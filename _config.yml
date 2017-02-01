@@ -6,7 +6,7 @@ description: "Fab Academey 2017 -Esteban Martin Gimenez"
 analytics: UA-90860442-1
 baseurl: "/archives/2017/fablabbcn/students/271"
 url: "http://archive.fabacademy.org"
-
+static: "https://nanusefue.github.io/fab2107-static-resource"
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title.html
