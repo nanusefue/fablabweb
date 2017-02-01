@@ -3,9 +3,9 @@
 # Site settings
 title: FAB ACADEMY 2017
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: ""
-url: "http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/"
+analytics: UA-90860442-1
+baseurl: "/archives/2017/fablabbcn/students/271/test"
+url: "http://archive.fabacademy.org"
 
 # Build settings
 markdown: kramdown
