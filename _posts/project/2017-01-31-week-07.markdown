@@ -1,6 +1,7 @@
 ---
 layout: project
-title:  "Mar 01: Electronics design"
+title:  "Mar 15: embedded programming
+"
 date:   2017-01-30 12:00:00
 author: Marcel Newman
 categories:
