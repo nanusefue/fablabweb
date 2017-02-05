@@ -15,7 +15,7 @@ tagged: Flat, UI, Development
 client: Wonder Corp.
 website: http://blacktie.co
 ---
-<h2>Create my own website </h2>
+<h2>Create my own website (DRAFT) </h2>
 <h3>Jekyll</h3>
 
 <img src="{{ "/assets/img/project/week1/jekyll.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -109,30 +109,6 @@ website: http://blacktie.co
 <p>TODO</p>
 
 <h4>Basic Command</h4>
-{% highlight bash linenos %}
-~ $ git init
-~ $ git add *.c
-~ $ git add README
-~ $ git commit -m 'initial project version'
-~ $ git clone git://github.com/schacon/grit.git
-$ git status
-On branch master
-nothing to commit, working directory clean
-$ cat .gitignore
-*.[oa]
-*~
-~ $ git commit -m "Commit message"
-~ $ git push origin master
-~ $ git remote add origin <server>
-~ $ git checkout -b <branchname>
-~ $ git checkout <branchname>
-~ $ git branch
-~ $ git push --all origin
-~ $ git pull
-~ $ git merge <branchname>
-~ $ git tag 1.0.0 <commitID>
-~ $ git fetch origin
-{% endhighlight %}
 
 
 <h3>References</h3>
