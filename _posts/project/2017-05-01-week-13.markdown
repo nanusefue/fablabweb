@@ -6,7 +6,7 @@ date:   2017-05-01 12:00:00
 author: Marcel Newman
 categories:
 - project
-img: portfolio_10.jpg
+img: portfolio_13.jpg
 thumb: thumb02.jpg
 carousel:
 #- single01.jpg
@@ -162,7 +162,7 @@ Instead of reducing the AVR's power supply, we can limit the output voltage on D
 
 <h2>SOFTWARE</h2>
 
-<h5>Bootloader</h5>
+<h4>Bootloader</h4>
 
 <p>El bootloader que se utiliza para tinyduino es el projecto opensource Micronucleous, he realizado un forck del proyexto para añadir la modificacion para utilizar la version del Attiny44. <a href="//github.com/nanusefue/micronucleus">Micronucleus</a>
 </p> 
@@ -199,15 +199,25 @@ Ahora podemos selecionar la version de nuestra tinyduino, Stracciatella o Mint
 <img src="{{ "/assets/img/project/week13/arduino_custom_board.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 
-<h5>Arduino IDE</h5>
+<h4>Arduino IDE</h4>
 
 <img src="{{ "/assets/img/project/week13/ArduinoProgram.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 
 <h2>Shield Accelerometer</h2>
-<h5>Hardware</h5>
-<h5>Reflow</h5>
+<h4>Hardware</h4>
+<h4>Reflow </h4>
+
+<p>Nice tutorial about the technique reflow, usind solder past.
+
+<a href="http://kineticsandelectronics.com/SurfaceMountTutorial.html" target="_blanck">Turorial</a>
+</p>
+
+
+<h4>My own reflow</h4>
+
 <div class="row">
+
 <div class="col-xs-6  col-lg-6  ">
 <img src="{{ "/assets/img/project/week13/reflow_own.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
@@ -215,6 +225,14 @@ Ahora podemos selecionar la version de nuestra tinyduino, Stracciatella o Mint
 <img src="{{ "/assets/img/project/week13/reflow_own_1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 </div>
+<h4>Reflow Profile</h4>
+
+<p>
+
+</p>
+
+<img src="{{ "/assets/img/project/week13/reflow_profile.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
 <div class="row">
 <div class="col-xs-6  col-lg-6  ">
 <img src="{{ "/assets/img/project/week13/reflow_test.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -228,14 +246,14 @@ Ahora podemos selecionar la version de nuestra tinyduino, Stracciatella o Mint
 
 
 
-<h5>Eagle</h5>
+<h4>Eagle</h4>
 
 
-<h5>Schematic</h5>
+<h4>Schematic</h4>
 <img src="{{ "/assets/img/project/week13/shield_eagle_sch.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 
-<h5>Eagle/Tinyduino</h5>
+<h4>Eagle/Tinyduino</h4>
 
 <div class="row">
 <div class="col-xs-6  col-lg-6  ">
