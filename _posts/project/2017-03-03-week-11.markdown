@@ -1,0 +1,18 @@
+---
+layout: project
+title:  "Mar 01: Electronics design"
+date:   2017-01-30 12:00:00
+author: Marcel Newman
+categories:
+- project
+img: portfolio_10.jpg
+thumb: thumb02.jpg
+carousel:
+#- single01.jpg
+#- single02.jpg
+#- single03.jpg
+tagged: Flat, UI, Development
+client: Wonder Corp.
+website: http://blacktie.co
+---
+<p>...</p>

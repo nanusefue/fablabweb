@@ -223,8 +223,8 @@ a:focus {
 	padding-bottom: 0px;
 	text-align: center;
 }
-
-#headerwrap h3, h5 {
+/*h5*/
+#headerwrap h3  {
 	color: white;
 	font-weight: 400;
 }
