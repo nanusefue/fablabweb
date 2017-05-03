@@ -7,6 +7,9 @@
 SoftSerial mySerial(9, 8); // RX, TX
 void setup(){
  
+   CLKPR = (1 << CLKPCE);
+   CLKPR = (0 << CLKPS3) | (0 << CLKPS2) | (0 << CLKPS1) | (0 << CLKPS0);
+ 
   mySerial.begin(19200);
   TinyWireM.begin();                    // initialize I2C lib
   uint8_t data = Read(ADXL_ADDR,0x00, 1,buffer)[0];
