@@ -266,32 +266,119 @@ Ahora podemos selecionar la version de nuestra tinyduino, Stracciatella o Mint
 
 <img src="{{ "/assets/img/project/week13/tiny_shield.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
+<h4>Arduino Code</h4>
+
+<h5>ADXL.ino</h5>
 
 
-{% highlight bash linenos %}
-~ $ git init
-~ $ git add *.c
-~ $ git add README
-~ $ git commit -m 'initial project version'
-~ $ git clone git://github.com/schacon/grit.git
-$ git status
-On branch master
-nothing to commit, working directory clean
-$ cat .gitignore
-*.[oa]
-*~
-~ $ git commit -m "Commit message"
-~ $ git push origin master
-~ $ git remote add origin <server>
-~ $ git checkout -b <branchname>
-~ $ git checkout <branchname>
-~ $ git branch
-~ $ git push --all origin
-~ $ git pull
-~ $ git merge <branchname>
-~ $ git tag 1.0.0 <commitID>
-~ $ git fetch origin
+{% highlight c linenos %}
+#include "ADXL_2.h"  /* Ne pas oublier d'inclure la librairie <TinyPinChange> qui est utilisee par la librairie <RcSeq> */
+#include <TinyWireM.h>                  // I2C Master lib for ATTinys which use USI
+#include <SoftSerial.h>     /* Allows Pin Change Interrupt Vector Sharing */
+#include <TinyPinChange.h>  /* Ne pas oublier d'inclure la librairie <TinyPinChange> qui est utilisee par la librairie <RcSeq> */
+
+
+SoftSerial mySerial(9, 8); // RX, TX
+void setup(){
+ 
+   CLKPR = (1 << CLKPCE);
+   CLKPR = (0 << CLKPS3) | (0 << CLKPS2) | (0 << CLKPS1) | (0 << CLKPS0);
+ 
+  mySerial.begin(19200);
+  TinyWireM.begin();                    // initialize I2C lib
+  uint8_t data = Read(ADXL_ADDR,0x00, 1,buffer)[0];
+  mySerial.print(data,HEX); 
+  if(data == 0xE5)
+  mySerial.print("Connected!!!");
+  else
+  mySerial.print("No Conected!!!");
+ 
+  Write(0x2D, 0x08); //init ADXL
+  Write(0x31, 0x08); //Set Range	
+
+}
+
+void loop(){
+  Acc_get();
+
+}
+
+
+AccelerometerRaw ReadRawAxis()
+{
+  Read(ADXL_ADDR,0x32,6,buffer); //Read value 
+  AccelerometerRaw raw = AccelerometerRaw();
+  raw.XAxis = ((int)buffer[1] << 8) | buffer[0]; //DATAX0
+  raw.YAxis = ((int)buffer[3] << 8) | buffer[2]; //DATAY0
+  raw.ZAxis = ((int)buffer[5] << 8) | buffer[4]; //DATAZ0
+  return raw;
+}
+
+
+void Acc_get(){  // Get the temperature from a DS1621
+  
+  AccelerometerRaw raw = ReadRawAxis();
+  mySerial.print("X: ");
+  mySerial.println(raw.XAxis);
+  mySerial.print("Y: ");
+  mySerial.println(raw.YAxis);
+  mySerial.print("Z: ");
+  mySerial.println(raw.ZAxis);
+  delay(100);
+
+}
+
+void Write(int address, int data)
+{
+  TinyWireM.beginTransmission(ADXL_ADDR);
+  TinyWireM.send(address);
+  TinyWireM.send(data);
+  TinyWireM.endTransmission();
+}
+
+
+uint8_t* Read(int m_Address,int address, int length,byte buffer[])
+{
+  TinyWireM.beginTransmission(m_Address);
+  TinyWireM.send(address);
+  TinyWireM.endTransmission();
+  
+  TinyWireM.beginTransmission(m_Address);
+  TinyWireM.requestFrom(m_Address, length);
+
+  if(TinyWireM.available() == length)
+  {
+    for(uint8_t i = 0; i < length; i++)
+    {
+      buffer[i] = TinyWireM.receive();
+    }
+  }
+  TinyWireM.endTransmission();
+
+  return buffer;
+}
+
+
+{% endhighlight %}
+
+<h5>ADXL.h</h5>
+{% highlight c++ linenos %}
+
+
+struct AccelerometerRaw
+{
+  	int XAxis;
+  	int YAxis;
+  	int ZAxis;
+};
+
+byte buffer[6];
+#define ADXL_ADDR   0x53              // 7 bit I2C address for ADXL343 
+int data;
+
+
+
 {% endhighlight %}
 
 
-<h3>References</h3>
+<!--<h3>References</h3> -->
