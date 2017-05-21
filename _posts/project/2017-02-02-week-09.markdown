@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Mar 01: echanical Design"
+title:  "Mar 01: Mechanical Design"
 date:   2017-02-02 12:00:00
 author: Marcel Newman
 categories:
