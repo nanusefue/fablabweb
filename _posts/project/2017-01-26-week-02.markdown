@@ -15,4 +15,16 @@ tagged: Flat, UI, Development
 client: Wonder Corp.
 website: http://blacktie.co
 ---
-<p>...</p>
+
+
+<h2>Assignment</h2>
+<h3>Computer-Aided Design: Model (draw, render, animate, simulate, ...) a possible final project, and post it on your class page with original 2D and 3D files.</h3>
+
+
+<p>
+	En esta semana aprenderemos a utlizar distintos programas de modelado 2D/3D para la creacion de diferentes diseños, y de esta manera poder realizar una analisis de todos ellos y elegir cual es el que mejor se adapta a nuestras necesidades a la hora de diseñar.
+</p>
+
+<p>
+	En esta semana aprenderemos a utlizar distintos programas de modelado 2D/3D para la creacion de diferentes diseños, y de esta manera poder realizar una analisis de todos ellos y elegir cual es el que mejor se adapta a nuestras necesidades a la hora de diseñar.
+</p>
