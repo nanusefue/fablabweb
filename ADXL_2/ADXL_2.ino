@@ -25,13 +25,16 @@ void setup(){
 }
 
 void loop(){
+  uint8_t data = Read(ADXL_ADDR,0x00, 1,buffer)[0];
   Acc_get();
-
+delay(200);
 }
 
 
 AccelerometerRaw ReadRawAxis()
 {
+
+  Write(0x32,0x01);
   Read(ADXL_ADDR,0x32,6,buffer);
   AccelerometerRaw raw = AccelerometerRaw();
   raw.XAxis = ((int)buffer[1] << 8) | buffer[0];
