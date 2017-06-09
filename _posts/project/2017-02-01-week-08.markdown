@@ -14,5 +14,22 @@ carousel:
 tagged: Flat, UI, Development
 client: Wonder Corp.
 website: http://blacktie.co
----
-<p>...</p> 
+
+<h2>Assignment</h2>
+<h3>measure something: add a sensor to a microcontroller board that you have designed and read it</h3>
+
+
+<p>
+Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
+</a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
+
+<h2>Tinyduino
+<small>ver. Stracciatella (Attiny44)/Mint (Attiny84) </small></h2>
+
+ <p>
+Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
+<br>
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week13/tinyduino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+</p>

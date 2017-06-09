@@ -17,14 +17,22 @@ website: http://blacktie.co
 ---
 
 
+
 <h2>Assignment</h2>
-<h3>Computer-Aided Design: Model (draw, render, animate, simulate, ...) a possible final project, and post it on your class page with original 2D and 3D files.</h3>
+<h3>Model (raster, vector, 2D, 3D, render, animate, simulate, …) a possible final project, and post it on your class page.</h3>
 
 
 <p>
-	En esta semana aprenderemos a utlizar distintos programas de modelado 2D/3D para la creacion de diferentes diseños, y de esta manera poder realizar una analisis de todos ellos y elegir cual es el que mejor se adapta a nuestras necesidades a la hora de diseñar.
-</p>
+Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
+</a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
 
-<p>
-	En esta semana aprenderemos a utlizar distintos programas de modelado 2D/3D para la creacion de diferentes diseños, y de esta manera poder realizar una analisis de todos ellos y elegir cual es el que mejor se adapta a nuestras necesidades a la hora de diseñar.
+<h2>Tinyduino
+<small>ver. Stracciatella (Attiny44)/Mint (Attiny84) </small></h2>
+
+ <p>
+Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
+<br>
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/tinyduino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
 </p>
