@@ -1,11 +1,11 @@
----
+------
 layout: project
-title:  "Mar 01: Mechanical Design [10]"
-date:   2017-02-02 12:00:00
+title:  "Mar 01: Electronics design [12]"
+date:   2017-01-30 12:00:00
 author: Marcel Newman
 categories:
 - project
-img: portfolio_09.jpg
+img: portfolio_10.jpg
 thumb: thumb02.jpg
 carousel:
 #- single01.jpg

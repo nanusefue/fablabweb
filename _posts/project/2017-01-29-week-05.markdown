@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  "Feb 22: 3D scanning and printing"
-date:   2017-01-28 12:00:00
-author: Marcel Newman
+title:  "Feb 22: 3D scanning and printing [5]"
+date:   2017-01-29 12:00:00
+author: Esteban Martin Gimenez
 categories:
 - project
 img: portfolio_05.jpg
@@ -14,7 +14,7 @@ carousel:
 tagged: Flat, UI, Development
 client: Wonder Corp.
 website: http://blacktie.co
-
+---
 <h2>Assignment</h2>
 <h3>measure something: add a sensor to a microcontroller board that you have designed and read it</h3>
 
@@ -29,7 +29,24 @@ Para este assignament he decicido crear mi propio arduino, basado en un microcon
  <p>
 Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
 <br>
-<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-<img width="600px" src="{{ "/assets/img/project/week13/tinyduino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint7.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
 </div>
 </p>

@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  "Jan 25: Principles and practices, project management"
+title:  "Jan 25: Principles and practices, project management [1]"
 date:   2017-01-25 12:00:00
-author: Marcel Newman
+author: Esteban Martin Gimenez
 categories:
 - project
 img: portfolio_01.jpg
@@ -11,8 +11,7 @@ carousel:
 - single01.jpg
 - single02.jpg
 - single03.jpg
-tagged: Flat, UI, Development
-client: Wonder Corp.
+
 website: http://blacktie.co
 ---
 <h2>Create my own website </h2>

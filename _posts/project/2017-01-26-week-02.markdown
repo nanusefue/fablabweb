@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  "Feb 01: Computer-aided design"
+title:  "Feb 01: Computer-aided design [2]"
 date:   2017-01-26 12:00:00
-author: Marcel Newman
+author: Esteban Martin Gimenez
 categories:
 - project
 img: portfolio_02.jpg
@@ -11,28 +11,117 @@ carousel:
 #- single01.jpg
 #- single02.jpg
 #- single03.jpg
-tagged: Flat, UI, Development
-client: Wonder Corp.
-website: http://blacktie.co
+website: http://labsdierobter.com
 ---
-
 
 
 <h2>Assignment</h2>
 <h3>Model (raster, vector, 2D, 3D, render, animate, simulate, …) a possible final project, and post it on your class page.</h3>
 
 
+<p>For this assignament i decide use diferentes software for 2D/3D, all most open source, and not open source.</p>
+<h5>OpenSource 2D</h5>
+<ul>
+<li>QCad</li>
+<li>Inksckape</li>
+</ul>
+<h5>OpenSource 3D</h5>
+<ul>
+<li>Openscad</li>
+</ul>
+
+And user others progran no-open source.
+
+<h5>2D</h5>
+<ul>
+<li><strike>Adobe Illustrator</strike></li>
+</ul>
+<h5>3D</h5>
+<ul>
+<li>Rhino3D and Grassphoper</li>
+<li>Solidworks</li>
+
+</ul>
+
+
+<h2>QCad</h2>
+
 <p>
-Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
-</a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
-
-<h2>Tinyduino
-<small>ver. Stracciatella (Attiny44)/Mint (Attiny84) </small></h2>
-
- <p>
-Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
-<br>
-<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-<img width="600px" src="{{ "/assets/img/project/week2/tinyduino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-</div>
+	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
 </p>
+<br>
+
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/qcad.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
+<h2>Inkscape</h2>
+
+<p>
+	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
+</p>
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/eps.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/ink.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
+<h2>Openscad</h2>
+
+<p>
+	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
+</p>
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/OpenScad.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/Regleta.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<h2>Rhino3D + Grassphoper</h2>
+
+<p>
+	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
+</p>
+
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/grass1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/anillo.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<h2>SolidWokrs</h2>
+
+<p>
+	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
+</p>
+
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/solid.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<br>
+<h3>Conclusions</h3>
+
+
+
+<h3>References</h3>
+<p><a href="https://www.rhino3d.com/es/">Rhinoceros3D</a></p>
+<p><a href="http://www.grasshopper3d.com/">Grasshopper</a></p>
+<p><a href="http://www.qcad.org/">Qcad</a></p>
+<p><a href="http://www.openscad.org/">OpenScad</a></p>
+<h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week2/download/qcad.dxf" | prepend: site.baseurl }}">Qcad.dxf</a></p>
+<p><a href="{{ "/assets/img/project/week2/download/openscad.scad" | prepend: site.baseurl }}">Openscad.scad</a></p>
+<p><a href="{{ "/assets/img/project/week2/download/board.eps" | prepend: site.baseurl }}">Bord.eps</a></p>
+<p><a href="{{ "/assets/img/project/week2/download/solidworks.SLDPRT" | prepend: site.baseurl }}">Solidworks.sld</a></p>
+
+<p><a href="{{ "/assets/img/project/week2/download/anillo.3dm" | prepend: site.baseurl }}">Rhino.3dm</a></p>
+<p><a href="{{ "/assets/img/project/week2/download/anillo.gh" | prepend: site.baseurl }}">Grasshopper.gh</a></p>
+
+
+

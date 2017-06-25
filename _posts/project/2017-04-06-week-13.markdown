@@ -1,11 +1,11 @@
 ---
 layout: project
-title:  "Mar 01: Mechanical Design [10]"
-date:   2017-02-02 12:00:00
+title:  "Mar 01: Modeling and Casting [13]"
+date:   2017-04-03 12:00:00
 author: Marcel Newman
 categories:
 - project
-img: portfolio_09.jpg
+img: portfolio_10.jpg
 thumb: thumb02.jpg
 carousel:
 #- single01.jpg
@@ -15,6 +15,7 @@ tagged: Flat, UI, Development
 client: Wonder Corp.
 website: http://blacktie.co
 ---
+
 <h2>Assignment</h2>
 <h3>measure something: add a sensor to a microcontroller board that you have designed and read it</h3>
 
