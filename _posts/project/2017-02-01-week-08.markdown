@@ -5,7 +5,7 @@ date:   2017-01-30 12:00:00
 author: Marcel Newman
 categories:
 - project
-img: portfolio_07.jpg
+img: portfolio_08.jpg
 thumb: thumb02.jpg
 carousel:
 #- single01.jpg
@@ -16,6 +16,7 @@ client: Wonder Corp.
 website: http://blacktie.co
 ---
 
+
 <h2>Assignment</h2>
 <h3>measure something: add a sensor to a microcontroller board that you have designed and read it</h3>
 
@@ -23,14 +24,105 @@ website: http://blacktie.co
 <p>
 Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
 </a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
-
+</p>
 <h2>Tinyduino
 <small>ver. Stracciatella (Attiny44)/Mint (Attiny84) </small></h2>
-
- <p>
-Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
-<br>
-<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-<img width="600px" src="{{ "/assets/img/project/week13/tinyduino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week8/atmel.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week8/atmel1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-</p>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week8/atmel2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week8/atmel3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week8/atmel4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week8/atmel5.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
+
+<div class="col-xs-12 ">
+
+
+{% highlight c++ linenos %}
+
+	/*   Blink */
+	// the setup function runs once when you press reset or power the board
+	void setup() {
+	  // initialize digital pin LED_BUILTIN as an output.
+	  pinMode(10, OUTPUT);
+	}
+
+	// the loop function runs over and over again forever
+	void loop() {
+	  digitalWrite(10, HIGH);   // turn the LED on (HIGH is the voltage level)
+	  delay(1000);                       // wait for a second
+	  digitalWrite(10, LOW);    // turn the LED off by making the voltage LOW
+	  delay(1000);                       // wait for a second
+	}
+{% endhighlight %}
+</div>
+<br>
+
+<div class="col-xs-12 ">
+
+<video width="800" controls loop>
+  <source src="{{ "/assets/img/project/week8/video.mp4" | prepend: site.baseurl }}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+<br>
+<div class="col-xs-12 ">
+
+{% highlight c++ linenos %}
+
+#include <SoftRcPulseOut.h> 
+ 
+SoftRcPulseOut myservo;  // create servo object to control a servo 
+                        // a maximum of eight servo objects can be created 
+#define SERVO_PIN         9
+
+#define REFRESH_PERIOD_MS 1
+
+#define NOW               1
+
+int pos = 0;    // variable to store the servo position 
+ 
+void setup() 
+{ 
+  myservo.attach(SERVO_PIN);  // attaches the servo on pin defined by SERVO_PIN to the servo object 
+} 
+ 
+ 
+void loop() 
+{ 
+  for(pos = 0; pos < 180; pos += 1)  // goes from 0 degrees to 180 degrees 
+  {                                  // in steps of 1 degree 
+    myservo.write(pos);              // tell servo to go to position in variable 'pos' 
+    delay(REFRESH_PERIOD_MS);        // waits 20ms for refresh period 
+    SoftRcPulseOut::refresh(NOW);    // generates the servo pulse Now
+  } 
+  for(pos = 180; pos>=1; pos-=1)     // goes from 180 degrees to 0 degrees 
+  {                                
+    myservo.write(pos);              // tell servo to go to position in variable 'pos' 
+    delay(REFRESH_PERIOD_MS);        // waits 20ms for for refresh period 
+    SoftRcPulseOut::refresh(NOW);    // generates the servo pulse Now
+  } 
+} 
+{% endhighlight %}
+</div>
+
+<div class="col-xs-12 ">
+
+<video width="800" controls loop>
+  <source src="{{ "/assets/img/project/week8/servo.mp4" | prepend: site.baseurl }}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+
+<h3>Download</h3>
+<p><a href="http://academy.cba.mit.edu/classes/embedded_programming/doc8183.pdf">Attiny 44/84</a></p>
+
+

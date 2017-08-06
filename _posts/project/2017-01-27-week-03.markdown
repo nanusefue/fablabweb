@@ -17,21 +17,27 @@ website: http://blacktie.co
 ---
 
 <h2>Assignment</h2>
-<h3>Make lasercutter test part(s), varying cutting settings and slot dimensions</h3>
-
-<h3>Cut something on the vinylcutter</h3>
-
-<h3>Design, make, and document a parametric press-fit construction kit,accounting for the lasercutter kerf, which can be assembled in multiple ways</h3>
-
-
-<p>
-Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
-</a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
+<ul>
+<li>
+	<h3>Make lasercutter test part(s), varying cutting settings and slot dimensions</h3>
+</li>
+<li>
+	<h3>Cut something on the vinylcutter</h3>
+</li>
+<li>
+	<h3>Design, make, and document a parametric press-fit construction kit,accounting for the 	lasercutter kerf, which can be assembled in multiple ways</h3>
+</li>
+</ul>
 
 <h2>Make lasercutter test part(s)</h2>
 
- <p>
-Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
+<p>
+One of the more important parts is the offset create when cutting in laser, is very important calculate this offset, for making a right cut and all piece work together.
+In this exercise using Inkscape for creating a rule with different width.
+I make another rule in Qcad, is easier calculate correctly the different size and export to a rhino.
+Use Rhino for sending the file to a laser cut, and use especial software for change the power and velocity depending on the material cut.
+
+</p>
 <br>
 <div class="col-xs-12  ">
 <img width="450px" src="{{ "/assets/img/project/week3/w3inkscape06.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -43,18 +49,26 @@ Tinyduino is a light version of Arduino, its based in a cheaper and smaller micr
 </div>
 
 <div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week3/kerf.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
 <img width="450px" src="{{ "/assets/img/project/week3/delta2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
-<img width="450px" src="{{ "/assets/img/project/week3/delta.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
 </div>
 
 <div class="col-xs-12  ">
+<img width="450px" src="{{ "/assets/img/project/week3/delta.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week3/delta1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-</p>
+<br>
+<h2>Engraving test</h2>
 
- <p>
-Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
+<p>
+When finishing the kerf test, I decide to use the laser for creating my own stamp, 
+I've gone to the art store and bought a sheet of Linoleum.
+I created the logo in Inkscape and configured the laser for making an engraving.
+The result is nice, I created block in wood and glued the stamp there.
+</p>
 <br>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/stamp2.bmp" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -65,12 +79,14 @@ Tinyduino is a light version of Arduino, its based in a cheaper and smaller micr
 
 <img width="450px" src="{{ "/assets/img/project/week3/stamp1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-</p>
 
 <h3>Cut something on the vinylcutter</h3>
 
- <p>
-Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
+<p>
+I decide use a vinulcutter for make some expiriment, user the parafilm (<a href="http://www.sigmaaldrich.com/catalog/product/sigma/p7793?lang=es&region=ES&gclid=CjwKCAjwk4vMBRAgEiwA4ftLs0N6FpQd6T-vcggcMl0RkNJ1J64DOZdpPAHe6F8-trFLT546dLtuvxoC1fwQAvD_BwE"  >Link</a>)
+i trai make a microfluidics device, using paper and parafilm <a href="http://pubs.rsc.org/-/content/articlelanding/2016/ra/c5ra26255k/unauth#!divAbstract">example</a>
+
+</p> 
 <br>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/vinilo.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -91,13 +107,10 @@ Tinyduino is a light version of Arduino, its based in a cheaper and smaller micr
 <!--<img width="450px" src="{{ "/assets/img/project/week3/vinilofinal2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>-->
 </div>
 
-</p>
-
-
 <h3>Parametric press-fit construction kit</h3>
 
 <p>
-Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
+I decided to use SolidWorks for creating a parametric model, the advantaged of using solidworks is more easily control all measurement and relate them, this way if change some measurement all design is modified.  
 <br>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/pressfit1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -124,6 +137,8 @@ Tinyduino is a light version of Arduino, its based in a cheaper and smaller micr
 <p><a href="https://www.epiloglaser.es/">Laser Cut</a></p>
 <p><a href="https://www.rolanddga.com/es-la/productos/plotter-de-corte">Vinyl Cuttter</a></p>
 <h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week3/download/kerf.dxf" | prepend: site.baseurl }}">Laser Kerf</a></p>
+<p><a href="{{ "/assets/img/project/week3/download/sello1.png" | prepend: site.baseurl }}">Engraving</a></p>
 <p><a href="{{ "/assets/img/project/week3/download/chip.dxf" | prepend: site.baseurl }}">Vinyl Cutter</a></p>
 <p><a href="{{ "/assets/img/project/week3/download/pressfit.SLDPRT" | prepend: site.baseurl }}">Pressfit</a></p>
 

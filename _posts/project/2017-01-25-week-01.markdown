@@ -99,6 +99,37 @@ website: http://blacktie.co
 # => The static site created in _site/ folder
 {% endhighlight %}
 
+<h3>Part of code for the first assignament</h3>
+{% highlight bash linenos %}
+---
+layout: project
+title:  "Jan 25: Principles and practices, project management [1]"
+date:   2017-01-25 12:00:00
+author: Esteban Martin Gimenez
+categories:
+- project
+img: portfolio_01.jpg
+thumb: thumb02.jpg
+carousel:
+- single01.jpg
+- single02.jpg
+- single03.jpg
+
+website: http://blacktie.co
+---
+<h2>Create my own website </h2>
+<h3>Jekyll</h3>
+
+<img src="{{ "/assets/img/project/week1/jekyll.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<p></p>
+<p>To create my website I've chosen to use <a  target="_blank" href="https://jekyllrb.com">Jekyll</a>. That's because this system allows you to create a web in a easy and static way,  making modifications by simple changes in the configuration files (Markdown) </p>
+
+<h4>Install Jekyll</h4>
+
+
+and more ....
+
+{% endhighlight %}
 
 <h2>Git (Version control system)  </h2>
 <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
@@ -109,11 +140,11 @@ website: http://blacktie.co
 
 <h4>Basic Command</h4>
 {% highlight bash linenos %}
-~ $ git init
-~ $ git add *.c
-~ $ git add README
-~ $ git commit -m 'initial project version'
-~ $ git clone git://github.com/schacon/grit.git
+~ $ git init (initialize de git repository local server)
+~ $ git add *.c (add new files in local repository)
+~ $ git add README (add Readme file)
+~ $ git commit -m 'initial project version' (first commit before add in repository)
+~ $ git clone git://github.com/schacon/grit.git (add existent respository for use)
 $ git status
 On branch master
 nothing to commit, working directory clean
@@ -121,24 +152,64 @@ $ cat .gitignore
 *.[oa]
 *~
 ~ $ git commit -m "Commit message"
-~ $ git push origin master
-~ $ git remote add origin <server>
-~ $ git checkout -b <branchname>
-~ $ git checkout <branchname>
-~ $ git branch
-~ $ git push --all origin
-~ $ git pull
-~ $ git merge <branchname>
-~ $ git tag 1.0.0 <commitID>
-~ $ git fetch origin
+~ $ git push origin master (push your local file to remote repository)
+~ $ git remote add origin <server> (conect your local repository with remote git server)
+~ $ git checkout -b <branchname> (create new branch)
+~ $ git checkout <branchname> (switch between branches )
+~ $ git push --all origin (upload all file to remote server)
+~ $ git pull (download all file to local server)
+~ $ git merge <branchname> (merge one especifica branch in the actual branch)
+~ $ git tag 1.0.0 <commitID>  (tag the actual commit)
+~ $ git fetch origin (recover all file from remote server)
 {% endhighlight %}
 
+<h2>How to deploy my own site</h2>
+
+<h4>Generating a new SSH</h4>
+
+{% highlight bash linenos %}
+~ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+{% endhighlight %}
+
+
+<h4>Copy the SSH key to your clipboard and add in fablab repository.</h4>
+
+{% highlight bash linenos %}
+
+	user@user-ThinkPad-X220:~/.ssh$ cat id_rsa.pub 
+	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5i+Ck1I9aN5sELzGmWeNGM9MKg+iNdO40IqPRffaMcJ
+	.... user@user-ThinkPad-X220
+{% endhighlight %}
+
+<h4>Add/Commit/Push your file a fablab Repository</h4>
+
+{% highlight bash linenos %}
+~ $ git add .
+~ $ git status
+~ $ git commit -am 'new assignament'
+~ $ git pull origin master
+~ $ git push origin master
+{% endhighlight %}
+
+<br>
+<div class="col-xs-12">
+<img width="450px" src="{{ "/assets/img/project/week1/gitpush.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week1/gitpush1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12">
+<img width="450px" src="{{ "/assets/img/project/week1/gitpush2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week1/gitpush3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div><div class="col-xs-12">
+<img width="450px" src="{{ "/assets/img/project/week1/gitpush4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week1/gitpush5.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
 
 <h3>References</h3>
 <p><a target="_blank" href="https://jekyllrb.com/">Jekyll</a></p>
 <p><a target="_blank" href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></p>
 <p><a target="_blank" href="https://git-scm.com/">Git</a></p>
-
+<p><a target="_blank" href="https://help.github.com/articles/connecting-to-github-with-ssh/
+">Git and SSH</a></p>
 
 
 <h2>PROJECT IDEA: OPEN ECOTRONs</h2> 
@@ -158,3 +229,8 @@ Having that open source apparatus can make us envision the emergence of a world 
 <h4>Open Brew / Open Fermentor</h4>
 <p>OpenBrew is the follow-up of the OpenGrow.  But now, we are not interested in the microorganism that grows inside but in the liquid media and the fermentation process.  It is a project to explore the different ways to elaborate/prepare/ferment different beverages. Specially beer (from different cereals) but also drinks that are developed by similar fermentation process like wine, cider or any other fruit alcohol fermentation. But also Mate or kombucha tea as an non-alcoholic drink. 
 Again, the idea is to end up with a general bioreactor/fermentor with a modular design that allows to be adapted to the special requirements of your beverage preparation. The fermentor, of course, will include some sensors and electronic systems to control and automatize the process, in order to make the fermentation easier, less laboured and accessible to everybody.</p>
+
+<div class="col-xs-10 col-xs-offeset-2">
+<img width="450px" src="{{ "/assets/img/project/week1/biorreactor.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>

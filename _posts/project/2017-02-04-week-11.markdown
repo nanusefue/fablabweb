@@ -30,6 +30,61 @@ Para este assignament he decicido crear mi propio arduino, basado en un microcon
 Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
 <br>
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-<img width="600px" src="{{ "/assets/img/project/week13/tinyduino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="600px" src="{{ "/assets/img/project/week11/output.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 </p>
+<p>
+	
+	;***** Adapt these SCA and SCL port and pin definition to your target !!;
+<ul>
+<li>#define SDA     	6		// SDA Port A, Pin 6</li>   
+<li>#define SCL		4		// SCL Port A, Pin 4</li>
+<li>#define SDA_PORT        PORTA           // SDA Port A</li>
+<li>#define SCL_PORT        PORTA           // SCL Port A</li>
+</ul>
+</p>
+{% highlight c++ linenos %}
+
+#include <DigisparkOLED.h>
+#include <Wire.h>
+#include "img0_128x64c1.h"
+#include "digistump_128x64c1.h"
+
+
+void setup() {
+  // put your setup code here, to run once:
+
+  oled.begin();
+
+}
+
+void loop() {
+  
+  // put your main code here, to run repeatedly:
+  oled.fill(0xFF); //fill screen with color
+  delay(1000);
+  oled.clear(); //all black
+  delay(1000);
+  //usage: oled.setCursor(X IN PIXELS, Y IN ROWS OF 8 PIXELS STARTING WITH 0);
+  oled.setCursor(0, 0); //top left
+  oled.setFont(FONT8X16);
+  oled.println(F("FABACADENY 2017")); //wrap strings in F() to save RAM!
+  oled.setFont(FONT6X8);
+  oled.println(F("ESTEBAN OLED!"));
+  oled.setCursor(0, 3); //two rows down because the 8x16 font takes two rows of 8
+  oled.println(F("BCN")); //println will move the cursor 8 or 16 pixels down (based on the front) and back to X=0
+  
+  delay(1000);
+
+}
+{% endhighlight %}
+
+<div class="col-xs-12 ">
+
+<video width="800" controls loop>
+  <source src="{{ "/assets/img/project/week11/oled.mp4" | prepend: site.baseurl }}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+http://www.avrfreaks.net/forum/i2c-library-attiny84

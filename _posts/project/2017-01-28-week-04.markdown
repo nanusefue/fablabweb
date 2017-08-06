@@ -17,19 +17,36 @@ website: http://blacktie.co
 ---
 
 <h2>Assignment</h2>
-<h3>Make an in-circuit programmer by milling the PCB, then optionally trying other processes.</h3>
+<ul>
+<li>
+	<h3>Make an in-circuit programmer by milling the PCB</h3>
+</li>	
+<li>
+	<h3>Optionally trying other processes.</h3>
+</li>
+</ul>
 
+
+<h2>Make an in-circuit programmer by milling the PCB</h2>
 
 <p>
-Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
-</a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
-
-<h2>Tinyduino
-<small>ver. Stracciatella (Attiny44)/Mint (Attiny84) </small></h2>
-
- <p>
-Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
+This week work to make an own FABISP, this board is very useful.
+When creating any new board with any microcontroller  (avr family), normally you need load some program inside, the fabisp is a board to make this be a possibility.
+Only you need to connect the fabsip in your computer and run the specific command to program the new board. 
+</p>
 <br>
+
+
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="300px" src="{{ "/assets/img/project/week4/hello.ISP.44.interior.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="300px" src="{{ "/assets/img/project/week4/hello.ISP.44.traces.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+
+<img width="300px" src="{{ "/assets/img/project/week4/programerusb1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="300px" src="{{ "/assets/img/project/week4/programerusb3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 
 <img width="300px" src="{{ "/assets/img/project/week4/programer1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -45,4 +62,146 @@ Tinyduino is a light version of Arduino, its based in a cheaper and smaller micr
 <img width="300px" src="{{ "/assets/img/project/week4/programer5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="300px" src="{{ "/assets/img/project/week4/programer6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week4/hello.ISP.44.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
 </p>
+<h4>Make Fuse</h4>
+
+{% highlight bash linenos%}
+
+nanu@nanu-ThinkPad-X220:firmware$ make fuse
+avrdude -c usbtiny -p attiny44  -U hfuse:w:0xDF:m -U lfuse:w:0xFF:m
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9207
+avrdude: reading input file "0xDF"
+avrdude: writing hfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.00s
+
+avrdude: 1 bytes of hfuse written
+avrdude: verifying hfuse memory against 0xDF:
+avrdude: load data hfuse data from input file 0xDF:
+avrdude: input file 0xDF contains 1 bytes
+avrdude: reading on-chip hfuse data:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: verifying ...
+avrdude: 1 bytes of hfuse verified
+avrdude: reading input file "0xFF"
+avrdude: writing lfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.01s
+
+avrdude: 1 bytes of lfuse written
+avrdude: verifying lfuse memory against 0xFF:
+avrdude: load data lfuse data from input file 0xFF:
+avrdude: input file 0xFF contains 1 bytes
+avrdude: reading on-chip lfuse data:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: verifying ...
+avrdude: 1 bytes of low fuse verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+
+{% endhighlight %}
+
+<h4>Make Program</h4>
+
+{% highlight bash linenos%}
+
+nanu@nanu-ThinkPad-X220:firmware$ make program
+avrdude -c usbtiny -p attiny44  -U flash:w:main.hex:i
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9207
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: reading input file "main.hex"
+avrdude: writing flash (2020 bytes):
+
+Writing | ################################################## | 100% 5.68s
+
+
+
+avrdude: 2020 bytes of flash written
+avrdude: verifying flash memory against main.hex:
+avrdude: load data flash data from input file main.hex:
+avrdude: input file main.hex contains 2020 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 3.36s
+
+
+
+avrdude: verifying ...
+avrdude: 2020 bytes of flash verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+
+avrdude -c usbtiny -p attiny44  -U hfuse:w:0xDF:m -U lfuse:w:0xFF:m
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9207
+avrdude: reading input file "0xDF"
+avrdude: writing hfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.00s
+
+avrdude: 1 bytes of hfuse written
+avrdude: verifying hfuse memory against 0xDF:
+avrdude: load data hfuse data from input file 0xDF:
+avrdude: input file 0xDF contains 1 bytes
+avrdude: reading on-chip hfuse data:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: verifying ...
+avrdude: 1 bytes of hfuse verified
+avrdude: reading input file "0xFF"
+avrdude: writing lfuse (1 bytes):
+
+Writing | ################################################## | 100% 0.00s
+
+avrdude: 1 bytes of lfuse written
+avrdude: verifying lfuse memory against 0xFF:
+avrdude: load data lfuse data from input file 0xFF:
+avrdude: input file 0xFF contains 1 bytes
+avrdude: reading on-chip lfuse data:
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: verifying ...
+avrdude: 1 bytes of lfuse verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+{% endhighlight %}
+
+
+<br>
+<div class="col-xs-12 ">
+
+<img width="1200px" src="{{ "/assets/img/project/week4/programerusb.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<h3>References</h3>

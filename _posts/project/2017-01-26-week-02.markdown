@@ -59,7 +59,8 @@ And user others progran no-open source.
 <h2>Inkscape</h2>
 
 <p>
-	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
+		Inkscape is a free, open source application for a vectorial computer designed, is similar to Illustrator, Corel Draw, and Freehand. The typical file use is SVG (Scalable Vector Graphics), and the other advantage, Inkscape is cross-platform you run on Linux, Mac or Windows.
+	 <a href='https://inkscape.org/es/'>Inkscape</a>
 </p>
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 <img width="600px" src="{{ "/assets/img/project/week2/eps.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -73,7 +74,12 @@ And user others progran no-open source.
 <h2>Openscad</h2>
 
 <p>
-	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
+	OpenScad is a software for creating solid 3D models, is open source like Inkscape or Qcad, and cross-platform.
+OpenScad is perfect for creating 3D models of machine parts, Another advantage this is a super parametric software.
+To create any models you must to write a script, the OpenScad renders 3D models from this script, is very easy to make any change in your model and you can be defined some variables to generate the model and change these variables to modify your model.
+
+
+	<a href='http://www.openscad.org/'>OpenScad</a>
 </p>
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 <img width="600px" src="{{ "/assets/img/project/week2/OpenScad.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -85,7 +91,15 @@ And user others progran no-open source.
 <h2>Rhino3D + Grassphoper</h2>
 
 <p>
-	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
+	<p>
+	Rhino3D is software for create NURBS curve, surface and solids, point clouds, mesh.
+	One of advantege in Rhino3D you can load any can off plugins, the most popular plugin is Grassphoper.
+	Grassphoper is generative algorithm editor this integrate whit rhino, for create and modifid diferents models grassphopre use the flow programming paradigma.Rhino3D is software for creating NURBS curve, surface, solids, point clouds, and mesh.
+	Ones of this advantage in Rhino3D you can load any plugins, the most popular plugin is Grassphoper.
+	Grassphoper is generative algorithm editor this integrates whit rhino, for creating and modified diferents models, using the flow programming paradigma.
+	<a href='https://www.rhino3d.com/'>Rhino3D</a> and 
+	<a href='http://www.grasshopper3d.com/'>Grasshopper</a>
+
 </p>
 
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
@@ -95,10 +109,10 @@ And user others progran no-open source.
 <img width="600px" src="{{ "/assets/img/project/week2/anillo.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
-<h2>SolidWokrs</h2>
+<h2>SolidWorks</h2>
 
 <p>
-	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
+	SolidWorks is software for 3D modeling, oriented to Mechanical design is a great tool for creating any type of industrial design very different to Rhino or Openscad. <a href='http://www.solidworks.es/'>Solidworks</a>
 </p>
 
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
@@ -106,7 +120,11 @@ And user others progran no-open source.
 </div>
 <br>
 <h3>Conclusions</h3>
-
+<p>
+All software used here is Magnifique, bat depends on wich you like to create, you need select the correct software.
+For example for model complex and mechanical design I think is better Solidworks,
+or if you like create a simple model but super parametric the best is openscad.
+</p>
 
 
 <h3>References</h3>
