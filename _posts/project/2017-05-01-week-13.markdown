@@ -1,0 +1,393 @@
+---
+layout: project
+title:  "Mar 01: Input Device [13]"
+
+date:   2017-05-01 12:00:00
+author: Marcel Newman
+categories:
+- project
+img: portfolio_13.jpg
+thumb: thumb02.jpg
+carousel:
+#- single01.jpg
+#- single02.jpg
+#- single03.jpg
+tagged: Flat, UI, Development
+client: Wonder Corp.
+website: http://blacktie.co
+---
+
+
+<h2>Assignment</h2>
+<h3>measure something: add a sensor to a microcontroller board that you have designed and read it</h3>
+
+
+<p>
+Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
+</a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
+
+<h2>Tinyduino
+<small>ver. Stracciatella (Attiny44)/Mint (Attiny84) </small></h2>
+
+ <p>
+Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
+<br>
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week13/tinyduino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+</p>
+
+<h2>HARDWARD</h2>
+
+<!-- <h4>Main Board</h4> -->
+
+<p>Tinyduino allows you to save the programs without using a external ISP programmer. The board uses six pins (ISP) to program the microcontroller, allowing a simple design and smaller board. Thus, using a Tinyduino is as easy as plug and program.  </p>
+<p>The technical specifications of Tinyduino are: </p>
+
+<ul>
+<li>Microcontroller Attiny44/84</li>
+<li>Flash [kB] ~ 2.5/6.5 </li>
+<li>CPU Speed: 8 Mhz </li>
+<li>Operating/Input Voltage: 5V and 3.3V</li>
+<li>Digital IO/PWM: 11 / 4</li>
+<li>Analog In/Out: 8</li>
+<li>MicroUSB connection</li>
+<li>I2C protocol </li>
+<li>Internal Led (pin 10) </li>
+<li>Reset Switch</li>
+</ul>
+
+<h5>Schematic</h5>
+<img src="{{ "/assets/img/project/week13/schematic_low.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+
+<h5>Eagle/Tinyduino</h5>
+
+<div class="row">
+<div class="col-xs-6  col-lg-6  ">
+<img src="{{ "/assets/img/project/week13/board.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-6  col-lg-6  ">
+<img src="{{ "/assets/img/project/week13/tinyduino.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+</div>
+
+
+<h4>USB Communication</h4>
+
+<p>
+Para poder crear mi propio arduino he utlizado la libreria v-usb, que es la misma que usa el USBTinyISP. 
+<br>
+<span style=" font-style: italic;">"(V-USB is a software-only implementation of a low-speed USB device for Atmel’s AVR® microcontrollers, making it possible to build USB hardware with almost any AVR® microcontroller, not requiring any additional chip.)"</span>
+</p> 
+
+<h4>V-USB Hardward Consideration</h4>
+<p>
+Para utilizar en nuestro proyecto V-USB, es importante tener encuenta ciertas consideraciones de hardware a la hora de crear nuestra propia placa.
+</p>
+<h4>The voltage level problem</h4>
+<!--
+<h4 class="small">Solution A: Reduced supply voltage for the AVR</h4>
+<h5>Opcion 1 </h5>
+<img src="{{ "/assets/img/project/week13/voltage-regulator.gif" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<p>One solution to the level conversion problem is to supply the AVR with a reduced voltage, usually in the range of 3.3 to 3.6 V. Since the USB power supply is in the range of 4.5 to 5.25 V, we need a low drop voltage regulator. Advantages of this solution are:
+</p>
+<p>Clean solution, fast transitions on D+ and D-.
+Good noise immunity for signal input.
+</p>
+
+<h6>Disadvantages:</h6>
+<ul>
+
+<li>Low drop regulators are often expensive and harder to obtain.</li>
+<li>Many AVRs are not specified for the required clock rates at supply voltages below 4.5 V.</li>
+<li>Other chips on the board may not be specified for 3.3 V.</li>
+</ul>
+
+<h5>Opcion 2 </h5>
+
+<img src="{{ "/assets/img/project/week13/voltage-reduction-with-diodes.gif" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<p>Another variation of this approach is to reduce the supply voltage with two rectifier diodes in series. This gives roughly a drop of 1.2 to 1.4 V, usually enough to make things work. The missing regulation may be problematic for analog circuitry or if you use the ADC. It depends on the power consumption of the device and the PC side voltage supply stability.</p>
+
+<h6>Additional advantages:</h6>
+
+<ul>
+	<li>Low cost, easily orderable devices.</li>
+	<li>No quiescent current, makes this solution ideal for USB compliant standby mode.</li>
+</ul>
+<h6>Additional disadvantages:</h6>
+<ul>
+	<li>No regulation, only voltage step-down.</li>
+	<li>Unregulated voltage problematic for analog circuitry, ADC usage, and maybe attached digital circuitry.</li>
+</ul>
+
+</p>
+<p> -->
+<h5 class="small">Solution: Level conversion on D+ and D-</h5>
+
+<img src="{{ "/assets/img/project/week13/level-conversion-with-zener.gif" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</p>
+<p>
+Instead of reducing the AVR's power supply, we can limit the output voltage on D+ and D- with Zener diodes. We recommend 3.6 V low power types, those that look like 1N4148 (usually 500 mW or less). Low power types are required because they have less capacitance and thus cause less distortion on the data lines. And 3.6 V is better than 3.3 V because 3.3 V diodes yield only ca. 2.7 V in conjunction with an 1.5 kΩ (or more exactly 10 kΩ) pull-up resistor. With 3.3 V diodes, the device may not be detected reliably.</p>
+
+<p>If you use Zener diodes for level conversion, please measure the voltage levels to make sure that the diodes you have chosen match the requirements.</p>
+
+<h6>Advantages of the Zener diode approach:</h6>
+<ul>
+<li>Low cost.</li>
+<li>Easy to obtain.</li>
+<li>Entire design can be at 5 V.</li>
+<li>AVR can be clocked at high rates.</li>
+</ul>
+<h6>Disadvantages:</h6>
+<ul>
+	<li>Not a clean solution, a compromise between all parameters must be found.</li>
+	<li>Zener diodes come with a broad range of characteristics, especially at low currents, results may not be reproducible.</li>
+	<li>High currents when sending high-level.</li>
+	<li>High level is different for signaling and in idle state because signaling uses high currents to drive the diodes while idle state is driven by a 1.5 kΩ pull-up resistor.</li>
+</ul>
+
+<p>
+
+ <a href="http://vusb.wikidot.com/hardware" target="_blank">See more solutions</a>
+
+</p>
+
+
+
+
+
+<h2>SOFTWARE</h2>
+
+<h4>Bootloader</h4>
+
+<p>El bootloader que se utiliza para tinyduino es el projecto opensource Micronucleous, he realizado un forck del proyexto para añadir la modificacion para utilizar la version del Attiny44. <a href="//github.com/nanusefue/micronucleus">Micronucleus</a>
+</p> 
+
+<img src="{{ "/assets/img/project/week13/micronucleous.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+
+<h3>Arduino Custom Board</h3>
+<h4>Como añadir Tinyduino para utlizarlo en nuestro Arduino IDE</h4>
+
+<p>
+<h4>Paso 1</h4>
+
+<p>
+Copiar y pegar la siguiente url en nuestro IDE en el menu: <b> File -> Preference </b>
+<br>
+https://nanusefue.github.io/poi/Tinyduino/package_tinyduino_index.json
+</p>
+
+<img src="{{ "/assets/img/project/week13/url_arduino_board.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<h4>Paso 2</h4>
+<p>
+Descargar e instalar todos los componentes necesarios para seleccionar la placa correcta.
+</p>
+
+<img src="{{ "/assets/img/project/week13/arduino_custom_manager.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<h4>Paso 3</h4>
+<p>
+Ahora podemos selecionar la version de nuestra tinyduino, Stracciatella o Mint
+</p>
+
+
+<img src="{{ "/assets/img/project/week13/arduino_custom_board.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+
+<h4>Arduino IDE</h4>
+
+<img src="{{ "/assets/img/project/week13/ArduinoProgram.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<br>
+
+
+<h2>Shield Accelerometer (ADXL 343)</h2>
+<br>
+
+<!--<h4>Hardware</h4> -->
+<h4>Reflow </h4>
+
+<p>Nice tutorial about the technique reflow, usind solder past.
+
+<a href="http://kineticsandelectronics.com/SurfaceMountTutorial.html" target="_blanck">Turorial</a>
+</p>
+
+
+<h4>My own reflow</h4>
+
+<div class="row">
+
+<div class="col-xs-6  col-lg-6  ">
+<img src="{{ "/assets/img/project/week13/reflow_own.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-6  col-lg-6  ">
+<img src="{{ "/assets/img/project/week13/reflow_own_1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+</div>
+<h4>Reflow Profile</h4>
+
+<p>
+
+</p>
+
+<img src="{{ "/assets/img/project/week13/reflow_profile.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<div class="row">
+<div class="col-xs-6  col-lg-6  ">
+<img src="{{ "/assets/img/project/week13/reflow_test.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-6  col-lg-6  ">
+<img src="{{ "/assets/img/project/week13/shield_acc_1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+</div>
+
+
+<br>
+
+
+<h4>Eagle Shield ADXL 343</h4>
+<h4>Schematic</h4>
+<img src="{{ "/assets/img/project/week13/shield_eagle_sch.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<br>
+
+<h4>Board</h4>
+
+<div class="row">
+<div class="col-xs-4  col-lg-4  ">
+<img src="{{ "/assets/img/project/week13/shield_eagle_br.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-4  col-lg-4  ">
+<img src="{{ "/assets/img/project/week13/shield_acc.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-4  col-lg-4  ">
+<img src="{{ "/assets/img/project/week13/tiny_shield.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+</div>
+
+
+
+
+<h4>Arduino Code</h4>
+<h5>ADXL.ino</h5>
+
+
+{% highlight c linenos %}
+#include "ADXL_2.h"  /* Ne pas oublier d'inclure la librairie <TinyPinChange> qui est utilisee par la librairie <RcSeq> */
+#include <TinyWireM.h>                  // I2C Master lib for ATTinys which use USI
+#include <SoftSerial.h>     /* Allows Pin Change Interrupt Vector Sharing */
+#include <TinyPinChange.h>  /* Ne pas oublier d'inclure la librairie <TinyPinChange> qui est utilisee par la librairie <RcSeq> */
+
+
+SoftSerial mySerial(9, 8); // RX, TX
+void setup(){
+ 
+   CLKPR = (1 << CLKPCE);
+   CLKPR = (0 << CLKPS3) | (0 << CLKPS2) | (0 << CLKPS1) | (0 << CLKPS0);
+ 
+  mySerial.begin(19200);
+  TinyWireM.begin();                    // initialize I2C lib
+  uint8_t data = Read(ADXL_ADDR,0x00, 1,buffer)[0];
+  mySerial.print(data,HEX); 
+  if(data == 0xE5)
+  mySerial.print("Connected!!!");
+  else
+  mySerial.print("No Conected!!!");
+ 
+  Write(0x2D, 0x08); //init ADXL
+  Write(0x31, 0x08); //Set Range	
+
+}
+
+void loop(){
+  Acc_get();
+
+}
+
+
+AccelerometerRaw ReadRawAxis()
+{
+  Read(ADXL_ADDR,0x32,6,buffer); //Read value 
+  AccelerometerRaw raw = AccelerometerRaw();
+  raw.XAxis = ((int)buffer[1] << 8) | buffer[0]; //DATAX0
+  raw.YAxis = ((int)buffer[3] << 8) | buffer[2]; //DATAY0
+  raw.ZAxis = ((int)buffer[5] << 8) | buffer[4]; //DATAZ0
+  return raw;
+}
+
+
+void Acc_get(){  // Get the temperature from a DS1621
+  
+  AccelerometerRaw raw = ReadRawAxis();
+  mySerial.print("X: ");
+  mySerial.println(raw.XAxis);
+  mySerial.print("Y: ");
+  mySerial.println(raw.YAxis);
+  mySerial.print("Z: ");
+  mySerial.println(raw.ZAxis);
+  delay(100);
+
+}
+
+void Write(int address, int data)
+{
+  TinyWireM.beginTransmission(ADXL_ADDR);
+  TinyWireM.send(address);
+  TinyWireM.send(data);
+  TinyWireM.endTransmission();
+}
+
+
+uint8_t* Read(int m_Address,int address, int length,byte buffer[])
+{
+  TinyWireM.beginTransmission(m_Address);
+  TinyWireM.send(address);
+  TinyWireM.endTransmission();
+  
+  TinyWireM.beginTransmission(m_Address);
+  TinyWireM.requestFrom(m_Address, length);
+
+  if(TinyWireM.available() == length)
+  {
+    for(uint8_t i = 0; i < length; i++)
+    {
+      buffer[i] = TinyWireM.receive();
+    }
+  }
+  TinyWireM.endTransmission();
+
+  return buffer;
+}
+
+
+{% endhighlight %}
+
+<h5>ADXL.h</h5>
+{% highlight c++ linenos %}
+
+
+struct AccelerometerRaw
+{
+  	int XAxis;
+  	int YAxis;
+  	int ZAxis;
+};
+
+byte buffer[6];
+#define ADXL_ADDR   0x53              // 7 bit I2C address for ADXL343 
+int data;
+
+
+
+{% endhighlight %}
+
+
+<!--<h3>References</h3> -->
+<h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week14/download/eagle.zip" | prepend: site.baseurl }}">Tinyduino (Eagle) </a></p>
+<p><a href="{{ "/assets/img/project/week14/download/acc_shield.zip" | prepend: site.baseurl }}">Accelerometer Shield (Eagle)</a></p>

@@ -1,0 +1,77 @@
+---
+layout: project
+title:  "Mar 01: Composite [14]"
+
+date:   2017-05-07 12:00:00
+author: Marcel Newma
+categories:
+- project
+img: portfolio_13.jpg
+thumb: thumb02.jpg
+carousel:
+#- single01.jpg
+#- single02.jpg
+#- single03.jpg
+tagged: Flat, UI, Development
+client: Wonder Corp.
+website: http://blacktie.co
+---
+
+
+<h2>Assignment</h2>
+<h3>measure something: add a sensor to a microcontroller board that you have designed and read it</h3>
+
+
+<p>
+Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
+</a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
+
+<h2>Tinyduino
+<small>ver. Stracciatella (Attiny44)/Mint (Attiny84) </small></h2>
+
+ <p>
+Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
+<br>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week14/compo0.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week14/compo.JPG" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week14/compo1.JPG" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week14/compo2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week14/compo2_2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week14/compo3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week14/compo4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week14/compo5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week14/compo6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week14/compo7.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week14/compo8.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week14/compo9.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week14/compo10.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week14/compo11.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week14/compo13.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week14/compo14.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
