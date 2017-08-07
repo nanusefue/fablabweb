@@ -1,12 +1,12 @@
 ---
 layout: project
-title:  "Mar 01: Composite [15]"
+title:  "Mar 01: Interface and Application Programming [15]"
 
-date:   2017-06-07 12:00:00
+date:   2017-08-07 12:00:00
 author: Marcel Newman
 categories:
 - project
-img: portfolio_13.jpg
+img: portfolio_15.jpg
 thumb: thumb02.jpg
 carousel:
 #- single01.jpg

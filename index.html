@@ -3,31 +3,20 @@ layout: index
 title: Home
 permalink: /
 ---
-<!--
-<div id="service">
+<div style="padding-top: 60px" id="service">
     <div class="container">
         <div class="row centered">
-            <div class="col-md-4">
-                <i class="fa fa-heart-o"></i>
-                <h4>Handsomely Crafted</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+            <div class="col-md-offset-4 col-md-4 col-xs-offset-2 col-xs-8">
+                <h3>FINAL PROJECT</h3>
+         <img src="{{ "/assets/img/project/pf/intro.jpg" | prepend: site.baseurl }}" alt=""> 
+                <p>OpenGrow is about to make a modular bioreactor, following the diy-open-source philosophy and keeping a low-price (a normal commercial one, can cost up to 4000 euros).</p>
+                <p><br/><a href="{{"/portfolio/" | prepend: site.baseurl }}"
+                 class="btn btn-theme">More</a></p>
             </div>
-            <div class="col-md-4">
-                <i class="fa fa-flask"></i>
-                <h4>Retina Ready</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-trophy"></i>
-                <h4>Quality Theme</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>		 				
+           		
         </div>
-    </div> container 
-    </div> /service -->
+    </div>  
+    </div>
 
 
 {% include portfolio.html title="ASSIGNMENTS" limit=15 %}
