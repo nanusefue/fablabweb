@@ -65,3 +65,22 @@ website: http://blacktie.co
 
 <h2>3D scan an object 
 <br><small>(and optionally print it)</small></h2>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/fox.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/fox0.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/fox1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/fox2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/fox3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/fox4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<h3>Download</h3>
+
+<p><a href="{{ "/assets/img/project/week5/download/fox.zip" | prepend: site.baseurl }}">Fox 3D Scanner</a></p>
