@@ -66,7 +66,6 @@ Only you need to connect the fabsip in your computer and run the specific comman
 <img width="600px" src="{{ "/assets/img/project/week4/hello.ISP.44.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 </div>
-</p>
 <h4>Make Fuse</h4>
 
 {% highlight bash linenos%}
@@ -205,3 +204,8 @@ avrdude done.  Thank you.
 <img width="1200px" src="{{ "/assets/img/project/week4/programerusb.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 <h3>References</h3>
+
+<p><a target="_blank" href="https://en.wikipedia.org/wiki/In-system_programming">ISP</a></p>
+<p><a target="_blank" href="http://www.nongnu.org/avrdude/">Avrdude</a></p>
+
+

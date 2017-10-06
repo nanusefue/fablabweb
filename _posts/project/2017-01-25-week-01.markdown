@@ -204,6 +204,16 @@ $ cat .gitignore
 <img width="450px" src="{{ "/assets/img/project/week1/gitpush5.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
+<!--
+<br>
+<h3>Conclusions</h3>
+<p>
+Git is a perfect software for version control, thats is great becouse you have all project under control, thats you have all very organizer and control, in own case git work perfect for mantain all current site for all studient in fablab.
+For create a web jekyll is a perfect create we own static web or blog, por eso me he decidido al util
+
+</p>
+-->
+
 <h3>References</h3>
 <p><a target="_blank" href="https://jekyllrb.com/">Jekyll</a></p>
 <p><a target="_blank" href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></p>
@@ -230,7 +240,7 @@ Having that open source apparatus can make us envision the emergence of a world 
 <p>OpenBrew is the follow-up of the OpenGrow.  But now, we are not interested in the microorganism that grows inside but in the liquid media and the fermentation process.  It is a project to explore the different ways to elaborate/prepare/ferment different beverages. Specially beer (from different cereals) but also drinks that are developed by similar fermentation process like wine, cider or any other fruit alcohol fermentation. But also Mate or kombucha tea as an non-alcoholic drink. 
 Again, the idea is to end up with a general bioreactor/fermentor with a modular design that allows to be adapted to the special requirements of your beverage preparation. The fermentor, of course, will include some sensors and electronic systems to control and automatize the process, in order to make the fermentation easier, less laboured and accessible to everybody.</p>
 
-<div class="col-xs-10 col-xs-offeset-2">
+<div class="col-xs-12">
 <img width="450px" src="{{ "/assets/img/project/week1/biorreactor.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-
+<img width="450px" src="{{ "/assets/img/project/week1/bioreactor1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
