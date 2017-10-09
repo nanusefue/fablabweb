@@ -39,6 +39,7 @@ Use Rhino for sending the file to a laser cut, and use especial software for cha
 
 </p>
 <br>
+<h4>Inskcape</h4>
 <div class="col-xs-12  ">
 <img width="450px" src="{{ "/assets/img/project/week3/w3inkscape06.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week3/w3inkscape07.JPG" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -47,6 +48,8 @@ Use Rhino for sending the file to a laser cut, and use especial software for cha
 <img width="450px" src="{{ "/assets/img/project/week3/w3inkscape08.JPG" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week3/w3inkscape10.JPG" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<h4>Qcad</h4>
+
 
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/kerf.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -56,24 +59,34 @@ Use Rhino for sending the file to a laser cut, and use especial software for cha
 
 </div>
 
+
+<h4>Final Test</h4>
 <div class="col-xs-12  ">
 <img width="450px" src="{{ "/assets/img/project/week3/delta.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>It is important to do this test with different materials and configurations, to know how the laser cutter in them, in our case the carton so that the pieces fit perfectly we need to apply an offset of 0.05mm.
+</p>
+<div class="col-xs-12  ">
 <img width="450px" src="{{ "/assets/img/project/week3/delta1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
 <br>
 <h2>Engraving test</h2>
 
 <p>
-When finishing the kerf test, I decide to use the laser for creating my own stamp, 
-I've gone to the art store and bought a sheet of Linoleum.
-I created the logo in Inkscape and configured the laser for making an engraving.
-The result is nice, I created block in wood and glued the stamp there.
+When I finish the kerf test, I decide to see what possibilities to use other materials with the laser cutter, and I decided to use the laser to create my own label, I went to the art shop and bought a linoleum sheet.
+I created the logo in Inkscape and I configured the laser cutter to make an engraving. The result has been very well, to finish the project I created the block in wood and pasted the seal there.
+To achieve this seal, I have combined the parameters of the laser to create an engraving and thus avoid cutting the linoleum, it is important to perform several tests to see if the result is expected.
 </p>
 <br>
+<h4>Inkscape logo and engraving </h4>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/stamp2.bmp" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week3/stamp3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<h4>Final result</h4>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/stamp.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
@@ -86,13 +99,21 @@ The result is nice, I created block in wood and glued the stamp there.
 I decide use a vinulcutter for make some expiriment, user the parafilm (<a href="http://www.sigmaaldrich.com/catalog/product/sigma/p7793?lang=es&region=ES&gclid=CjwKCAjwk4vMBRAgEiwA4ftLs0N6FpQd6T-vcggcMl0RkNJ1J64DOZdpPAHe6F8-trFLT546dLtuvxoC1fwQAvD_BwE"  >Link</a>)
 i trai make a microfluidics device, using paper and parafilm <a href="http://pubs.rsc.org/-/content/articlelanding/2016/ra/c5ra26255k/unauth#!divAbstract">example</a>
 
+Los disenios esta realizdos en Qcad y exportados para el programa de la cortadora de vinilo, primero he realizado un test en papel para ver si el disenio que he realizado se podia cortar.
+Para poder cortar el parafilm con la cortadora ve vinilo, es necesario prepararlo, lo que consiste en pegar nuestra hoja de parafilm en un DINA4 ya que sino el parafilm no queda correctamtente ubicado en la cortadora.
+Ademas otro punto a tener en cuenta es la posicion y tamanio de nuestra hoja, ya que la maquina tomara las dimensiones del DIN4, por eso los valores se deben poner manualmente.
+Despues de varias pruebas, he logrado que el parafilm quede perfectamente cortado.
+Una vez que tenemos nuestro disenio en el parafilm, ahora aplicamos calor sobre este y una hoja que sea absorbente, para que el parafilm se pegue en esta y quede sellado, dandole la forma que hemos diseniado.	
 </p> 
 <br>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/vinilo.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 <img width="450px" src="{{ "/assets/img/project/week3/vinilo1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/vinilo2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 

@@ -49,10 +49,17 @@ And user others progran no-open source.
 <p>
 	QCAD is a free, open source application for computer aided drafting (CAD) in two dimensions (2D). With QCAD you can create technical drawings such as plans for buildings, interiors, mechanical parts or schematics and diagrams. QCAD works on Windows, macOS and Linux. The source code of QCAD is released under the GPL version 3 (GPLv3), a popular Open Source license. <a href='https://qcad.org/en/'>QCad</a>
 </p>
-<br>
+<p>
+There are several CAD programs for linux systems, but for my point of view the simplest is Qcad, there is a free version which has some features that are deactivated over time, but equally can be used perfectly.
+Qcad is intuitive enough to use it, besides it allows to export the files in different formats and to use them in any other program of 3D to obtain a piece in volume.
+I like to use Qcad to design models that will be cut in the laser cutter.
+</p>
 
-<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-<img width="600px" src="{{ "/assets/img/project/week2/qcad.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<div class="col-xs-12 ">
+<img width="400px" src="{{ "/assets/img/project/week2/qcad1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week2/qcad.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+
 </div>
 
 
@@ -61,6 +68,9 @@ And user others progran no-open source.
 <p>
 		Inkscape is a free, open source application for a vectorial computer designed, is similar to Illustrator, Corel Draw, and Freehand. The typical file use is SVG (Scalable Vector Graphics), and the other advantage, Inkscape is cross-platform you run on Linux, Mac or Windows.
 	 <a href='https://inkscape.org/es/'>Inkscape</a>
+</p>
+<p>
+There are not many vectorial design programs for linux, Inkscape is the best known and most used by people, I personally like Illustrator much more, but there is no version for linux, inkscape is quite simple to use, I use it when I need to create trim frames or modify some path on the boards I created in Eagle, it has the possibility to export and import many file formats, such as svg, ai, dxf, eps, etc.
 </p>
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 <img width="600px" src="{{ "/assets/img/project/week2/eps.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -77,13 +87,36 @@ And user others progran no-open source.
 	OpenScad is a software for creating solid 3D models, is open source like Inkscape or Qcad, and cross-platform.
 OpenScad is perfect for creating 3D models of machine parts, Another advantage this is a super parametric software.
 To create any models you must to write a script, the OpenScad renders 3D models from this script, is very easy to make any change in your model and you can be defined some variables to generate the model and change these variables to modify your model.
+</p>
 
-
-	<a href='http://www.openscad.org/'>OpenScad</a>
+<p>
+The interesting thing about using OpenScad is the fast one with which you can create a simple disk, in addition to that we can not parameterize our design to 100%, although it has its limitations and to make more complex models requires more knowledge of the program, with the time can be achieved more complex.
+</p>
+<p>
+Below we see the most common functions that OpenScad has to create models.
 </p>
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 <img width="600px" src="{{ "/assets/img/project/week2/OpenScad.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<h4>Model example</h4>
+
+{% highlight c linenos%}
+
+cube([100,10,2]);
+for ( i = [0 :2: 99] )
+{
+	 translate([i,0,0])
+	 difference(){
+		 translate([0,0,2])cube([2,10,2]);
+		 translate([0,-1,4])rotate([0,45,0])cube([3,12,3]);
+
+	 }
+}
+
+{% endhighlight %}
+
+<br>
+
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 <img width="600px" src="{{ "/assets/img/project/week2/Regleta.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
@@ -114,6 +147,11 @@ To create any models you must to write a script, the OpenScad renders 3D models 
 <p>
 	SolidWorks is software for 3D modeling, oriented to Mechanical design is a great tool for creating any type of industrial design very different to Rhino or Openscad. <a href='http://www.solidworks.es/'>Solidworks</a>
 </p>
+<p>
+The way to work with Solidworks is totally different to the different programs of generation of 3D models that I am used to use, programs like OpenScad or Rhino are worked from solids, meshes, points, curves, which can be modified by boolean operations .
+Instead in SolidWorks, it is drawn from 2D planes, and what is created in these planes can be extruded, fed, bevelled. allows us to make assemblage of different parts and also the possibility to parameterize all our design.
+
+</p>
 
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 <img width="600px" src="{{ "/assets/img/project/week2/solid.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -123,7 +161,8 @@ To create any models you must to write a script, the OpenScad renders 3D models 
 <p>
 All software used here is Magnifique, bat depends on wich you like to create, you need select the correct software.
 For example for model complex and mechanical design I think is better Solidworks,
-or if you like create a simple model but super parametric the best is openscad.
+or if you like create a simple model but super parametric the best is openscad, or if you prefer to work with complex surfaces it is better to use Rhino + grasshopper.
+ 
 </p>
 
 

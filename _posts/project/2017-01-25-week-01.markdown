@@ -21,6 +21,11 @@ website: http://blacktie.co
 <p></p>
 <p>To create my website I've chosen to use <a  target="_blank" href="https://jekyllrb.com">Jekyll</a>. That's because this system allows you to create a web in a easy and static way,  making modifications by simple changes in the configuration files (Markdown) </p>
 
+<h4>Editor's</h4>
+
+<p>As a editor of my website I prefer the Sublime Text since I am used to using it daily, although the greater number of partners use the braket
+</p>
+
 <h4>Install Jekyll</h4>
 
 <h4>Requirements</h4>
@@ -98,8 +103,61 @@ website: http://blacktie.co
 ~ $ jekyll build
 # => The static site created in _site/ folder
 {% endhighlight %}
+<h3>Jekyll configuration file to work correctly with the fabacademy repository structure
+</h3>
+<p>
+In order for jekyll to work correctly with the folder structure of our webs in the fablab repository, it is important to configure the file that jekyll uses to generate link / image / file paths automatically, since otherwise we will get broken links.
+</p>
+<p>
+Also in this file we can add any variable that we create static that we create necessary to use in our web, like for example the email, social networks, etc.
+</p>
+
+{% highlight bash linenos %}
+### GENERAL SETTINGS ###
+
+# Site settings
+title: FAB ACADEMY 2017
+description: "Fab Academey 2017 -Esteban Martin Gimenez"
+analytics: UA-90860442-1
+baseurl: "/archives/2017/fablabbcn/students/271"
+url: "http://archive.fabacademy.org"
+static: "https://nanusefue.github.io/fab2107-static-resource"
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title.html
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+colors:  #in hex code if not noted else
+  primary: "#00b3fe" #"#F70031" 
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
+  secondary: "#384452" #"#33004D"
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+  
+  
+### CONTACT SETTINGS ###
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: github
+    url: https://github.com/nanusefue
+  - title: instagram
+    url: https://www.instagram.com/nanusefue/
+    
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+email: nanusefue.at.gmail.dot.com
+{% endhighlight %}
 
 <h3>Part of code for the first assignament</h3>
+<p>
+This is an example of how I created the first assignment using markdown, the first part of the code is the one that uses jekyll to know image, title and category of the page, these values are used for jekyll automatically generate our grid of assignaments in the main page, the order is given by the date we use here.
+</p>
+<p>
+I then use html to create the structure I have decided for my assignaments.
+</p>
+
 {% highlight bash linenos %}
 ---
 layout: project
@@ -181,9 +239,14 @@ $ cat .gitignore
 	.... user@user-ThinkPad-X220
 {% endhighlight %}
 
-<h4>Add/Commit/Push your file a fablab Repository</h4>
+
+<h4>Clone/Add/Commit/Push your file a fablab Repository</h4>
+
+First we need to clone the repository of fablab in local, so we can add our files for the first time, then we can do our first commit, once we have the first commit, with the push command we upload everything to the remote repository, it is important to use the command pull to have the local repository updated with the remote.
+
 
 {% highlight bash linenos %}
+~ $ git clone git@git.fabacademy.org:fabacademy2017/fablabbcn.git .
 ~ $ git add .
 ~ $ git status
 ~ $ git commit -am 'new assignament'
@@ -221,6 +284,8 @@ For create a web jekyll is a perfect create we own static web or blog, por eso m
 <p><a target="_blank" href="https://help.github.com/articles/connecting-to-github-with-ssh/
 ">Git and SSH</a></p>
 
+<p><a target="_blank" href="http://brackets.io/">Brackets</a></p>
+<p><a target="_blank" href="https://www.sublimetext.com/">Sublime Text</a></p>
 
 <h2>PROJECT IDEA: OPEN ECOTRONs</h2> 
 
