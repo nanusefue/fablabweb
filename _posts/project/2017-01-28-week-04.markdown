@@ -36,36 +36,103 @@ Only you need to connect the fabsip in your computer and run the specific comman
 </p>
 <br>
 
+<p>From the different design of the FABISP, I have decided to make several formats, the version with a mini usb connector and the version with the usb connector on the board, which uses fewer components. from the two png file cutting and paths, I used the fabmodules version to create the file for the cnc that we use in the fablab.</p>
 
-<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<div class="col-xs-12 ">
 <img width="300px" src="{{ "/assets/img/project/week4/hello.ISP.44.interior.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="300px" src="{{ "/assets/img/project/week4/hello.ISP.44.traces.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="300px" src="{{ "/assets/img/project/week4/hello.ISP.44.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
+<p>
+configuration of fabmodules, we must create two files for this plate, one that corresponds to the external cut and another one for the creation of the traces of our board.
+Import:
+for both files we select the type of file that we are going to import (png), that must have a minimum resolution of 600dpi
+Output format:
+Roland mill (.rml) that is the format that accepts our cnc
+<ul>
+<li>Traces:</li>
+<ul>
+<li><strong>PCB traces (1/64)</strong></li>
+<li>PCB outline (1/32)</li>
+<li>PCB traces (0.010)</li>
+<li>wax rough cut (1/8)</li>
+<li>wax finish cut (1/8)</li>
+</ul>
+</ul>
+
+ 
+<ul>
+<li>Outline:</li>
+<ul>
+<li>PCB traces (1/64)</li>
+<li><strong>PCB outline (1/32)</strong></li>
+<li>PCB traces (0.010)</li>
+<li>wax rough cut (1/8)</li>
+<li>wax finish cut (1/8)</li>
+</ul>
+</ul>
+<h4>Cuts configurations
+</h4>
+<p>
+<ul>
+<li><strong>Outline:</strong></li>
+<ul>
+<li>machine: SMR-20</li>   
+<li>x0 (mm): 0</li>
+<li>y0 (mm): 0</li>
+<li>z0 (mm): 10</li>
+<li>xhome (mm): 0</li>
+<li>yhome (mm): 0</li>
+<li>zhome (mm): 0</li>	
+</ul>
+</ul>
+</p>
+<p>
+<ul>
+<li><strong>Process: (THIS CHANGES DEPEND IS IF TRACE OR OUTLINE)</strong></li>
+<ul>
+<li>cut depth (mm): 0.6</li>
+<li>stock thickness (mm): 1.7</li>
+<li>tool diameter (mm): 0.79</li> 
+<li>number of offsets (-1 to fill): 1</li> 	
+</ul>
+
+</ul>
+
+</p>
+</p>
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 
 <img width="300px" src="{{ "/assets/img/project/week4/programerusb1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="300px" src="{{ "/assets/img/project/week4/programerusb3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+
 </div>
+
+<h4>Cutting in SMR-20</h4>
 
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 
 <img width="300px" src="{{ "/assets/img/project/week4/programer1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="300px" src="{{ "/assets/img/project/week4/programer.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
+<h4>UBS connector in pcb details</h4>
+
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 
 <img width="300px" src="{{ "/assets/img/project/week4/programer4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="300px" src="{{ "/assets/img/project/week4/programer3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<h4>Programing board connections</h4>
+
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 
 <img width="300px" src="{{ "/assets/img/project/week4/programer5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="300px" src="{{ "/assets/img/project/week4/programer6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-<img width="600px" src="{{ "/assets/img/project/week4/hello.ISP.44.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
-</div>
 <h4>Make Fuse</h4>
 
 {% highlight bash linenos%}
