@@ -133,7 +133,16 @@ Roland mill (.rml) that is the format that accepts our cnc
 <img width="300px" src="{{ "/assets/img/project/week4/programer6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
-<h4>Make Fuse</h4>
+<h4>AVR Fuse</h4>
+<p>
+The fuse is a very important part when programming our microcontroller, an error in the fuse can leave to break of the own chip,
+the fuses define how our chip should act, whether it has an external oscillator, the speed of the clock, whether it contains a bootloader, voltages and what it will work, protection to protect the program, etc.
+The important thing about fuses is that they can be reset and changed constantly.
+</p>
+<p>
+Each type of process has different fuse settings
+</p>
+
 
 {% highlight bash linenos%}
 
@@ -266,13 +275,25 @@ avrdude done.  Thank you.
 
 
 <br>
+<p>
+
+To verify that our board works correctly simply connecting it to our computer and using the command linux:
+
+{% highlight bash linenos%}
+ $: lsusb
+{% endhighlight %}
+
+we will see that our device will appear in the list, and we can start to record any microprocessor that uses the ISP protocol.
+</p>
 <div class="col-xs-12 ">
 
 <img width="1200px" src="{{ "/assets/img/project/week4/programerusb.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 <h3>References</h3>
 
+<p><a target="_blank" href="http://www.ladyada.net/learn/avr/fuses.html">AVR Fuse</a></p>
 <p><a target="_blank" href="https://en.wikipedia.org/wiki/In-system_programming">ISP</a></p>
+<p><a target="_blank" href="http://fabmodules.org/">Fabmodules</a></p>
 <p><a target="_blank" href="http://www.nongnu.org/avrdude/">Avrdude</a></p>
 
 
