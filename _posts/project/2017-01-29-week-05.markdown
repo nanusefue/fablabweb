@@ -37,15 +37,49 @@ website: http://blacktie.co
 <iframe width='100%' height="600px" frameBorder="none" src="http://archive.fabacademy.org/2017/fablabbcn/group/3dprint.html"></iframe>
 
 
+<h3>Introduccion 3D Printer</h3>
+
+Una impresora 3D en si es un robot, existen diferentes configuraciones de robots, la mas comun en una impresora 3D es la configuracion cartesiana.
+
+<div class="col-xs-12 ">
+<img width="300px" src="{{ "/assets/img/project/week5/printer/cartesiano.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="300px" src="{{ "/assets/img/project/week5/printer/delta.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="300px" src="{{ "/assets/img/project/week5/printer/scara.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
+<div class="col-xs-12 ">
+<img width="900px" src="{{ "/assets/img/project/week5/printer/diferencia.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/printer/partes.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/printer/partes1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/printer/partes2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/printer/partes3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/printer/modelProcess.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/printer/process_gcode.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
 <h2>Design and 3D print an object.
 <br><small> (small, few cm) that could not be made subtractively</small></h2>
 
 <br>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week5/3dprint.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week5/3dprint1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 </div>
+
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week5/3dprint2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week5/3dprint3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
