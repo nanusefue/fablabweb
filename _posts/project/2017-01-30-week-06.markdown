@@ -33,28 +33,60 @@ website: http://blacktie.co
 	</li>
 
 </ul>
+<p>
+To redesign the hello world circuit I use the Eagle software version 7.1, since version 8.0 I do not like it as it asks you to achieve.
+</p>
+<p>
+First, the board is designed in the schematic version, where we use the fablab library, this library is specially created to use the smd components and the cnc can create the traces without problem, since the bit diameter is 1/64.
+</p>
 
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week6/eagle10.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week6/eagle1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 </div>
-<div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week6/eagle11.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week6/eagle2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
+<p>For this board has been added a reset button,led.</p>
+
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="750px" src="{{ "/assets/img/project/week6/eagle11.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<p>And 3.3 volts regulator.</p>
+
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+
+<img width="750px" src="{{ "/assets/img/project/week6/eagle12.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>Then the design is done using eagle board mode, where the position of the components and the trace are designed.</p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week6/eagle8.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week6/eagle9.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
+<p>Once finished, you should check the design rules that are created especially for the fablab cnc, this allows us to know if our board can be made in cnc, checking the width of the trace, the distances of the traces, etc.</p>
 
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week6/eagle3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week6/eagle7.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
-</div>
-<div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week6/eagle8.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week6/eagle9.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 </div>
+
+
+
+<p>Then the design of the board is done to send to the cnc.</p>
+
+<div class="col-xs-12 ">
+
+<img width="900px" src="{{ "/assets/img/project/week6/eagle2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
+<p>As of the final design, we see the image in PNG and the board after soldering all components.</p>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week6/board.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
@@ -64,3 +96,5 @@ website: http://blacktie.co
 
 <h3>Download</h3>
 <p><a href="{{ "/assets/img/project/week14/download/eagle.zip" | prepend: site.baseurl }}">Tinyduino (Eagle) </a></p>
+<p><a href="{{ "/assets/img/project/week14/download/fabmodule.dru" | prepend: site.baseurl }}">DRU Rules</a></p>
+<p><a href="{{ "/assets/img/project/week14/download/fab.lbr" | prepend: site.baseurl }}">Fab Library for Eagle </a></p>
