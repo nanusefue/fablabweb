@@ -1,12 +1,12 @@
 ---
 layout: project
-title:  "Mar 01: Interface and Application Programming [18]"
+title:  "Mar 01: Invention, Intellectual Property and Business Models [18]"
 
 date:   2017-09-07 12:00:00
 author: Marcel Newman
 categories:
 - project
-img: portfolio_15.jpg
+img: portfolio_18.jpg
 thumb: thumb02.jpg
 carousel:
 #- single01.jpg
@@ -19,3 +19,54 @@ website: http://blacktie.co
 
 
 <h2>Assignment</h2>
+<ul><li>
+<h3>Create and document a license for your final project. </h3></li>
+<li>
+<h3>Develop a plan for dissemination of your final project. </h3></li>
+<li>
+<h3>Prepare a summary slide (presentation.png, 1280x1024) and video clip (presentation.mp4, 1080p HTML5, < ~minute, < ~10 MB) in your root directory</h3></li>
+</ul>
+
+<h4>Invention</h4>
+<p>This project tries to reduce the costs in the creation of a bioarector, there are several projects of bioareactors diy in the internet, but none of those that I have seen try to cover different utilities, part of my project is to try that this bioarector can be used for different means, such as mushrooms, yeast, spirulina, and even a mini aquaponics. In this way you try to reduce the costs of a commercial bioreactor, using the tools provided by a fabalab.</p>
+
+<p>Part of the idea is that anyone can have a bioareactor in their home and be able to grow fresh spirulina, or yeast for bread or beer or any amateur biologist doing their own experiments.</p>
+
+
+<h4>Intellectual Property</h4>
+<p>There are several types of project sharing licenses, for this project in particular I decided to use the licenses offered by creative commons, there are different types of license that we could use such as: </p>
+<p>Depending on the selection of the following questions are generated distant types of licenses from restrictive to fully open source.</p>
+
+<div class="col-xs-12 ">
+
+<img width="650px" src="{{ "/assets/img/project/week18/type.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<img width="250px" src="{{ "/assets/img/project/week18/open.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<h5>Type of license I select:</h5>
+
+
+<p>Allow adaptations of your work to be shared?</p>
+
+<ul>
+<li>Yes</li>
+<li>No</li>
+<li><strong>Yes, as long as others share alike</strong> </li>
+</ul>
+
+<p>Allow commercial uses of your work?</p>
+<ul>
+<li>Yes</li>
+<li><strong>No</strong></li>
+</ul>
+
+<h3>Attribution-NonCommercial-ShareAlike 4.0 International</h3>
+
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
+
+<h4>Dissemination</h4>
+
+<p>As disseminate this project can be used in the network of biohackers that currently exists (diybio.org) that every day grows and is very active around the world, or in some exposition of maker, like the fair maker, could also be done some campaign of croudfounding so that anyone can have a bioreactor in their house.</p>
