@@ -18,8 +18,18 @@ website: http://blacktie.co
 
 
 <h2>Assignment</h2>
-<h3>measure something: add a sensor to a microcontroller board that you have designed and read it</h3>
-
+<ul>
+<li>
+  <h3>Read a microcontroller data sheet.</h3>
+</li> 
+<li>
+  <h3>Program your board to do something, with as many different programming languages and programming environments as possible.
+</h3>
+</li>
+<li>
+  <h3>Optionally, experiment with other architectures.</h3>
+</li> 
+</ul>
 
 <p>
 Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
