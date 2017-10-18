@@ -1,0 +1,89 @@
+---
+layout: project
+title:  "Mar 01: Output Device [10]"
+date:   2017-03-05 12:00:00
+author: Marcel Newman
+categories:
+- project
+img: portfolio_12.jpg
+thumb: thumb02.jpg
+carousel:
+#- single01.jpg
+#- single02.jpg
+#- single03.jpg
+tagged: Flat, UI, Development
+client: Wonder Corp.
+website: http://blacktie.co
+---
+<h2>Assignment</h2>
+<h3>Add an output device to a microcontroller board you've designed and program it to do something</h3>
+
+
+<p>As part of another assigament (<a target="_blank" href="week-08.html">Week 8</a>) design a board that could be used as an arduino, the idea is not to create a plate for each of the electronic assignaments, there are many boards that use arduino and mircroprocesarores as the Attiny85 / 44/84, in my case I have decided to buy an attiny 84, which is the same as 44 but has 8k of flash memory, allowing to add more lines of code by applying the programming capacity.</p>
+
+<p>In the previous assignment I have also connected a servo motor, in this case I decided to try with an OLED display, since the 8k allowed me to program all the necessary code for it to work.</p>
+
+
+<p>Adapt these SCA and SCL port and pin definition to your target.
+
+<ul>
+<li>#define SDA     	6		// SDA Port A, Pin 6</li>   
+<li>#define SCL		4		// SCL Port A, Pin 4</li>
+<li>#define SDA_PORT        PORTA           // SDA Port A</li>
+<li>#define SCL_PORT        PORTA           // SCL Port A</li>
+</ul>
+</p>
+{% highlight c++ linenos %}
+
+#include <DigisparkOLED.h>
+#include <Wire.h>
+#include "img0_128x64c1.h"
+#include "digistump_128x64c1.h"
+
+
+void setup() {
+  // put your setup code here, to run once:
+
+  oled.begin();
+
+}
+
+void loop() {
+  
+  // put your main code here, to run repeatedly:
+  oled.fill(0xFF); //fill screen with color
+  delay(1000);
+  oled.clear(); //all black
+  delay(1000);
+  //usage: oled.setCursor(X IN PIXELS, Y IN ROWS OF 8 PIXELS STARTING WITH 0);
+  oled.setCursor(0, 0); //top left
+  oled.setFont(FONT8X16);
+  oled.println(F("FABACADENY 2017")); //wrap strings in F() to save RAM!
+  oled.setFont(FONT6X8);
+  oled.println(F("ESTEBAN OLED!"));
+  oled.setCursor(0, 3); //two rows down because the 8x16 font takes two rows of 8
+  oled.println(F("BCN")); //println will move the cursor 8 or 16 pixels down (based on the front) and back to X=0
+  
+  delay(1000);
+
+}
+{% endhighlight %}
+
+<p>Here a video of how the oled works after programming it, the plate is fed through the USB port.</p>
+<div class="col-xs-12 ">
+
+<video width="800" controls loop>
+  <source src="{{ "/assets/img/project/week10/oled.mp4" | prepend: site.baseurl }}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+
+<h3>Referens</h3>
+
+
+<p><a href="http://www.avrfreaks.net/forum/i2c-library-attiny84">I2C Attiny</a></p>
+<p><a href="https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr/libraries/DigisparkOLED">DigisparkOLED Library</a></p>
+
+
+

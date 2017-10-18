@@ -19,53 +19,98 @@ website: http://blacktie.co
 <h2>Assignment</h2>
 <h3>Make something big</h3>
 
+<p>
+For the assignment I have decided to create a modular lab, this lab is designed to be carried to any event, and contains several machines from a laboratory, it is also intended to be the support of my bioreactor in my final fablab project.
+</p>
 
-<br>
-<div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week7/qcad.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week7/rhino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<p>I have used Qcad for the design of the panels that make up the modular lab.</p>
+<div class="col-xs-10 col-xs-offset-2 ">
+<img width="650px" src="{{ "/assets/img/project/week7/qcad.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<p>Once the 2D design is finished, I have exported a dxf file to be used in Rhino and create the 3D model and see if it has a bug, before creating the files to send to the cnc cutter.</p>
+
+
+<div class="col-xs-10 col-xs-offset-2">
+<img width="650px" src="{{ "/assets/img/project/week7/rhino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>Once finished the ensemble of the pieces in rhino, I bought that all the boards properly correct, I had to correct some minimal error, but in principle everything fits perfectly.
+</p>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week7/rhino1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week7/rhino2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
-<div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week7/cncrhino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week7/cncrhino1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-</div>
-<div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week7/cncrhino2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week7/cncrhino3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-</div>
-<div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week7/cncrhino4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week7/cncrhino6.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-</div>
-
-<div class="col-xs-12 ">
 
 
+<p>To create the file for our cnc, we use a spatial plugins for Rhino, which is the RhinoCam, this software is used to create different strategies to cut with cnc, such as bit type, cutting type, pocketing, engraving and profile.</p>
+<p>I found this tutorial on how to use rhinocam <a href="http://cmu-dfab.org/category/tutorials/router/">Tutorial</a></p>
+
+<p>I use 5 differents setups for create my big somethings</p>
+
+
+<div class="col-xs-10 col-xs-offset-2 ">
+<img width="650px" src="{{ "/assets/img/project/week7/cncrhino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
+<p>Engraving for holes to fix the table in cnc.</p>
+
+<div class="col-xs-10 col-xs-offset-2 ">
+<img width="650px" src="{{ "/assets/img/project/week7/cncrhino1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>Engraving for joints can fit together.</p>
+
+<div class="col-xs-10 col-xs-offset-2 ">
+<img width="650px" src="{{ "/assets/img/project/week7/cncrhino2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>Pocketing for joints and letters.</p>
+
+<div class="col-xs-12">
+	<img width="450px" src="{{ "/assets/img/project/week7/cncrhino3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+	<img width="450px" src="{{ "/assets/img/project/week7/cncrhino4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>Profile for the external part of the modular lab.</p>
+
+
+<div class="col-xs-10 col-xs-offset-2 ">
+<img width="650px" src="{{ "/assets/img/project/week7/cncrhino6.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>Ricardo, has shown us little should be used cnc we have in fablab.</p>
+
+<div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week7/cnc.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week7/cnc1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-
 </div>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week7/cnc2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week7/cnc3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-
 </div>
+
+<p>I used the shopbot machine to cut the wood, since the other machine was not working, once set the table, first I sent the gcode to create the loaves in the wood and be able to hold it with screws and thus prevent it from moving position.</p>
+
 
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week7/cnc4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week7/cnc5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
+<p>I have sent the rest of the file to cut wood, engraving for letters and joints, and the profile for external cutting.
+Unfortunately the images of the assembly do not have them, to be able to ensablar everything perfectly I have used a rubber hammer and with the help of a companion in less than 20 minutes I have been able to assemble the whole module.</p>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week7/cnc6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week7/cnc7.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-
 </div>
 
 
 
+<h3>Referens</h3>
+
+
+<p><a href="https://mecsoft.com/rhinocam-software/">RhinoCam</a></p>

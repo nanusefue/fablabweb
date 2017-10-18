@@ -1,0 +1,95 @@
+---
+layout: project
+title:  "Mar 22: Mechanical design Part 2[11]"
+date:   2017-03-15 12:00:00
+author: Marcel Newman
+categories:
+- project
+img: portfolio_09.jpg
+thumb: thumb02.jpg
+carousel:
+#- single01.jp
+#- single02.jpg
+#- single03.jpg
+tagged: Flat, UI, Development
+client: Wonder Corp.
+website: http://blacktie.co
+---
+<h2>Assignment</h2>
+
+
+<ul>
+<li>
+  <h3><strike> MECHANICAL DESIGN (week 1 of 2)</strike>
+</h3>
+</li>
+
+<li>
+  <h3>MACHINE DESIGN (week 2 of 2)
+</h3>
+</li>
+<li>
+  <h3>Automate your machine. Document the group project and your individual contribution.
+</h3>
+</li>
+</ul>
+<p> <a href="http://archive.fabacademy.org/2017/fablabbcn/group/machine/group3/">Group Page</a>
+
+<p>In this second part we will work on automating our cnc, the previous week we did our first test of how the machine would be assembled and we tried our cnc driver with nema 17 engines and their drivers.</p>
+
+<p>This week we worked on the final design of the machine, we decided to give it more height, since the one we had in the previous one was not high enough, besides making the whole frame mechanized, to avoid that it does not square and the pieces uncovered like in the test.</p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week11/machine2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week11/machine3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>The pieces have been glued with a carpenter's tail and we used some nails so that everything encaged in place.</p>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week11/machine4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week11/machine5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>Gluing and aligning process we use tweezers so that everything is perfectly fixed in place.</p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week11/machine6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week11/machine7.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>Before gluing the final piece we have put the rails that have been cut with the cnc, this have been put with a few screws.</p>
+
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week11/machine8.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week11/machine9.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>
+We used the grinder to undo the screws, since we have noticed that these were touching with the part of the X axis.
+</p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week11/machine10.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week11/machine11.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<h3>First move</h3>
+<p>For this test we send gcode directly from the arduino terminal.</p>
+{% highlight c linenos %}
+	G00 = Rapid linear move 
+	example: G00 X## Y## Z## (X,Y,Z = position)
+{% endhighlight %}
+
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+	<video width="600" controls loop>
+  		<source src="{{ "/assets/img/project/week11/video.mp4" | prepend: site.baseurl }}" type="video/mp4">
+  	Your browser does not support HTML5 video.
+	</video>
+</div>
+<div class="clear"><br></div>
+<h3>Controlling CNC using Chilipeppr</h3>
+
+<p>We are user this especial software in the cloud for controlling the cnc machine (<a href="http://chilipeppr.com/grbl" target="_blank">Chilipeppr</a>), the ventage for this software is very simple and is multiplatform(linux/mac/windows), only need install the host, this host use for conect the arduino cnc shild with the chrome browser, and send GCODE file to machine.</p>
+
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+
+<video src="https://www.flickr.com/photos/nco2/33750141160/play/hd/55af1799d9/" width="600"  poster="https://farm3.staticflickr.com/2866/33750141160_55af1799d9_c.jpg" controls=""></video>
+
+</div>

@@ -18,10 +18,12 @@ website: http://blacktie.co
 
 
 <h2>Assignment</h2>
+
 <ul>
 <li>
-  <h3>Read a microcontroller data sheet.</h3>
-</li> 
+  <h3>Read a microcontroller data sheet.
+</h3>
+</li>
 <li>
   <h3>Program your board to do something, with as many different programming languages and programming environments as possible.
 </h3>
@@ -31,26 +33,40 @@ website: http://blacktie.co
 </li> 
 </ul>
 
+
+
+
+
 <p>
-Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
-</a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
-</p>
-<h2>Tinyduino
-<small>ver. Stracciatella (Attiny44)/Mint (Attiny84) </small></h2>
+For this assignment began studying the Attiny family of Atmel processors. <a href="http://www.atmel.com/products/microcontrollers/avr/tinyavr.aspx" target="_blank" >Attiny
+</a></p>
+<p>When we work with any electronic component, and more when it is a chip, all of them have their datasheet, these sheets give us the necessary information to be able to use them in any design we make, such as work voltages, currents, programming, arrangement of pins, size, etc.</p>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week8/atmel.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week8/atmel1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week8/atmel2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week8/atmel3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-<div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week8/atmel4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week8/atmel5.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
+
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+  <img width="650px" src="{{ "/assets/img/project/week8/atmel6.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
+<p>For this week I decided to investigate to be able to make my board have a bootloader as an arduino and be able to use the Arduino IDE.</p>
+<p>For this I will use a bootloader that I have modified and can be used with the attiny44, also it is necessary to know how the pins of the atiny are mapped with the pins of Arduino, here we see a picture of how this would be.</p>
+
+<p>This allows me to upload all the code through the USB port without having to have 6 extra pins and the FABISP.</p>
+
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="650px" src="{{ "/assets/img/project/week8/atmel5.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>The first program is a blink, to prove that everything works correctly.</p>
 
 <div class="col-xs-12 ">
 
@@ -83,6 +99,7 @@ Para este assignament he decicido crear mi propio arduino, basado en un microcon
 </video>
 </div>
 <br>
+<p>The second program used the library to control servo motor, basically with this board we can use almost all libraries of arduino, the only problem is the space that is available to our programs, as the 44 attiny is only 4k.</p>
 <div class="col-xs-12 ">
 
 {% highlight c++ linenos %}
@@ -131,8 +148,13 @@ void loop()
 </video>
 </div>
 
+<h3>Referens</h3>
+
+<p><a href="http://academy.cba.mit.edu/classes/embedded_programming/doc8183.pdf">Attiny 44/84</a></p>
+<p><a href="https://github.com/nanusefue/micronucleus">Micronucleus</a></p>
+<p><a href="https://learn.adafruit.com/add-boards-arduino-v164/overview">Adding third party boards Arduino IDE</a></p>
+
 
 <h3>Download</h3>
-<p><a href="http://academy.cba.mit.edu/classes/embedded_programming/doc8183.pdf">Attiny 44/84</a></p>
 
 
