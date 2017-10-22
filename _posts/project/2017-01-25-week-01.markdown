@@ -15,6 +15,9 @@ carousel:
 website: http://blacktie.co
 ---
 <h2>Create my own website </h2>
+
+<p>about <a href="{{ "/about" | prepend: site.baseurl }}" taget="_blank"> me</a></p>
+
 <h3>Jekyll</h3>
 
 <img src="{{ "/assets/img/project/week1/jekyll.png" | prepend: site.baseurl }}" alt='webpage jekyll'>

@@ -301,4 +301,8 @@ we will see that our device will appear in the list, and we can start to record 
 <p><a target="_blank" href="http://fabmodules.org/">Fabmodules</a></p>
 <p><a target="_blank" href="http://www.nongnu.org/avrdude/">Avrdude</a></p>
 
+<h3>Download</h3>
+
+<p><a target="_blank"href="{{ "/assets/img/project/week4/srm-20.pdf" | prepend: site.baseurl }}">SRM-20 Manual</a></p>
+
 

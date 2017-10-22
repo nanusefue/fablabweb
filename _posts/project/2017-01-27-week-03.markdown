@@ -131,6 +131,8 @@ The drawings made in Qcad and exported to the program of the vinyl cutter, first
 
 <p>
 I decided to use SolidWorks for creating a parametric model, the advantaged of using solidworks is more easily control all measurement and relate them, this way if change some measurement all design is modified.  
+</p>
+
 <br>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/pressfit1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -148,8 +150,7 @@ I decided to use SolidWorks for creating a parametric model, the advantaged of u
 
 
 
-</p>
-<h3>Conclusions</h3>
+<!--<h3>Conclusions</h3>-->
 
 
 
