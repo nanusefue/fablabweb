@@ -107,9 +107,31 @@ Roland mill (.rml) that is the format that accepts our cnc<p>
 <p>Save .rml file</p>
 
 <h4>Cutting in SMR-20</h4>
+<p>
+<ul>
+<li>1- Rapid Move X Y</li>
+<li>2- Rapid Move Z</li>
+<ul>	<li>Cursor Speed (Continuos x100  x10 x1)</li></ul>
+<li>Move</li>
+<ul>
+	<li>3- View - move the platform to see the final result.</li>
+	<li>4- To Orgin - go to the origin that we have previously set
+</li>
+	<li>5- Stop</li>
+</ul>
+<li>Set Origin Point</li>
+	<ul><li>6 Set Origin coordenates XYZ</li></ul>
+<li>Cut</li>
+	<ul><li>7- Change the speed of movement when cutting</li></ul>
+<li>Spindle Speed</li>
+	<ul><li>8- Change rotor speed</li></ul>
+
+<li>9</li>
+<li>10- Pause or cancel actual Job</li>
+</ul>
+</p>
 
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-
 <img width="600px" src="{{ "/assets/img/project/week4/srm20.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 
