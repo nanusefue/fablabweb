@@ -155,6 +155,6 @@ void loop()
 <p><a href="https://learn.adafruit.com/add-boards-arduino-v164/overview">Adding third party boards Arduino IDE</a></p>
 
 
-<h3>Download</h3>
+<!--<h3>Download</h3>-->
 
 

@@ -20,8 +20,7 @@ website: http://blacktie.co
 
 
 <p>
-Para este assignament he decicido crear mi propio arduino, basado en un microcontrolador <a href="" target="_blank" >Attiny44/84
-</a>, de esta forma podre programar mi board utilizando el puerto usb y ademas poder utilizar el IDE de arduino.
+For this assignament I decided to create my own arduino, based on a microcontroller Attiny44/84, so I can program my board using the usb port and also be able to use the arduino IDE.</p>
 
 <h2>Tinyduino
 <small>ver. Stracciatella (Attiny44)/Mint (Attiny84) </small></h2>
@@ -73,14 +72,15 @@ Tinyduino is a light version of Arduino, its based in a cheaper and smaller micr
 <h4>USB Communication</h4>
 
 <p>
-Para poder crear mi propio arduino he utlizado la libreria v-usb, que es la misma que usa el USBTinyISP. 
+In order to create my own arduino I have used the v-usb library, which is the same one used by USBTinyISP. 
 <br>
 <span style=" font-style: italic;">"(V-USB is a software-only implementation of a low-speed USB device for Atmel’s AVR® microcontrollers, making it possible to build USB hardware with almost any AVR® microcontroller, not requiring any additional chip.)"</span>
 </p> 
 
 <h4>V-USB Hardward Consideration</h4>
 <p>
-Para utilizar en nuestro proyecto V-USB, es importante tener encuenta ciertas consideraciones de hardware a la hora de crear nuestra propia placa.
+To use in our V-USB project, it is important to consider certain hardware considerations when creating our own board.
+
 </p>
 <h4>The voltage level problem</h4>
 <!--
@@ -161,35 +161,36 @@ Instead of reducing the AVR's power supply, we can limit the output voltage on D
 
 <h4>Bootloader</h4>
 
-<p>El bootloader que se utiliza para tinyduino es el projecto opensource Micronucleous, he realizado un forck del proyexto para añadir la modificacion para utilizar la version del Attiny44. <a href="//github.com/nanusefue/micronucleus">Micronucleus</a>
+<p>The bootloader that is used for tinyduino is the opensource Micronucleous project, I made a proyexto forck to add the modification to use the Attiny44 version.
+ <a href="//github.com/nanusefue/micronucleus">Micronucleus</a>
 </p> 
 
 <img src="{{ "/assets/img/project/week13/micronucleous.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 
 <h3>Arduino Custom Board</h3>
-<h4>Como añadir Tinyduino para utlizarlo en nuestro Arduino IDE</h4>
+<h4>How to add Tinyduino to use in our Arduino IDE</h4>
 
 <p>
 <h4>Paso 1</h4>
 
 <p>
-Copiar y pegar la siguiente url en nuestro IDE en el menu: <b> File -> Preference </b>
+Copy and paste the following url into our IDE in the menu: <b> File -> Preference </ b>
 <br>
 https://nanusefue.github.io/poi/Tinyduino/package_tinyduino_index.json
 </p>
 
 <img src="{{ "/assets/img/project/week13/url_arduino_board.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
-<h4>Paso 2</h4>
+<h4>Step 2</h4>
 <p>
-Descargar e instalar todos los componentes necesarios para seleccionar la placa correcta.
+Download and install all necessary components to select the correct board.
 </p>
 
 <img src="{{ "/assets/img/project/week13/arduino_custom_manager.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<h4>Paso 3</h4>
+<h4>Step 3</h4>
 <p>
-Ahora podemos selecionar la version de nuestra tinyduino, Stracciatella o Mint
+Now we can select the version of our tinyduino, Stracciatella or Mint
 </p>
 
 

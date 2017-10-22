@@ -23,6 +23,18 @@ website: http://blacktie.co
 
 <p>In the previous assignment I have also connected a servo motor, in this case I decided to try with an OLED display, since the 8k allowed me to program all the necessary code for it to work.</p>
 
+<h3>I2C Protocol</h3>
+<p>I2C requires a mere two wires, like asynchronous serial, but those two wires can support up to 1008 slave devices. Also, unlike SPI, I2C can support a multi-master system, allowing more than one master to communicate with all devices on the bus (although the master devices can’t talk to each other over the bus and must take turns using the bus lines).</p>
+
+<p>Data rates fall between asynchronous serial and SPI; most I2C devices can communicate at 100kHz or 400kHz. There is some overhead with I2C; for every 8 bits of data to be sent, one extra bit of meta data must be transmitted.</p>
+
+<p>The hardware required to implement I2C is more complex than SPI, but less than asynchronous serial. It can be fairly trivially implemented in software.</p>
+
+<div class="col-xs-12 ">
+
+<img width="900px" src="{{ "/assets/img/project/week10/i2c.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
 
 <p>Adapt these SCA and SCL port and pin definition to your target.
 

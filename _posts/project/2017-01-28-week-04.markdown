@@ -106,36 +106,60 @@ Roland mill (.rml) that is the format that accepts our cnc<p>
 
 <p>Save .rml file</p>
 
-<h4>Cutting in SMR-20</h4>
-<p>
-<ul>
-<li>1- Rapid Move X Y</li>
-<li>2- Rapid Move Z</li>
-<ul>	<li>Cursor Speed (Continuos x100  x10 x1)</li></ul>
-<li>Move</li>
-<ul>
-	<li>3- View - move the platform to see the final result.</li>
-	<li>4- To Orgin - go to the origin that we have previously set
-</li>
-	<li>5- Stop</li>
-</ul>
-<li>Set Origin Point</li>
-	<ul><li>6 Set Origin coordenates XYZ</li></ul>
-<li>Cut</li>
-	<ul><li>7- Change the speed of movement when cutting</li></ul>
-<li>Spindle Speed</li>
-	<ul><li>8- Change rotor speed</li></ul>
-
-<li>9</li>
-<li>10- Pause or cancel actual Job</li>
-</ul>
-</p>
+<h4>Cutting in SMR-20 vPanel</h4>
+<p>This is the control panel that we will use to configure the machine and send the files to our boards.</p>
 
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-<img width="600px" src="{{ "/assets/img/project/week4/srm20.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="600px" src="{{ "/assets/img/project/week4/srm20-1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
 
+
+<div class="col-xs-12  ">
+<img width="900px" src="{{ "/assets/img/project/week4/srm20-3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12  ">
+<img width="900px" src="{{ "/assets/img/project/week4/srm20-4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<h4>Configure file in SMR-20 vPanel (CUT)</h4>
+
+<div class="col-xs-12  ">
+<img width="900px" src="{{ "/assets/img/project/week4/srm20-5.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12  ">
+<img width="900px" src="{{ "/assets/img/project/week4/srm20-6.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<h4>Set the Origin Point (XYZ)</h4>
+
+<p>The X and Y origins are determined by the cutting data and the location of
+the material. (“X” and “Y” cannot be set individually.) You normally align
+the Z origin with the surface of the material. Take the size of the material
+and the length of the cutting tool into consideration when you set the
+origins.</p>
+
+<div class="col-xs-12">
+
+<img width="450px" src="{{ "/assets/img/project/week4/srm-xy.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week4/srm_xy.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
+<div class="col-xs-12  ">
+<img width="900px" src="{{ "/assets/img/project/week4/srm20-10.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12  ">
+<img width="900px" src="{{ "/assets/img/project/week4/srm20-11.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<div class="col-xs-12  ">
+<img width="400px" src="{{ "/assets/img/project/week4/srm_yes.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week4/srm_000.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 </div>
+
+
+<h4>Final Process</h4>
 
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 
@@ -330,6 +354,6 @@ we will see that our device will appear in the list, and we can start to record 
 
 <h3>Download</h3>
 
-<p><a target="_blank"href="{{ "/assets/img/project/week4/srm-20.pdf" | prepend: site.baseurl }}">SRM-20 Manual</a></p>
+<p><a target="_blank" href="{{ "/assets/img/project/week4/srm-20.pdf" | prepend: site.baseurl }}"> SRM-20 Manual</a></p>
 
 

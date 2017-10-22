@@ -36,6 +36,7 @@ For the assignment I have decided to create a modular lab, this lab is designed 
 
 <p>Once finished the ensemble of the pieces in rhino, I bought that all the boards properly correct, I had to correct some minimal error, but in principle everything fits perfectly.
 </p>
+<p>One of the mistakes that I had to solve is the distance of the unions, since it is necessary to have a margin so that these fit perfectly, thanks to the help of some colleagues I have found this problem in all unions since no had this margin (0.1 mm), is enough to fit everything perfectly.</p>
 
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week7/rhino1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -109,8 +110,11 @@ Unfortunately the images of the assembly do not have them, to be able to ensabla
 </div>
 
 
-
 <h3>Referens</h3>
-
-
 <p><a href="https://mecsoft.com/rhinocam-software/">RhinoCam</a></p>
+
+<h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week7/download/modular_lab.dxf" | prepend: site.baseurl }}">ModularLab.dxf</a></p>
+<p><a href="{{ "/assets/img/project/week7/download/rhino_assambly.3dm" | prepend: site.baseurl }}">Rhino File (Assambly)</a></p>
+<p><a href="{{ "/assets/img/project/week7/download/rhino_cam.zip" | prepend: site.baseurl }}">Rhino CAM</a></p>
+<p><a href="{{ "/assets/img/project/week7/download/cam.zip" | prepend: site.baseurl }}">CAM File</a></p>

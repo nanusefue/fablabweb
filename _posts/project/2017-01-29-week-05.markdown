@@ -32,8 +32,10 @@ website: http://blacktie.co
 
 <h3>Introduccion 3D Printer</h3>
 
-<p>Una impresora 3D en si es un robot, existen diferentes configuraciones de robots, la mas comun en una impresora 3D es la configuracion cartesiana, esta configuracion esta presente en impresoras como la prusa i2/i3, makerbot and others.</p>
-<p>Existen otras configuraciones como la delta o scara, un modelo de  impresora con configuracion delta es la impresora Kossel, y un modelo con configuracion Scara es la Morgan.
+<p>A 3D printer itself is a robot, there are different configurations of robots, most common in a 3D printer is the Cartesian configuration, this configuration is present in printers like the prusa i2 / i3, makerbot and others.
+</p>
+<p>There are other configurations like the delta or scara, a printer model with delta configuration is the Kossel printer, and a model with Scara configuration is the Morgan.
+
 </p>
 <div class="col-xs-12 ">
 <img width="300px" src="{{ "/assets/img/project/week5/printer/cartesiano.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -43,13 +45,15 @@ website: http://blacktie.co
 <br>
 <h3>Cartisian vs Delta</h3>
 
-El modelado por deposición fundida utiliza una técnica aditiva, depositando el material en capas, para conformar la pieza. Un filamento plástico o metálico que inicialmente se almacena en rollos, es introducido en una boquilla. La boquilla se encuentra por encima de la temperatura de fusión del material y puede desplazarse en tres ejes controlada electrónicamente. La boquilla normalmente la mueven motores a pasos o servomotores La pieza es construida con finos hilos del material que solidifican inmediatamente después de salir de la boquilla.
+The molten deposition model uses an additive technique, depositing the material in layers, to form the piece. A plastic or metal filament initially stored in rolls is introduced into a nozzle. The nozzle is above the melting temperature of the material and can be moved in three axes electronically controlled. The nozzle is usually driven by stepping motors or servomotors. The part is constructed of thin strands of material that solidify immediately after exiting the nozzle.
+
 
 <div class="col-xs-12 ">
 <img width="900px" src="{{ "/assets/img/project/week5/printer/diferencia.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
-<p>Aqui podemos ver la cuales son las ventajas y desventajas entre la configuracion delta y cartesiana.</p>
+<p>Here we can see which are the advantages and disadvantages between the delta and Cartesian configuration.
+</p>
 
 <h4>Advantage</h4>
 
@@ -160,6 +164,56 @@ El modelado por deposición fundida utiliza una técnica aditiva, depositando el
 <h2>Test the design rules for your printer(s) (group project)
 <br><small> (group project)</small></h2>
 
+<p>For the design test for the 3D printers I decided to use thingivers and look for a test that I found complete enough to see what resolution I could get from my printer.</p>
+
+<p>I have used a model called "Torture Test", since it tests the quality, calibration, configuration parameters, etc. of our printer.</p>
+
+<p>the characteristics to make this impression are the following:</p>
+<ul>
+<li>Print Setting</li>
+	<ul>
+		<li>Nozzel: 0.4mm</li>
+		<li>Layer height: 0.3mm</li>
+		<li>Perimeters: 3</li>
+		<li>Solid Layers: 3</li>
+		<li>Infill: 25%</li>
+		<li>Fill Pattern: Rectilinear</li>
+	</ul>
+<li>Filament Setting</li>
+	<ul>
+		<li>Diameter: 1.75mm</li>
+		<li>Temperature</li>
+			<ul>
+				<li>Extruder:</li>
+					<ul>
+						<li>First layer: 205</li>
+						<li>Other layer:180</li>
+					</ul>
+				<li>Bed:</li>
+					<ul>
+						<li>First layer:60</li>
+						<li>Other layer:60</li>
+					</ul>
+			</ul>
+
+	</ul>
+
+	</ul>
+
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/test.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/test0.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<p>Here we can see that when you make the bridge, it does not finish correctly, this could be solved if we add a fan that cools the plastic in a faster way.</p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/test1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/test1_1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
 
 <iframe width='100%' height="600px" frameBorder="none" src="http://archive.fabacademy.org/2017/fablabbcn/group/3dprint.html"></iframe>
 
@@ -211,8 +265,8 @@ I decided to design a 3D printer version of a plate holder using solidworks, som
 <h2>3D scan an object 
 <br><small>(and optionally print it)</small></h2>
 <p>
-Para el scaneo en 3D he decidio escoger una mascara de fox, para que el esconeo funcione mejor la he puesto en una tarima, y asi poder escanearla mejor.
-Existen varios metodos para escanear objetos en 3D como por ejemplo:</p>
+For the 3D scan I decided to choose a mask of fox, so that the hiding works better I have placed it on a stage, and thus to be able to scan it better. There are several methods for scanning objects in 3D such as:
+</p>
 <ul>
 <li>Laser and webcam</li>
 <li>Kinectis</li>
@@ -276,7 +330,7 @@ Existen varios metodos para escanear objetos en 3D como por ejemplo:</p>
 <p><a href="http://reprap.org/wiki/Kossel">Kossel</a></p>
 <p><a href="http://reprap.org/wiki/Prusa">Prusa I3</a></p>
 <p><a href="http://reprap.org/wiki/RepRap_Morgan">Scara</a></p>
-
+<p><a href="https://www.thingiverse.com/thing:33902"> Torture Test</a>
 
 <h3>Download</h3>
 
@@ -285,3 +339,4 @@ Existen varios metodos para escanear objetos en 3D como por ejemplo:</p>
 <p><a href="{{ "/assets/img/project/week5/download/fox.zip" | prepend: site.baseurl }}">Fox 3D Scanner</a></p>
 <p><a href="{{ "/assets/img/project/week5/download/3dprinter.zip" | prepend: site.baseurl }}">3D Model</a></p>
 <p><a href="{{ "/assets/img/project/week5/download/fox2.gcode" | prepend: site.baseurl }}">Fox gcode</a></p>
+

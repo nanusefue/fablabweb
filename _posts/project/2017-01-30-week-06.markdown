@@ -46,16 +46,12 @@ First, the board is designed in the schematic version, where we use the fablab l
 
 </div>
 
-<p>For this board has been added a reset button,led.</p>
+<p>For this board has been added a reset button,led, 3.3 volts regulator and micro USB (power supply).</p>
 
-<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-<img width="750px" src="{{ "/assets/img/project/week6/eagle11.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-</div>
-<p>And 3.3 volts regulator.</p>
+<div class="col-xs-12 ">
+<img width="550px" src="{{ "/assets/img/project/week6/eagle11.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="550px" src="{{ "/assets/img/project/week6/eagle12.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
-<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-
-<img width="750px" src="{{ "/assets/img/project/week6/eagle12.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
 <p>Then the design is done using eagle board mode, where the position of the components and the trace are designed.</p>
