@@ -34,7 +34,30 @@ website: http://blacktie.co
 
 
 <h4>Intellectual Property</h4>
+
+<ul>
+<li>GNU Licence</li>
+<li>Creative Commons</li>
+<li>Copyleft</li>
+</ul>
+
+<div class="col-xs-10 col-xs-offset-2 ">
+
+<img width="200px" src="{{ "/assets/img/project/week18/gnu-head.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<img width="200px" src="{{ "/assets/img/project/week18/cc.large.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<img width="200px" src="{{ "/assets/img/project/week18/copyleft.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>There are several ways to license a product, exiten licenses for software, documentation or everything related to the creation of software such as GNU, while others such as copyleft or creative commons, can be used in various areas such as art , programming, machines, electronics, etc.</p>
+<p>The difference between copyleft and creative commons, in the first is not restricted the use of the work to copy, instead in the second, you can choose what kind of restrictions we can apply, we will see later, since I have opted for use the creative commons type license.</p>
+
+
 <p>There are several types of project sharing licenses, for this project in particular I decided to use the licenses offered by creative commons, there are different types of license that we could use such as: </p>
+
+
+
 <p>Depending on the selection of the following questions are generated distant types of licenses from restrictive to fully open source.</p>
 
 <div class="col-xs-12 ">

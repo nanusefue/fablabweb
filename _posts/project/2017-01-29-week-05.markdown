@@ -178,24 +178,25 @@ I decided to design a 3D printer version of a plate holder using solidworks, som
 
 </div>
 
+<p>I decided to replicate this model since once finished it would be something that could give one used in lab, exiten several pieces that could not be made subtractively since it has several cavities in different planes of the piece, there is the possibility of performing it by parts and finish joining the parts to get the final piece, below we can see two pieces that could not be done subtractively, because of the complexity of the same in different planes and like this, we can see a cut in solidworks to see the internal complexity.</p>
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week5/3dprint.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week5/3dprint1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 </div>
-<p><small>Solidworks design</small></p>
+
+
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week5/3dprint5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
 
 
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week5/3dprint2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week5/3dprint3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-
-</div>
-<p><small>Print works</small></p>
-
-<div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week5/3dprint4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week5/3dprint5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 </div>
 <p><small>Details for 3d pieces</small></p>

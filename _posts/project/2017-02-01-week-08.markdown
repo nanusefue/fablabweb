@@ -29,8 +29,8 @@ website: http://blacktie.co
 </h3>
 </li>
 <li>
-  <h3>Optionally, experiment with other architectures</h3>
-</li>
+  <h3>Optionally, experiment with other architectures.</h3>
+</li> 
 </ul>
 
 

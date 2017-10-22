@@ -34,8 +34,6 @@ This week work to make an own FABISP, this board is very useful.
 When creating any new board with any microcontroller  (avr family), normally you need load some program inside, the fabisp is a board to make this be a possibility.
 Only you need to connect the fabsip in your computer and run the specific command to program the new board. 
 </p>
-<br>
-
 <p>From the different design of the FABISP, I have decided to make several formats, the version with a mini usb connector and the version with the usb connector on the board, which uses fewer components. from the two png file cutting and paths, I used the fabmodules version to create the file for the cnc that we use in the fablab.</p>
 
 <div class="col-xs-12 ">
@@ -81,10 +79,10 @@ Roland mill (.rml) that is the format that accepts our cnc<p>
 <li>machine: SMR-20</li>   
 <li>x0 (mm): 0</li>
 <li>y0 (mm): 0</li>
-<li>z0 (mm): 10</li>
+<li>z0 (mm): 0</li>
 <li>xhome (mm): 0</li>
 <li>yhome (mm): 0</li>
-<li>zhome (mm): 0</li>	
+<li>zhome (mm): 10</li>	
 </ul>
 </ul>
 
@@ -109,9 +107,31 @@ Roland mill (.rml) that is the format that accepts our cnc<p>
 <p>Save .rml file</p>
 
 <h4>Cutting in SMR-20</h4>
+<p>
+<ul>
+<li>1- Rapid Move X Y</li>
+<li>2- Rapid Move Z</li>
+<ul>	<li>Cursor Speed (Continuos x100  x10 x1)</li></ul>
+<li>Move</li>
+<ul>
+	<li>3- View - move the platform to see the final result.</li>
+	<li>4- To Orgin - go to the origin that we have previously set
+</li>
+	<li>5- Stop</li>
+</ul>
+<li>Set Origin Point</li>
+	<ul><li>6 Set Origin coordenates XYZ</li></ul>
+<li>Cut</li>
+	<ul><li>7- Change the speed of movement when cutting</li></ul>
+<li>Spindle Speed</li>
+	<ul><li>8- Change rotor speed</li></ul>
+
+<li>9</li>
+<li>10- Pause or cancel actual Job</li>
+</ul>
+</p>
 
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
-
 <img width="600px" src="{{ "/assets/img/project/week4/srm20.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 
@@ -145,7 +165,7 @@ the fuses define how our chip should act, whether it has an external oscillator,
 The important thing about fuses is that they can be reset and changed constantly.
 </p>
 <p>
-Each type of process has different fuse settings
+Each type of process has different fuse settings.
 </p>
 
 
@@ -196,7 +216,14 @@ avrdude done.  Thank you.
 
 {% endhighlight %}
 
-<h4>Make Program</h4>
+<h4>Programing</h4>
+
+<p>
+To program the chip with the firmware the "make" command is used, this command allows us to create different configurations depending on what we want to do to our chip.
+like for example to record the fuse, to compile/recompile the code, etc. thus configuring this file we can indicate the family of the chip and the programmer to be used.
+the -c flag is used to indicate the programmer and the -p family to which the chip belongs.
+
+</p>
 
 {% highlight bash linenos%}
 
@@ -285,7 +312,7 @@ avrdude done.  Thank you.
 To verify that our board works correctly simply connecting it to our computer and using the command linux:
 
 {% highlight bash linenos%}
- $: lsusb
+nanu@nanu-ThinkPad-X220:firmware$ lsusb
 {% endhighlight %}
 
 we will see that our device will appear in the list, and we can start to record any microprocessor that uses the ISP protocol.
