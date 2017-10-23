@@ -24,22 +24,44 @@ website: http://blacktie.co
 <img width="450px" src="{{ "/assets/img/project/week12/rhino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/rhino1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
 <div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week12/cnc.PNG" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/molde.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
+
 <div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week12/cnc2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/strategy_1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/strategy.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week12/cutting_area.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/area_part.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week12/path_type.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/tool.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week12/cnc4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 <div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week12/cnc4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/cnc6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 <div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week12/cnc6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/cnc.PNG" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc7.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/cnc8.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc9.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>

@@ -6,7 +6,7 @@ date:   2017-09-07 12:00:00
 author: Marcel Newman
 categories:
 - project
-img: portfolio_15.jpg
+img: portfolio_17.jpg
 thumb: thumb02.jpg
 carousel:
 #- single01.jpg
