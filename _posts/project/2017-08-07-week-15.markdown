@@ -16,3 +16,36 @@ tagged: Flat, UI, Development
 client: Wonder Corp.
 website: http://blacktie.co
 ---
+<h2>Assignment</h2>
+<ul>
+	<li>
+		<h3>Design and build a wired &/or wireless network connecting at least two processors</h3>
+	</li>
+</ul>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week15/bridge_sch.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week15/node_1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week15/bridge.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week15/node.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+
+<div class="col-xs-12 ">
+<img width="900px" src="{{ "/assets/img/project/week15/modules.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+
+</div>
+
+
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+
+<video width="600" controls loop>
+  <source src="{{ "/assets/img/project/week15/video.mp4" | prepend: site.baseurl }}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
