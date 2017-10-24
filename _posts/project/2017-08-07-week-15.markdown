@@ -49,3 +49,13 @@ website: http://blacktie.co
   Your browser does not support HTML5 video.
 </video>
 </div>
+<h3>References</h3>
+
+<p><a target="_blank" href="http://www.ladyada.net/learn/avr/fuses.html">AVR Fuse</a></p>
+<p><a target="_blank" href="https://en.wikipedia.org/wiki/In-system_programming">ISP</a></p>
+<p><a target="_blank" href="http://fabmodules.org/">Fabmodules</a></p>
+<p><a target="_blank" href="http://www.nongnu.org/avrdude/">Avrdude</a></p>
+
+<h3>Download</h3>
+
+<p><a target="_blank" href="{{ "/assets/img/project/week4/srm-20.pdf" | prepend: site.baseurl }}"> SRM-20 Manual</a></p>
