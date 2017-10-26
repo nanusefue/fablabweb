@@ -85,4 +85,5 @@ The rest of amazons and the methacrylate of a local store.</p>
 
 <p>I only have a couple of weeks to finish the whole process, some parts are already finished, like the module, and electronics, but I focus on the part of the vessel, since it needs to be correctly aligned, once this is finished, I will focus on the sensors for my bioreactor.</p>
 
-<!--<h4>how will it be evaluated?</h4>-->
+<h4>how will it be evaluated?</h4>
+<p>The most important thing is that the automatic control works correctly, that the sensors that have adapted to the bioreactor take the data and these are very correct, in order to obtain an optimal system for the growth of spirulina.</p>
