@@ -107,6 +107,9 @@ Roland mill (.rml) that is the format that accepts our cnc<p>
 <p>Save .rml file</p>
 
 <h4>Cutting in SMR-20 vPanel</h4>
+
+<p>Before sending to cut our table is necessary to fix it in the platform of the machine, for this is used double-sided tape, since it is perfectly adapted to the platform and allows us to remove it without any difficulty when finished cutting the plate.</p>
+
 <p>This is the control panel that we will use to configure the machine and send the files to our boards.</p>
 
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
@@ -158,7 +161,6 @@ origins.</p>
 
 </div>
 
-
 <h4>Final Process</h4>
 
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
@@ -175,6 +177,16 @@ origins.</p>
 <img width="300px" src="{{ "/assets/img/project/week4/programer3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 <h4>Programing board connections</h4>
+<p>I work on linux and normally work with the design of boards, so I have already installed all the tools to work with microprocessors of the AVR family </ p>
+<p> But for anyone who wants to program their microcontrollore in linux you need to install some packages </p>
+{% highlight bash linenos%}
+
+sudo apt-get install gcc-avr binutils-avr avr-libc
+
+sudo apt-get install avrdude
+{% endhighlight %}
+
+<br>
 
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 

@@ -337,6 +337,6 @@ For the 3D scan I decided to choose a mask of fox, so that the hiding works bett
 
 
 <p><a href="{{ "/assets/img/project/week5/download/fox.zip" | prepend: site.baseurl }}">Fox 3D Scanner</a></p>
-<p><a href="{{ "/assets/img/project/week5/download/3dprinter.zip" | prepend: site.baseurl }}">3D Model</a></p>
+<p><a href="{{ "/assets/img/project/week5/download/3dprinter.rar" | prepend: site.baseurl }}">3D Model</a></p>
 <p><a href="{{ "/assets/img/project/week5/download/fox2.gcode" | prepend: site.baseurl }}">Fox gcode</a></p>
 
