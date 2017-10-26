@@ -22,25 +22,232 @@ website: http://blacktie.co
 		<h3>Design and build a wired &/or wireless network connecting at least two processors</h3>
 	</li>
 </ul>
-
+<p>For this reason, you decide to create 3 boards if you are connected to the middle of the serial port, if you have been running a bridge and that is a bridge that is data from the computer. fall node if it identifies a unique identification, in case case we have Node 0,1 and 2, where the zero corresponds to the bridge.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week15/bridge_sch.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week15/node_1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-
 </div>
-
+<p>I have reduced the size of the board as much as the cnc has allowed me, since the idea is that these nodes are as small as possible, the only one that has been bigger is the bridge, since it has a connection for the usb cable.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week15/bridge.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week15/node.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-
 </div>
+<p>Here we see the final file to use to create the file that needs cnc in this case is the bridge, as it is appreciated is a little larger than the nodes.</p>
+<h6>Brige</h6>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week15/bridge_trace.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week15/bridge_out.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<h6>Node</h6>
 
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week15/nodo_trace.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week15/nodo_out.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>The program is the same for all (bridge / nodes), we must only change the variable of line 33, by the value 0,1 or 2.</p>
+
+<div class="col-xs-12 ">
+{% highlight c linenos %}
+	#define node_id '0'
+{% endhighlight %}
+</div>
+<p>Program</p>
+<div class="col-xs-12 ">
+
+{% highlight c linenos %}
+
+// Neil Gershenfeld
+// 11/24/10
+//
+// (c) Massachusetts Institute of Technology 2010
+// Permission granted for experimental and personal use;
+// license for commercial sale available from MIT.
+//
+
+#include <avr/io.h>
+#include <util/delay.h>
+#include <avr/pgmspace.h>
+#include <string.h>
+
+#define output(directions,pin) (directions |= pin) // set port direction for output
+#define input(directions,pin) (directions &= (~pin)) // set port direction for input
+#define set(port,pin) (port |= pin) // set port pin
+#define clear(port,pin) (port &= (~pin)) // clear port pin
+#define pin_test(pins,pin) (pins & pin) // test for port pin
+#define bit_test(byte,bit) (byte & (1 << bit)) // test for bit set
+#define bit_delay_time 100 // bit delay for 9600 with overhead
+#define bit_delay() _delay_us(bit_delay_time) // RS232 bit delay
+#define half_bit_delay() _delay_us(bit_delay_time/2) // RS232 half bit delay
+#define led_delay() _delay_ms(100) // LED flash delay
+
+#define led_port PORTB
+#define led_direction DDRB
+#define led_pin (1 << PB0)
+
+#define serial_port PORTB
+#define serial_direction DDRB
+#define serial_pins PINB
+#define serial_pin_in (1 << PB3)
+#define serial_pin_out (1 << PB4)
+
+#define node_id '0'
+
+void get_char(volatile unsigned char *pins, unsigned char pin, char *rxbyte) {
+  
+   
+   *rxbyte = 0;
+   while (pin_test(*pins,pin))
+      ;
+   half_bit_delay();
+   bit_delay();
+   
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 0);
+   else
+      *rxbyte |= (0 << 0);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 1);
+   else
+      *rxbyte |= (0 << 1);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 2);
+   else
+      *rxbyte |= (0 << 2);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 3);
+   else
+      *rxbyte |= (0 << 3);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 4);
+   else
+      *rxbyte |= (0 << 4);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 5);
+   else
+      *rxbyte |= (0 << 5);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 6);
+   else
+      *rxbyte |= (0 << 6);
+   bit_delay();
+   if pin_test(*pins,pin)
+      *rxbyte |= (1 << 7);
+   else
+      *rxbyte |= (0 << 7);
+ 
+   bit_delay();
+   half_bit_delay();
+   }
+
+void put_char(volatile unsigned char *port, unsigned char pin, char txchar) {
+  
+   clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,0)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,1)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,2)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,3)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,4)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,5)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,6)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+   if bit_test(txchar,7)
+      set(*port,pin);
+   else
+      clear(*port,pin);
+   bit_delay();
+  
+   set(*port,pin);
+   bit_delay();
+  
+   bit_delay();
+   }
+
+void put_string(volatile unsigned char *port, unsigned char pin, PGM_P str) {
+  
+   static char chr;
+   static int index;
+   index = 0;
+   do {
+      chr = pgm_read_byte(&(str[index]));
+      put_char(&serial_port, serial_pin_out, chr);
+      ++index;
+      } while (chr != 0);
+   }
+
+void flash() {
+ 
+   clear(led_port, led_pin);
+   led_delay();
+   set(led_port, led_pin);
+   }
+
+int main(void) {
+  
+   static char chr;
+   CLKPR = (1 << CLKPCE);
+   CLKPR = (0 << CLKPS3) | (0 << CLKPS2) | (0 << CLKPS1) | (0 << CLKPS0);
+   set(serial_port, serial_pin_out);
+   input(serial_direction, serial_pin_out);
+   set(led_port, led_pin);
+   output(led_direction, led_pin);
+   while (1) {
+      get_char(&serial_pins, serial_pin_in, &chr);
+      flash();
+      if (chr == node_id) {
+         output(serial_direction, serial_pin_out);
+         static const char message[] PROGMEM = "node ";
+         put_string(&serial_port, serial_pin_out, (PGM_P) message);
+         put_char(&serial_port, serial_pin_out, chr);
+         put_char(&serial_port, serial_pin_out, 10); // new line
+         led_delay();
+         flash();
+         input(serial_direction, serial_pin_out);
+         }
+      }
+   }
+{% endhighlight %}
+</div>
+<p>Once programer the different boards, we have to connect them to each other by means of a cable that we have constructed especially for them, in this way the connection between the bridge and the nodes is made.</p> 
 <div class="col-xs-12 ">
 <img width="900px" src="{{ "/assets/img/project/week15/modules.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 
 </div>
-
+<p>In this video we can see how the nodes are working using the Arduino console, if we send a 0 the blink flashes twice, if instead we send a 1, we see that it blinks twice the node that has assigned the id 1, and so on with the different nodes.</p>
 
 <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 
@@ -49,13 +256,13 @@ website: http://blacktie.co
   Your browser does not support HTML5 video.
 </video>
 </div>
-<h3>References</h3>
 
+<!--<h3>References</h3>
 <p><a target="_blank" href="http://www.ladyada.net/learn/avr/fuses.html">AVR Fuse</a></p>
 <p><a target="_blank" href="https://en.wikipedia.org/wiki/In-system_programming">ISP</a></p>
 <p><a target="_blank" href="http://fabmodules.org/">Fabmodules</a></p>
 <p><a target="_blank" href="http://www.nongnu.org/avrdude/">Avrdude</a></p>
-
+-->
 <h3>Download</h3>
-
-<p><a target="_blank" href="{{ "/assets/img/project/week4/srm-20.pdf" | prepend: site.baseurl }}"> SRM-20 Manual</a></p>
+<p><a target="_blank" href="{{ "/assets/img/project/week15/download/bridge.zip" | prepend: site.baseurl }}">Bridge</a></p><p><a target="_blank" href="{{ "/assets/img/project/week15/download/node.zip" | prepend: site.baseurl }}">Node</a></p>
+<p><a target="_blank" href="{{ "/assets/img/project/week15/download/program.zip" | prepend: site.baseurl }}">Program</a></p>
