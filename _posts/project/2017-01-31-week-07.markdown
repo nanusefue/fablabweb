@@ -115,6 +115,6 @@ Unfortunately the images of the assembly do not have them, to be able to ensabla
 
 <h3>Download</h3>
 <p><a href="{{ "/assets/img/project/week7/download/modular_lab.dxf" | prepend: site.baseurl }}">ModularLab.dxf</a></p>
-<p><a href="{{ "/assets/img/project/week7/download/rhino_assambly.3dm" | prepend: site.baseurl }}">Rhino File (Assambly)</a></p>
-<p><a href="{{ "/assets/img/project/week7/download/rhino_cam.zip" | prepend: site.baseurl }}">Rhino CAM</a></p>
+<p><a href="{{ "/assets/img/project/week7/download/rinho_assambly.3dm" | prepend: site.baseurl }}">Rhino File (Assambly)</a></p>
+<p><a href="{{ "/assets/img/project/week7/download/rinho_cam.zip" | prepend: site.baseurl }}">Rhino CAM</a></p>
 <p><a href="{{ "/assets/img/project/week7/download/cam.zip" | prepend: site.baseurl }}">CAM File</a></p>
