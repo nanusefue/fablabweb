@@ -90,6 +90,11 @@ website: http://blacktie.co
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
 
-<h4>Dissemination</h4>
+<h4>Dissemination and Income</h4>
 
-<p>As disseminate this project can be used in the network of biohackers that currently exists (diybio.org) that every day grows and is very active around the world, or in some exposition of maker, like the fair maker, could also be done some campaign of croudfounding so that anyone can have a bioreactor in their house.</p>
+<p>As disseminate this project can be used in the network of biohackers that currently exists (diybio.org) that every day grows and is very active around the world, or in some exposition of maker, like the fair maker</p>
+
+<p>To create a kit that is simple that has a good design, this would allow me to make a campaign of croudfounding so that anyone can have a bioreactor at home, teach in educational centers and communities that are interested in the self cultivation of spirulina or any element that a bioreactor can be used.</p>
+
+
+

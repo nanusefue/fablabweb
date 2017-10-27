@@ -58,16 +58,64 @@ Use Rhino for sending the file to a laser cut, and use especial software for cha
 
 
 </div>
+<h4> Prepare laser cutting </h4>
+<p> To send the file to lasercut we use rihno, we export our file, in my case a dxf to rhino, and we prepare everything as if we print a normal file, this allows us to change several parameters of the laser printer, such as type of material to be used, measurement of the working area, etc. </p>
+<div class="col-xs-12  ">
+<img width="850px" src="{{ "/assets/img/project/week3/laser4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>Windows for trotec printer</p>
+<div class="col-xs-12  ">
+<img width="850px" src="{{ "/assets/img/project/week3/laser3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>Once the file has been sent, a special trotec program is opened, which is the one that communicates with the laser cutter, this one is in charge of managing all the parameters that we need, if we use a files by layers of colors, in this we can indicate different parameters according to the color of this, to cut carton we will use the black layer, with the following parameters that are predefined by the machine, power: 15 and speed: 1,4.</p>
+
+
+<div class="col-xs-12  ">
+<img width="850px" src="{{ "/assets/img/project/week3/laser5.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<div class="col-xs-12  ">
+
+<img width="850px" src="{{ "/assets/img/project/week3/laser6.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>To locate the beginning of the laser we will use the cursors that we have in the machine, if we will see on the trotec program a cross that indicates where the laser is located and this will be our point 0,0.</p>
+
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week3/cross.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<img width="450px" src="{{ "/assets/img/project/week3/cross1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+
+</div>
+
+<p>To calibrate the Z you must place the material in the machine and use the focusing tool, it is simply leaning on the laser and moving the platform until it touches and falls alone, this way we have the laser focused correctly.</p>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week3/calibrate.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<img width="450px" src="{{ "/assets/img/project/week3/calibrate1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+
+</div>
+
+<!--
+<div class="col-xs-12  ">
+<img width="450px" src="{{ "/assets/img/project/week3/laser.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week3/laser1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+-->
 
 
 <h4>Final Test</h4>
 <div class="col-xs-12  ">
 <img width="450px" src="{{ "/assets/img/project/week3/delta.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-<p>It is important to do this test with different materials and configurations, to know how the laser cutter in them, in our case the carton so that the pieces fit perfectly we need to apply an offset of 0.05mm.
+<p>It is important to do this test with different materials and configurations, to know how the laser cutter in them, in our case the carton so that the pieces fit perfectly we need to apply an <strong>kerf</strong> of 0.05mm, the thickness of the carton is 3.5 mm.
 </p>
 <div class="col-xs-12  ">
 <img width="450px" src="{{ "/assets/img/project/week3/delta1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week3/carton.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
 <br>
@@ -104,6 +152,37 @@ The drawings made in Qcad and exported to the program of the vinyl cutter, first
 </p> 
 <br>
 <h4>Design and initial test</h4>
+<p>Before sending the files to be cut we must load the material we are going to use:</p>
+<ul>
+<li>First we unlocked the roll that would press the paper against the machine.</li>
+<li>We use the white rollers to hold the paper always has to be inside the white lines that we see on the machine.</li>
+<li>We introduce the paper and lower the lever that presses this.</li>
+<li>The machine will detect the paper and ask us to indicate what type of format is (roll, sheet, etc).</li>
+<li>Depending on the format, the machine will automatically detect the measurements.</li>
+<li>Now we can use the program to send our file</li>
+</ul>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week3/load1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<img width="450px" src="{{ "/assets/img/project/week3/load2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week3/load3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<img width="450px" src="{{ "/assets/img/project/week3/load4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>The program that is used is the <a href="https://www.rolanddgi.com/es/productos/software/roland-cutstudio" >Roland Cut Studio</a>, this is the one that sends the file to the cutter, is very simple to use, if the measurements of the material are detected automatically, we can see the workspace where we have to accommodate our design, once we have accommodated the design we sent short.</p>
+
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week3/viny1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+<img width="450px" src="{{ "/assets/img/project/week3/viny2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/vinilo.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
@@ -111,6 +190,8 @@ The drawings made in Qcad and exported to the program of the vinyl cutter, first
 </div>
 
 <h4>Cut Design</h4>
+
+
 
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week3/vinilo2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>

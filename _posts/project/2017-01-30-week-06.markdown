@@ -65,10 +65,11 @@ First, the board is designed in the schematic version, where we use the fablab l
 <p>Once finished, you should check the design rules that are created especially for the fablab cnc, this allows us to know if our board can be made in cnc, checking the width of the trace, the distances of the traces, etc.</p>
 
 <div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week6/eagle3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week6/eagle7.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="950px" src="{{ "/assets/img/project/week6/eagle3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12 ">
 
-
+<img width="950px" src="{{ "/assets/img/project/week6/eagle7.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
 
@@ -91,6 +92,6 @@ First, the board is designed in the schematic version, where we use the fablab l
 </div>
 
 <h3>Download</h3>
-<p><a href="{{ "/assets/img/project/week14/download/eagle.zip" | prepend: site.baseurl }}">Tinyduino (Eagle) </a></p>
-<p><a href="{{ "/assets/img/project/week14/download/fabmodule.dru" | prepend: site.baseurl }}">DRU Rules</a></p>
-<p><a href="{{ "/assets/img/project/week14/download/fab.lbr" | prepend: site.baseurl }}">Fab Library for Eagle </a></p>
+<p><a href="{{ "/assets/img/project/week13/download/eagle.zip" | prepend: site.baseurl }}">Tinyduino (Eagle) </a></p>
+<p><a href="{{ "/assets/img/project/week6/download/fabmodule.dru" | prepend: site.baseurl }}">DRU Rules</a></p>
+<p><a href="{{ "/assets/img/project/week6/download/fab.lbr" | prepend: site.baseurl }}">Fab Library for Eagle </a></p>

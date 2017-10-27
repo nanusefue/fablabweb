@@ -69,14 +69,17 @@ The rest of amazons and the methacrylate of a local store.</p>
 <p>The vessel is armed for me from methacrylate pieces, such as the board that controls the bioreactor (Tinyduino), the diffuser for light, in addition to the module where the bioreactor will be.</p>
 
 <h4>what processes will be used?</h4>
+<p>
 <ul>
 <li>For the vessel i have used the laser</li>
 <li>For the pcb the milimachine</li>
 <li>For the diffuser the 3D printer</li>
 <li>For the module the CNC</li>
 </ul>
+</p>
+<h4>what tasks need to be completed?</h4>
+<p>Create a special shield to be able to control the different actuators and sensors that can be used to control the bioreactor, to monitor the correct functioning and that what we are growing can be found in the most optimal conditions for this</p>
 
-<!--<h4>what tasks need to be completed?</h4>-->
 
 <h4>what questions need to be answered?</h4>
 <p>Once finished know if spirulina reproduces correctly and is feasible to grow it in my own home.</p>
