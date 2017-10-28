@@ -26,21 +26,27 @@ website: http://blacktie.co
 </ul>
 
 
-<p>what is the deadline? How much time do I have left?</p>
+<h4>what is the deadline? How much time do I have left?</h4>
+<p>The project has to finish in two weeks, so I decided to dedicate the first week to make the boat that is the part that more work needs since I only have a chance to fit perfectly. the following week I dedicate it to the electronica and to print the necessary pieces to finish my final project.</p>
+<p>It remains to print some parts for the bioreactor, and the container that counter in this case the spirulina.</p>
+<h4>what tasks have been completed, and what tasks remain?</h4>
+<p>Some weeks of the assignments that you take to make part of the project like modular lab in the week of make big something, or in the week of modeling part that I think that are necessary for the project, also in several assignaments of electronica I have worked in the idea of a board that can use shilds like arduino.</p>
 
-<p>what tasks have been completed, and what tasks remain?</p>
+<h4>how will I complete the remaining tasks in time?</h4>
+<p>To meet the delivery dates it is necessary to have a work plan and try to comply with it every day, there are parts that are not necessary to perform them in the fablab and can work with them in my house.</p>
+<p>Another if they are necessary to finish them in the fablab and they are the ones that have a top priority since in these days the people are more active and the machines more occupied by that it is important to have a planning.</p>
 
-<p>how will I complete the remaining tasks in time?</p>
+<h4>what has worked? what hasn't?</h4>
+<p>I have managed to use the Tyniduino with a larger microcontroller and thus to have more memory (8k) and being able to use the USB port to program it, I have also been able to connect several actuators, such as a display and a digital temperature sensor.</p>
+<p>What still does not work for me is the shield, since I have discovered some design errors and I will have to correct them.</p>
 
-<p>what has worked?</p>
-
-<p>what hasn't?</p>
-
-<p>Project plan</p>
+<h4>Project plan</h4>
+<p>I currently work in a software company and used to plan our Trello project, so when it comes to using a tool to manage the final project, I have opted for this, since it is familiar and I feel comfortable using it.</p>
 <div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
 <img width="600px" src="{{ "/assets/img/project/week19/trello.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-<p>what questions still need to be resolved?</p>
+<h4>what questions still need to be resolved?</h4>
+<p>The spirulina will grow properly inside the bioreactor, the sensors will work correctly and will actually know the state of the spirulina, the glass is not lost when it is built.</p>
 
-<p>what have you learned?</p>
+<h4>what have you learned?</h4>
 
