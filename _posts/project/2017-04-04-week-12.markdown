@@ -19,54 +19,80 @@ website: http://blacktie.co
 <h3>Design a 3D mould, machine it, and cast parts from it.</h3>
 
 <p>I decide to reuse a piece that I have designed previously and use it to create a silicone model and be able to make a copy in resin or other material that is not using the 3D printer, this will allow me to make as many copies faster than a printer 3D.</p>
+<p>I had to modify the part to be able to create the mold in two parts.</p>
 
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/rhino.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/rhino1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-
+<p>The model is exported as a stl, and this is opened in the program Modela Player 4, with this program we will create all the strategies necessary to create the mold in wax.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/molde.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
-
+<p>I have created 4 strategy that are necessary to have the final molds, the first is to make a quick roughing and have a part of the piece, the following 3 are a finishing to have a finer and accurate finish of the piece.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/strategy_1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/strategy.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-
 </div>
+<p>Another interesting part is that we can indicate the area of cut of each of the strategies we have decided, optimize the time of use of the machine and which parts will be more detailed.</p>
 
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/cutting_area.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/area_part.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-
+<p>We chose the type of path that will follow the mill at the time of cutting the wax, I have selected the address x as it is the one that was more suitable for the piece I want to perform.</p>
+<p>We chose the type of path that will follow the mill at the time of cutting the wax, I have selected the address x since it is the one that was more suitable for the piece I want to perform, the type of mill I use is a flat of 3.18, this for the initial roughing is perfect.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/path_type.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/tool.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
-
+<!--
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/cnc4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-</div>
+</div> -->
+<p>I had the problem that when the mill started to get to the bottom of the mold, the problems started since the mold design was too deep for the mill and this was beginning to touch the spindle of the cnc, so I had to stop the whole process and try to make another design simpler since the week of this was exactly finished, I learned a lot of how to work and prepare the mold to be totally successful the final result.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/cnc5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<p>I have done the same procedure described above, but in this case I have taken into account the depth of the mold, this time I have been able to do it successfully.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/cnc.PNG" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc7.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
-
+<p>And finished the cutting process we proceed to create the mold with silicone, the silicone is use catalizator components when they are mixed both the curing process begins, for the mix catalizator to add in a proportion of 3%/ 5%</p>
+<p>With the mixture made apply a layer of release agent so that when the silicone is cured it is easier to remove without breaking the mold, one of the most common problems that occur when we make any type of mold are the bubbles that are created inside and this can corner the final piece, so to avoid bubbles in the fablab has built a vacuum machine that with it we managed to expel most of the bubbles quickly.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/cnc8.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc9.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<p>Once this process is finished we leave the mold in a place removed for 24 hours so that the silicone finishes to cure, and to be able to remove the mold without problems.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/cnc10.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/cnc11.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
+<h4>Silicone mold from an object</h4>
+<p>As I have had a failure in the first mold and the second one I have done is not very complex I have decided to work on an object that if I need for my <strong> final project </strong>, it is a 3 output connector that is used in the glass bottles, has a special cap through which several tubes are connected, this eg to feed spirulina directly or for any experiment that requires the exchange of liquids.</p>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week12/molde.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/molde1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>Being a one piece mold I have cut the silicon with a cutter, and I have done several tests since to obtain a decent piece it is necessary to go carefully so that the material fills all the interior of the mold and there are no bubbles inside it as we can see in the first image.</p>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week12/molde3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/molde4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>We can see how the object is placed on the plug after several attempts, this fits perfectly and we save the cost that is about 80 euros.</p>
+<div class="col-xs-12 ">
+<img width="950px" src="{{ "/assets/img/project/week12/molde5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week12/download/reductor.stl" | prepend: site.baseurl }}">Molde STL</a></p>
+<p><a href="{{ "/assets/img/project/week12/download/reductor.mpj" | prepend: site.baseurl }}">Molde Modela Player M4</a></p>
