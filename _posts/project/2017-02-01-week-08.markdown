@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Mar 15: embedded programming [8]"
+title:  "Embedded programming [8]"
 date:   2017-01-30 12:00:00
 author: Marcel Newman
 categories:
