@@ -41,10 +41,14 @@ First, the board is designed in the schematic version, where we use the fablab l
 </p>
 
 <div class="col-xs-12 ">
-<img width="450px" src="{{ "/assets/img/project/week6/eagle10.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="450px" src="{{ "/assets/img/project/week6/eagle1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="950px" src="{{ "/assets/img/project/week6/eagle10.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<div class="col-xs-12 ">
+<img width="950px" src="{{ "/assets/img/project/week6/eagle1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 
 </div>
+
 
 <p>For this board has been added a reset button,led, 3.3 volts regulator and micro USB (power supply).</p>
 
@@ -67,8 +71,8 @@ First, the board is designed in the schematic version, where we use the fablab l
 <div class="col-xs-12 ">
 <img width="950px" src="{{ "/assets/img/project/week6/eagle3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<p>The DRU rules are very important when validating the design of our board, since this serves us to know if it is fit to be cut with our cnc, since it is not a professional way to create has a couple of limitations.</p>
 <div class="col-xs-12 ">
-
 <img width="950px" src="{{ "/assets/img/project/week6/eagle7.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 

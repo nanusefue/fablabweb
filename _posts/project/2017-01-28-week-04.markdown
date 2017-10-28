@@ -97,12 +97,16 @@ Roland mill (.rml) that is the format that accepts our cnc<p>
 
 </ul>
 
-<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<div class="col-xs-12">
 
-<img width="300px" src="{{ "/assets/img/project/week4/programerusb1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="300px" src="{{ "/assets/img/project/week4/programerusb3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
-
+<img width="900px" src="{{ "/assets/img/project/week4/programerusb1.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
+<div class="col-xs-12">
+
+<img width="900px" src="{{ "/assets/img/project/week4/programerusb3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
 
 <p>Save .rml file</p>
 
@@ -163,18 +167,18 @@ origins.</p>
 
 <h4>Final Process</h4>
 
-<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<div class="col-xs-12 ">
 
-<img width="300px" src="{{ "/assets/img/project/week4/programer1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="300px" src="{{ "/assets/img/project/week4/programer.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week4/programer1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week4/programer.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
 <h4>UBS connector in pcb details</h4>
 
-<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<div class="col-xs-12">
 
-<img width="300px" src="{{ "/assets/img/project/week4/programer4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="300px" src="{{ "/assets/img/project/week4/programer3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week4/programer4.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week4/programer3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 <h4>Programing board connections</h4>
 <p>I work on linux and normally work with the design of boards, so I have already installed all the tools to work with microprocessors of the AVR family </ p>
@@ -188,10 +192,10 @@ sudo apt-get install avrdude
 
 <br>
 
-<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<div class="col-xs-12">
 
-<img width="300px" src="{{ "/assets/img/project/week4/programer5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="300px" src="{{ "/assets/img/project/week4/programer6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week4/programer5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week4/programer6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
 <h4>AVR Fuse</h4>
@@ -365,6 +369,8 @@ we will see that our device will appear in the list, and we can start to record 
 <p><a target="_blank" href="http://www.nongnu.org/avrdude/">Avrdude</a></p>
 
 <h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week4/download/fabisp.zip" | prepend: site.baseurl }}">FabISP</a></p>
+<p><a href="{{ "/assets/img/project/week4/download/fabispmin45.zip" | prepend: site.baseurl }}">FabISP MINI </a></p>
 
 <p><a target="_blank" href="{{ "/assets/img/project/week4/srm-20.pdf" | prepend: site.baseurl }}"> SRM-20 Manual</a></p>
 

@@ -63,7 +63,7 @@ Use Rhino for sending the file to a laser cut, and use especial software for cha
 <div class="col-xs-12  ">
 <img width="850px" src="{{ "/assets/img/project/week3/laser4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
-<p>Windows for trotec printer</p>
+<p>Windows printer for trotec laser cut</p>
 <div class="col-xs-12  ">
 <img width="850px" src="{{ "/assets/img/project/week3/laser3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
@@ -213,6 +213,19 @@ The drawings made in Qcad and exported to the program of the vinyl cutter, first
 <p>
 I decided to use SolidWorks for creating a parametric model, the advantaged of using solidworks is more easily control all measurement and relate them, this way if change some measurement all design is modified.  
 </p>
+
+<p>for the design of pressfix as it is the first time I have used solid works I have found that there are two ways of being able to dimension a model and that it resizes by modifying a dimension value.
+The first one I found is linking dimension values, ie we can link the values of the dimensions, when we change a value all the dimensions that are linked to this automatically change.</p>
+
+<div class="col-xs-12 ">
+<img width="950px" src="{{ "/assets/img/project/week3/relationvalues.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<p>The second option is to create an xls file with which we will have all the values of our dimensions in which we can apply different equations for the correct calculation, I have attached a video of youtube which indicates how to perform this procedure.</p>
+<div class="col-xs-12 ">
+<img width="950px" src="{{ "/assets/img/project/week3/externalfile.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8SW-UZy1QMA" frameborder="0" allowfullscreen></iframe>
 
 <br>
 <div class="col-xs-12 ">

@@ -81,6 +81,13 @@ For the assignment I have decided to create a modular lab, this lab is designed 
 <div class="col-xs-10 col-xs-offset-2 ">
 <img width="650px" src="{{ "/assets/img/project/week7/cncrhino6.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<p>The speed we recommend Ricardo for the type of playwood and mill we will use is recommended to have a speed of 12000, and a feed rate of 2000, by default we have a speed of 12000 and a feedrate of 20000.</p>
+<div class="col-xs-12">
+	<img width="450px" src="{{ "/assets/img/project/week7/flatmill.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+	<img width="450px" src="{{ "/assets/img/project/week7/feed.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
 <p>Ricardo, has shown us little should be used cnc we have in fablab.</p>
 
 <div class="col-xs-12 ">
