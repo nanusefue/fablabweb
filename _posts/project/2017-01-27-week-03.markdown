@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Feb 08: Computer-controlled cutting [3]"
+title:  "Computer-controlled cutting [3]"
 date:   2017-01-27 12:00:00
 author: Esteban Martin Gimenez
 categories:

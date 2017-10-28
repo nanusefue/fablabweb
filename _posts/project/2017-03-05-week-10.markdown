@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Mar 01: Output Device [10]"
+title:  "Output Device [10]"
 date:   2017-03-05 12:00:00
 author: Marcel Newman
 categories:

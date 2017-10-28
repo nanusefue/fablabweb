@@ -1,12 +1,12 @@
 ---
 layout: project
-title:  "Invention, Intellectual Property and Business Models [18]"
+title:  "Project development [19]"
 
 date:   2017-09-07 12:00:00
 author: Marcel Newman
 categories:
 - project
-img: portfolio_18.jpg
+img: portfolio_19.jpg
 thumb: thumb02.jpg
 carousel:
 #- single01.jpg

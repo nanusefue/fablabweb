@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Mar 22: Mechanical design [9]"
+title:  "Mechanical design [9]"
 date:   2017-01-30 12:00:00
 author: Marcel Newman
 categories:

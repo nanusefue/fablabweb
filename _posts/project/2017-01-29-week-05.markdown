@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Feb 22: 3D scanning and printing [5]"
+title:  "3D scanning and printing [5]"
 date:   2017-01-29 12:00:00
 author: Esteban Martin Gimenez
 categories:

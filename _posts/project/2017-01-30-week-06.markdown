@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Mar 01: Electronics design [6]"
+title:  "Electronics design [6]"
 date:   2017-01-30 12:00:00
 author: Esteban Martin Gimenez
 
