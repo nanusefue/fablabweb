@@ -50,3 +50,6 @@ website: http://blacktie.co
 
 <h4>what have you learned?</h4>
 
+<p>Many of the construction techniques they used are new to me, even if you have several experiences, such as 3D printer, electronics, molding, etc.</p> 
+<p>Others like cnc or laser cutting are the first time I used them and it has been interesting to use them to build my project, without them it would not be possible to do it so fast.</p>
+
