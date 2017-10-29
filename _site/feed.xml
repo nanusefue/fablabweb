@@ -3,10 +3,10 @@
   <channel>
     <title>FAB ACADEMY 2017</title>
     <description>Fab Academey 2017 -Esteban Martin Gimenez</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 29 Oct 2017 22:11:45 +0100</pubDate>
-    <lastBuildDate>Sun, 29 Oct 2017 22:11:45 +0100</lastBuildDate>
+    <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/</link>
+    <atom:link href="http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 29 Oct 2017 22:13:09 +0100</pubDate>
+    <lastBuildDate>Sun, 29 Oct 2017 22:13:09 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -35,7 +35,7 @@
 &lt;h4&gt;Project plan&lt;/h4&gt;
 &lt;p&gt;I currently work in a software company and used to plan our Trello project, so when it comes to using a tool to manage the final project, I have opted for this, since it is familiar and I feel comfortable using it.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 &quot;&gt;
-&lt;img width=&quot;600px&quot; src=&quot;/assets/img/project/week19/trello.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;600px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week19/trello.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;h4&gt;what questions still need to be resolved?&lt;/h4&gt;
 &lt;p&gt;The spirulina will grow properly inside the bioreactor, the sensors will work correctly and will actually know the state of the spirulina, the glass is not lost when it is built.&lt;/p&gt;
@@ -47,8 +47,8 @@
 
 </description>
         <pubDate>Thu, 07 Sep 2017 14:00:00 +0200</pubDate>
-        <link>http://localhost:4000/project/week-19.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-19.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-19.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-19.html</guid>
         
       
       </item>
@@ -79,11 +79,11 @@
 
 &lt;div class=&quot;col-xs-10 col-xs-offset-2 &quot;&gt;
 
-&lt;img width=&quot;200px&quot; src=&quot;/assets/img/project/week18/gnu-head.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;200px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week18/gnu-head.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
-&lt;img width=&quot;200px&quot; src=&quot;/assets/img/project/week18/cc.large.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;200px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week18/cc.large.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
-&lt;img width=&quot;200px&quot; src=&quot;/assets/img/project/week18/copyleft.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;200px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week18/copyleft.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;There are several ways to license a product, exiten licenses for software, documentation or everything related to the creation of software such as GNU, while others such as copyleft or creative commons, can be used in various areas such as art , programming, machines, electronics, etc.&lt;/p&gt;
@@ -95,9 +95,9 @@
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
 
-&lt;img width=&quot;650px&quot; src=&quot;/assets/img/project/week18/type.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;650px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week18/type.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
-&lt;img width=&quot;250px&quot; src=&quot;/assets/img/project/week18/open.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;250px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week18/open.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 &lt;/div&gt;
 &lt;h5&gt;Type of license I select:&lt;/h5&gt;
@@ -128,8 +128,8 @@
 
 </description>
         <pubDate>Thu, 07 Sep 2017 14:00:00 +0200</pubDate>
-        <link>http://localhost:4000/project/week-18.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-18.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-18.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-18.html</guid>
         
       
       </item>
@@ -206,8 +206,8 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;p&gt;The most important thing is that the automatic control works correctly, that the sensors that have adapted to the bioreactor take the data and these are very correct, in order to obtain an optimal system for the growth of spirulina.&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Sep 2017 14:00:00 +0200</pubDate>
-        <link>http://localhost:4000/project/week-17.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-17.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-17.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-17.html</guid>
         
       
       </item>
@@ -217,8 +217,8 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
         <description>&lt;h2&gt;Assignment&lt;/h2&gt;
 </description>
         <pubDate>Thu, 07 Sep 2017 14:00:00 +0200</pubDate>
-        <link>http://localhost:4000/project/week-16.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-16.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-16.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-16.html</guid>
         
       
       </item>
@@ -233,25 +233,25 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;For this reason, you decide to create 3 boards if you are connected to the middle of the serial port, if you have been running a bridge and that is a bridge that is data from the computer. fall node if it identifies a unique identification, in case case we have Node 0,1 and 2, where the zero corresponds to the bridge.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week15/bridge_sch.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week15/node_1.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/bridge_sch.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/node_1.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;I have reduced the size of the board as much as the cnc has allowed me, since the idea is that these nodes are as small as possible, the only one that has been bigger is the bridge, since it has a connection for the usb cable.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week15/bridge.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week15/node.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/bridge.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/node.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;Here we see the final file to use to create the file that needs cnc in this case is the bridge, as it is appreciated is a little larger than the nodes.&lt;/p&gt;
 &lt;h6&gt;Brige&lt;/h6&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week15/bridge_trace.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week15/bridge_out.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/bridge_trace.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/bridge_out.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;h6&gt;Node&lt;/h6&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week15/nodo_trace.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week15/nodo_out.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/nodo_trace.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/nodo_out.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;The program is the same for all (bridge / nodes), we must only change the variable of line 33, by the value 0,1 or 2.&lt;/p&gt;
 
@@ -635,7 +635,7 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Once programer the different boards, we have to connect them to each other by means of a cable that we have constructed especially for them, in this way the connection between the bridge and the nodes is made.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;900px&quot; src=&quot;/assets/img/project/week15/modules.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;900px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/modules.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 
 &lt;/div&gt;
@@ -644,7 +644,7 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;div class=&quot;col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 &quot;&gt;
 
 &lt;video width=&quot;600&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
-  &lt;source src=&quot;/assets/img/project/week15/video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
   Your browser does not support HTML5 video.
 &lt;/video&gt;
 &lt;/div&gt;
@@ -656,13 +656,13 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.nongnu.org/avrdude/&quot;&gt;Avrdude&lt;/a&gt;&lt;/p&gt;
 --&gt;
 &lt;h3&gt;Download&lt;/h3&gt;
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;/assets/img/project/week15/download/bridge.zip&quot;&gt;Bridge&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;/assets/img/project/week15/download/node.zip&quot;&gt;Node&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;/assets/img/project/week15/download/program.zip&quot;&gt;Program&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/download/bridge.zip&quot;&gt;Bridge&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/download/node.zip&quot;&gt;Node&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week15/download/program.zip&quot;&gt;Program&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Aug 2017 14:00:00 +0200</pubDate>
-        <link>http://localhost:4000/project/week-15.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-15.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-15.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-15.html</guid>
         
       
       </item>
@@ -677,14 +677,14 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;p&gt;I decided to create a model using solidworks, ide is to create a cover for a drone, to avoid breaking the part of the electronics if it collides with some external element.&lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo0.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo.JPG&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo0.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo.JPG&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;I have configured the machine to make two passes with the roughing and finishing strategy, obtaining a very fine finish, this type of material being quite soft allows us to cut at maximum speed.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo1.JPG&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo2.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo1.JPG&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo2.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 &lt;/div&gt;
 &lt;p&gt;We use the Entropy Resin brand resin, specifically the &quot;Super Sap ONF Hardener&quot; which is ideal for laminating.&lt;/p&gt;
@@ -715,13 +715,13 @@ SUPER SAP® ONE System is the industry leader for USDA BioPreferredSM   certifie
 &lt;p&gt;Once the mixture is done we have a time of 18 minutes before the resin begins to cure, so it is important to have everything ready to apply the resin in our model.&lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo2_2.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo3.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo2_2.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo3.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;To apply the resin we need gloves, and a spatula to spread the resin on the material.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo4.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo5.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo4.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo5.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
 
@@ -736,14 +736,14 @@ SUPER SAP® ONE System is the industry leader for USDA BioPreferredSM   certifie
 &lt;p&gt;Once together all the layers are put in the vacuum machine, so that everything fit the mold that I created in the cnc.&lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo6.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo7.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo6.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo7.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;Once the drying process is finished, I realized that I forgot to put one of the plastic layers between the model and the fabric with the resin, so I had to break the mold, to get the final piece.&lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo8.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo9.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo8.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo9.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 &lt;p&gt;As the previous piece did not remain as I would like to, I decided to try another technique, I asked the teacher who gave us some classes on the use of resin.&lt;/p&gt;
 &lt;p&gt;In this case I wanted to create a resistant and flexible material, with fabric and wood sheets.&lt;/p&gt;
@@ -751,13 +751,13 @@ SUPER SAP® ONE System is the industry leader for USDA BioPreferredSM   certifie
 
 &lt;/div&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo10.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo11.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo10.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo11.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;h4&gt;Final result&lt;/h4&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo13.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week14/compo14.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo13.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/compo14.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 
 &lt;h3&gt;Referens&lt;/h3&gt;
@@ -765,12 +765,12 @@ SUPER SAP® ONE System is the industry leader for USDA BioPreferredSM   certifie
 &lt;p&gt;&lt;a href=&quot;https://entropyresins.com/&quot;&gt;Entropy Resins&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3&gt;Download&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/project/week14/download/manual.pdf&quot;&gt;Manual Resin&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/project/week14/download/technical.pdf&quot;&gt;Spec Resin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/download/manual.pdf&quot;&gt;Manual Resin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/download/technical.pdf&quot;&gt;Spec Resin&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Jun 2017 14:00:00 +0200</pubDate>
-        <link>http://localhost:4000/project/week-14.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-14.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-14.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-14.html</guid>
         
       
       </item>
@@ -790,7 +790,7 @@ For this assignament I decided to create my own arduino, based on a microcontrol
 Tinyduino is a light version of Arduino, its based in a cheaper and smaller microcontroller: the Attiny44 or the Attiniy84. As it can be deduced from the name the 44 has a flash memory of 4k and the 84 of 8k.   
 &lt;br /&gt;
 &lt;div class=&quot;col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 &quot;&gt;
-&lt;img width=&quot;600px&quot; src=&quot;/assets/img/project/week13/tinyduino.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;600px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/tinyduino.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 
@@ -815,16 +815,16 @@ Tinyduino is a light version of Arduino, its based in a cheaper and smaller micr
 &lt;/ul&gt;
 
 &lt;h5&gt;Schematic&lt;/h5&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/project/week13/schematic_low.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/schematic_low.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;&lt;/p&gt;
 
 &lt;h5&gt;Eagle/Tinyduino&lt;/h5&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-xs-6  col-lg-6  &quot;&gt;
-&lt;img src=&quot;/assets/img/project/week13/board.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/board.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-xs-6  col-lg-6  &quot;&gt;
-&lt;img src=&quot;/assets/img/project/week13/tinyduino.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/tinyduino.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -845,7 +845,7 @@ To use in our V-USB project, it is important to consider certain hardware consid
 &lt;!--
 &lt;h4 class=&quot;small&quot;&gt;Solution A: Reduced supply voltage for the AVR&lt;/h4&gt;
 &lt;h5&gt;Opcion 1 &lt;/h5&gt;
-&lt;img src=&quot;/assets/img/project/week13/voltage-regulator.gif&quot; alt='webpage jekyll'&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/voltage-regulator.gif&quot; alt='webpage jekyll'&gt;
 
 &lt;p&gt;One solution to the level conversion problem is to supply the AVR with a reduced voltage, usually in the range of 3.3 to 3.6 V. Since the USB power supply is in the range of 4.5 to 5.25 V, we need a low drop voltage regulator. Advantages of this solution are:
 &lt;/p&gt;
@@ -863,7 +863,7 @@ Good noise immunity for signal input.
 
 &lt;h5&gt;Opcion 2 &lt;/h5&gt;
 
-&lt;img src=&quot;/assets/img/project/week13/voltage-reduction-with-diodes.gif&quot; alt='webpage jekyll'&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/voltage-reduction-with-diodes.gif&quot; alt='webpage jekyll'&gt;
 
 &lt;p&gt;Another variation of this approach is to reduce the supply voltage with two rectifier diodes in series. This gives roughly a drop of 1.2 to 1.4 V, usually enough to make things work. The missing regulation may be problematic for analog circuitry or if you use the ADC. It depends on the power consumption of the device and the PC side voltage supply stability.&lt;/p&gt;
 
@@ -883,7 +883,7 @@ Good noise immunity for signal input.
 &lt;p&gt; --&gt;
 &lt;h5 class=&quot;small&quot;&gt;Solution: Level conversion on D+ and D-&lt;/h5&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/project/week13/level-conversion-with-zener.gif&quot; alt=&quot;webpage jekyll&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/level-conversion-with-zener.gif&quot; alt=&quot;webpage jekyll&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;/p&amp;gt;&lt;/p&gt;
 &lt;p&gt;
@@ -920,7 +920,7 @@ Instead of reducing the AVR's power supply, we can limit the output voltage on D
  &lt;a href=&quot;//github.com/nanusefue/micronucleus&quot;&gt;Micronucleus&lt;/a&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/project/week13/micronucleous.png&quot; alt=&quot;webpage jekyll&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/micronucleous.png&quot; alt=&quot;webpage jekyll&quot; /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Arduino Custom Board&lt;/h3&gt;
 &lt;h4&gt;How to add Tinyduino to use in our Arduino IDE&lt;/h4&gt;
@@ -934,26 +934,26 @@ Copy and paste the following url into our IDE in the menu: &lt;b&gt; File -&amp;
 https://nanusefue.github.io/poi/Tinyduino/package_tinyduino_index.json
 &amp;lt;/p&amp;gt;
 
-&lt;img src=&quot;/assets/img/project/week13/url_arduino_board.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/url_arduino_board.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 &lt;h4&gt;Step 2&lt;/h4&gt;
 &lt;p&gt;
 Download and install all necessary components to select the correct board.
 &lt;/p&gt;
 
-&lt;img src=&quot;/assets/img/project/week13/arduino_custom_manager.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/arduino_custom_manager.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;h4&gt;Step 3&lt;/h4&gt;
 &lt;p&gt;
 Now we can select the version of our tinyduino, Stracciatella or Mint
 &lt;/p&gt;
 
 
-&lt;img src=&quot;/assets/img/project/week13/arduino_custom_board.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/arduino_custom_board.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 
 &lt;h4&gt;Arduino IDE&lt;/h4&gt;
 
-&lt;img src=&quot;/assets/img/project/week13/ArduinoProgram.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/ArduinoProgram.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;br /&gt;
 
 
@@ -974,10 +974,10 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 &lt;div class=&quot;row&quot;&gt;
 
 &lt;div class=&quot;col-xs-6  col-lg-6  &quot;&gt;
-&lt;img src=&quot;/assets/img/project/week13/reflow_own.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/reflow_own.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-xs-6  col-lg-6  &quot;&gt;
-&lt;img src=&quot;/assets/img/project/week13/reflow_own_1.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/reflow_own_1.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;h4&gt;Reflow Profile&lt;/h4&gt;
@@ -986,14 +986,14 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 
 &lt;/p&gt;
 
-&lt;img src=&quot;/assets/img/project/week13/reflow_profile.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/reflow_profile.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-xs-6  col-lg-6  &quot;&gt;
-&lt;img src=&quot;/assets/img/project/week13/reflow_test.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/reflow_test.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-xs-6  col-lg-6  &quot;&gt;
-&lt;img src=&quot;/assets/img/project/week13/shield_acc_1.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/shield_acc_1.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1003,7 +1003,7 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 
 &lt;h4&gt;Eagle Shield ADXL 343&lt;/h4&gt;
 &lt;h4&gt;Schematic&lt;/h4&gt;
-&lt;img src=&quot;/assets/img/project/week13/shield_eagle_sch.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/shield_eagle_sch.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 &lt;br /&gt;
 
@@ -1011,13 +1011,13 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-xs-4  col-lg-4  &quot;&gt;
-&lt;img src=&quot;/assets/img/project/week13/shield_eagle_br.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/shield_eagle_br.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-xs-4  col-lg-4  &quot;&gt;
-&lt;img src=&quot;/assets/img/project/week13/shield_acc.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/shield_acc.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-xs-4  col-lg-4  &quot;&gt;
-&lt;img src=&quot;/assets/img/project/week13/tiny_shield.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week13/tiny_shield.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
@@ -1229,13 +1229,13 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 
 &lt;!--&lt;h3&gt;References&lt;/h3&gt; --&gt;
 &lt;h3&gt;Download&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/project/week14/download/eagle.zip&quot;&gt;Tinyduino (Eagle) &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/project/week14/download/acc_shield.zip&quot;&gt;Accelerometer Shield (Eagle)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/download/eagle.zip&quot;&gt;Tinyduino (Eagle) &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week14/download/acc_shield.zip&quot;&gt;Accelerometer Shield (Eagle)&lt;/a&gt;&lt;/p&gt;
 &lt;/b&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 02 May 2017 14:00:00 +0200</pubDate>
-        <link>http://localhost:4000/project/week-13.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-13.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-13.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-13.html</guid>
         
       
       </item>
@@ -1249,84 +1249,84 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 &lt;p&gt;I had to modify the part to be able to create the mold in two parts.&lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/rhino.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/rhino1.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/rhino.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/rhino1.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;The model is exported as a stl, and this is opened in the program Modela Player 4, with this program we will create all the strategies necessary to create the mold in wax.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/molde.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc1.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/molde.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc1.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;I have created 4 strategy that are necessary to have the final molds, the first is to make a quick roughing and have a part of the piece, the following 3 are a finishing to have a finer and accurate finish of the piece.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/strategy_1.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/strategy.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/strategy_1.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/strategy.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;Another interesting part is that we can indicate the area of cut of each of the strategies we have decided, optimize the time of use of the machine and which parts will be more detailed.&lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cutting_area.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/area_part.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cutting_area.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/area_part.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;We chose the type of path that will follow the mill at the time of cutting the wax, I have selected the address x as it is the one that was more suitable for the piece I want to perform.&lt;/p&gt;
 &lt;p&gt;We chose the type of path that will follow the mill at the time of cutting the wax, I have selected the address x since it is the one that was more suitable for the piece I want to perform, the type of mill I use is a flat of 3.18, this for the initial roughing is perfect.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/path_type.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/tool.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/path_type.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/tool.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 
 &lt;!--
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc4.jpg&quot; alt='webpage jekyll'&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc3.jpg&quot; alt='webpage jekyll'&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc4.jpg&quot; alt='webpage jekyll'&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc3.jpg&quot; alt='webpage jekyll'&gt;
 &lt;/div&gt; --&gt;
 &lt;p&gt;I had the problem that when the mill started to get to the bottom of the mold, the problems started since the mold design was too deep for the mill and this was beginning to touch the spindle of the cnc, so I had to stop the whole process and try to make another design simpler since the week of this was exactly finished, I learned a lot of how to work and prepare the mold to be totally successful the final result.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc5.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc6.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc5.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc6.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;I have done the same procedure described above, but in this case I have taken into account the depth of the mold, this time I have been able to do it successfully.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc.PNG&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc7.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc.PNG&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc7.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;And finished the cutting process we proceed to create the mold with silicone, the silicone is use catalizator components when they are mixed both the curing process begins, for the mix catalizator to add in a proportion of 3%/ 5%&lt;/p&gt;
 &lt;p&gt;With the mixture made apply a layer of release agent so that when the silicone is cured it is easier to remove without breaking the mold, one of the most common problems that occur when we make any type of mold are the bubbles that are created inside and this can corner the final piece, so to avoid bubbles in the fablab has built a vacuum machine that with it we managed to expel most of the bubbles quickly.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc8.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc9.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc8.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc9.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;Once this process is finished we leave the mold in a place removed for 24 hours so that the silicone finishes to cure, and to be able to remove the mold without problems.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc10.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/cnc11.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc10.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/cnc11.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 
 &lt;h4&gt;Silicone mold from an object&lt;/h4&gt;
 &lt;p&gt;As I have had a failure in the first mold and the second one I have done is not very complex I have decided to work on an object that if I need for my &lt;strong&gt; final project &lt;/strong&gt;, it is a 3 output connector that is used in the glass bottles, has a special cap through which several tubes are connected, this eg to feed spirulina directly or for any experiment that requires the exchange of liquids.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/molde.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/molde1.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/molde.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/molde1.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;Being a one piece mold I have cut the silicon with a cutter, and I have done several tests since to obtain a decent piece it is necessary to go carefully so that the material fills all the interior of the mold and there are no bubbles inside it as we can see in the first image.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/molde3.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week12/molde4.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/molde3.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/molde4.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;We can see how the object is placed on the plug after several attempts, this fits perfectly and we save the cost that is about 80 euros.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;950px&quot; src=&quot;/assets/img/project/week12/molde5.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;950px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/molde5.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 
 &lt;h3&gt;Download&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/project/week12/download/reductor.stl&quot;&gt;Molde STL&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/img/project/week12/download/reductor.mpj&quot;&gt;Molde Modela Player M4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/download/reductor.stl&quot;&gt;Molde STL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week12/download/reductor.mpj&quot;&gt;Molde Modela Player M4&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 Apr 2017 14:00:00 +0200</pubDate>
-        <link>http://localhost:4000/project/week-12.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-12.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-12.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-12.html</guid>
         
       
       </item>
@@ -1357,35 +1357,35 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 &lt;p&gt;This week we worked on the final design of the machine, we decided to give it more height, since the one we had in the previous one was not high enough, besides making the whole frame mechanized, to avoid that it does not square and the pieces uncovered like in the test.&lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine2.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine3.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine2.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine3.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;The pieces have been glued with a carpenter's tail and we used some nails so that everything encaged in place.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine4.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine5.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine4.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine5.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;Gluing and aligning process we use tweezers so that everything is perfectly fixed in place.&lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine6.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine7.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine6.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine7.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Before gluing the final piece we have put the rails that have been cut with the cnc, this have been put with a few screws.&lt;/p&gt;
 
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine8.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine9.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine8.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine9.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;
 We used the grinder to undo the screws, since we have noticed that these were touching with the part of the X axis.
 &lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine10.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
-&lt;img width=&quot;450px&quot; src=&quot;/assets/img/project/week11/machine11.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine10.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;450px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/machine11.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
 &lt;/div&gt;
 &lt;h3&gt;First move&lt;/h3&gt;
 &lt;p&gt;For this test we send gcode directly from the arduino terminal.&lt;/p&gt;
@@ -1398,7 +1398,7 @@ We used the grinder to undo the screws, since we have noticed that these were to
 
 &lt;div class=&quot;col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 &quot;&gt;
 	&lt;video width=&quot;600&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
-  		&lt;source src=&quot;/assets/img/project/week11/video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  		&lt;source src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week11/video.mp4&quot; type=&quot;video/mp4&quot; /&gt;
   	Your browser does not support HTML5 video.
 	&lt;/video&gt;
 &lt;/div&gt;
@@ -1415,8 +1415,8 @@ We used the grinder to undo the screws, since we have noticed that these were to
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Mar 2017 13:00:00 +0100</pubDate>
-        <link>http://localhost:4000/project/week-11.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-11.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-11.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-11.html</guid>
         
       
       </item>
@@ -1439,7 +1439,7 @@ We used the grinder to undo the screws, since we have noticed that these were to
 
 &lt;div class=&quot;col-xs-12 &quot;&gt;
 
-&lt;img width=&quot;900px&quot; src=&quot;/assets/img/project/week10/i2c.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;img width=&quot;900px&quot; src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week10/i2c.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
 
 &lt;/div&gt;
 
@@ -1522,7 +1522,7 @@ We used the grinder to undo the screws, since we have noticed that these were to
 &lt;div class=&quot;col-xs-12 &quot;&gt;
 
 &lt;video width=&quot;800&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;
-  &lt;source src=&quot;/assets/img/project/week10/oled.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;/archives/2017/fablabbcn/students/271/assets/img/project/week10/oled.mp4&quot; type=&quot;video/mp4&quot; /&gt;
   Your browser does not support HTML5 video.
 &lt;/video&gt;
 &lt;/div&gt;
@@ -1534,8 +1534,8 @@ We used the grinder to undo the screws, since we have noticed that these were to
 
 </description>
         <pubDate>Sun, 05 Mar 2017 13:00:00 +0100</pubDate>
-        <link>http://localhost:4000/project/week-10.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/week-10.html</guid>
+        <link>http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-10.html</link>
+        <guid isPermaLink="true">http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/project/week-10.html</guid>
         
       
       </item>
