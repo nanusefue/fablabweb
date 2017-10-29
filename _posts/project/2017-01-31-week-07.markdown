@@ -112,8 +112,19 @@ For the assignment I have decided to create a modular lab, this lab is designed 
 Unfortunately the images of the assembly do not have them, to be able to ensablar everything perfectly I have used a rubber hammer and with the help of a companion in less than 20 minutes I have been able to assemble the whole module.</p>
 
 <div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week7/1cnc.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week7/2cnc.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week7/cnc6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week7/cnc7.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week7/lab.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week7/lab1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
 

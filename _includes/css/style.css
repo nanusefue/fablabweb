@@ -20,7 +20,8 @@
 		margin: 0;
 		padding: 0px;
 	} 
-
+	.top-buffer { margin-top:20px; }
+	
 body { 
 	background: #ffffff; 
 	margin: 0; 
