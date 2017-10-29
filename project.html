@@ -182,19 +182,83 @@ permalink: /project/
     <div class="col-xs-12">
         <img width="350px" src="{{ "/assets/img/project/pf/shieldBioreactor.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
         <img width="750px" src="{{ "/assets/img/project/pf/shieldbioreactorsch.png" | prepend: site.baseurl }}" alt='webpage jekyll'>      
-    </div>
+    </div>For programming I have used the arduino IDE, programming the sensors so that the information of the bioreactor is displayed in the Oled, I currently have a temperature sensor and a pH sensor.
     <div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
             <img width="450px" src="{{ "/assets/img/project/pf/shildb.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
             <img width="350px" src="{{ "/assets/img/project/week6/board.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>      
         </div>
-    <p>For the programming I have used the arduino IDE, progrando the sensors so that the information of the bioreactor is shown in the Oled.</p>
+    <p>For programming I have used the arduino IDE, programming the sensors so that the information of the bioreactor is displayed in the Oled, 
+        I currently have a temperature sensor and a pH sensor.</p>
     {% highlight c linenos %}
-    byte buffer[6];
-    #define ADXL_ADDR   0x53              // 7 bit I2C address for ADXL343 
-    int data;
+    #include <DigisparkOLED.h>
+        #include <Wire.h>
+        #include "img0_128x64c1.h"
+        #include "digistump_128x64c1.h"
+        #include <OneWire.h> 
+        #define ONEWIRE_BUSS 0
+        OneWire TemperatureSensor(ONEWIRE_BUSS);
+        #define SensorPin 0          //pH meter Analog output to Arduino Analog Input 0
+        int time=0;
+        int ledPin = 5;
+        int flag = 0;
+        
+        void setup() {
+        
+          oled.begin();
+          pinMode(ledsPin, OUTPUT); 
+        }
+        
+        void loop() {
+          
+          oled.fill(0xFF); //fill screen with color
+          delay(1000);
+          oled.clear(); //all black
+          delay(1000);
+          oled.setCursor(0, 0); //top left
+          oled.setFont(FONT8X16);
+          oled.println(F(getTemp()+ "C")); //wrap strings in F() to save RAM!
+          oled.clear(); //all black         
+          oled.setCursor(0, 0); //top left         
+          oled.setFont(FONT6X8);
+          oled.println(F(analogRead(SensorPin)+ "Ph")); //wrap strings in F() to save RAM!
+          delay(1000);
+          time+=1; 
+          if(time<900000)
+          { 
+            digitalWrite(ledsPin,HIGH);//on       
+          }
+          if(time>900000)
+          { 
+            digitalWrite(ledsPin,LOW);//off          
+            time=0; 
+          }
+        }
     
-    
-    
+        int getTemp()
+        {
+            byte i;
+            byte data[12];
+            int16_t raw;
+            float celsius;
+         
+            TemperatureSensor.reset();       // reset one wire buss
+            TemperatureSensor.skip();        // select only device
+            TemperatureSensor.write(0x44);   // start conversion
+         
+            delay(1000);                     // wait for the conversion
+         
+            TemperatureSensor.reset();
+            TemperatureSensor.skip();
+            TemperatureSensor.write(0xBE);   // Read Scratchpad
+            for ( i = 0; i < 9; i++) {       // 9 bytes
+              data[i] = TemperatureSensor.read();
+            }
+         
+            raw = (data[1] << 8) | data[0];
+            celsius = (float)raw / 16.0;
+            return celsius;
+        }
+
     {% endhighlight %}
         
 <h4>final process</h4>
@@ -221,10 +285,9 @@ permalink: /project/
 </div><! --/row -->
 <div class="row top-buffer"
 <h3>Download</h3>
-<p><a href="{{ "/assets/img/project/week3/download/kerf.dxf" | prepend: site.baseurl }}">Laser Kerf</a></p>
-<p><a href="{{ "/assets/img/project/week3/download/sello1.png" | prepend: site.baseurl }}">Engraving</a></p>
-<p><a href="{{ "/assets/img/project/week3/download/chip.dxf" | prepend: site.baseurl }}">Vinyl Cutter</a></p>
-<p><a href="{{ "/assets/img/project/week3/download/pressfit.SLDPRT" | prepend: site.baseurl }}">Pressfit</a></p>
+<p><a href="{{ "/assets/img/project/pf/3Dfile.zip" | prepend: site.baseurl }}">Construction file</a></p>
+<p><a href="{{ "/assets/img/project/pf/Bioreactor.zip" | prepend: site.baseurl }}">Electronics</a></p>
+
 
 </div>
 
