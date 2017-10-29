@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/archives/2017/fablabbcn/students/271/assets/ico/favicon.ico">
+
+    <title>FAB ACADEMY 2017 - Computer-controlled cutting [3]</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/archives/2017/fablabbcn/students/271/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/archives/2017/fablabbcn/students/271/assets/css/style.css" rel="stylesheet">
+    <link href="/archives/2017/fablabbcn/students/271/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/archives/2017/fablabbcn/students/271/assets/css/syntax.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="/archives/2017/fablabbcn/students/271/css/main.css">-->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/archives/2017/fablabbcn/students/271/">FAB ACADEMY 2017</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li ><a href="/archives/2017/fablabbcn/students/271/">HOME</a></li>
+      <!--  <li ><a href="/archives/2017/fablabbcn/students/271/blog/">BLOG</a></li> -->
+     <!--   <li ><a href="/archives/2017/fablabbcn/students/271/portfolio/">PORTFOLIO</a></li> -->
+        <li ><a href="/archives/2017/fablabbcn/students/271/about/">ABOUT</a></li>
+     <!--   <li ><a href="/archives/2017/fablabbcn/students/271/contact/">CONTACT</a></li>-->
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>Computer-controlled cutting [3]</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+
+<div class="container mt">
+    <div class="row">
+
+        <div class="col-lg-10 col-lg-offset-1 centered">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            
+            
+        </div>
+    </div> <!--/Carousel -->
+</div>
+
+
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="spacing"></div>
+
+            <h2>Assignment</h2>
+<ul>
+<li>
+	<h3>Make lasercutter test part(s), varying cutting settings and slot dimensions</h3>
+</li>
+<li>
+	<h3>Cut something on the vinylcutter</h3>
+</li>
+<li>
+	<h3>Design, make, and document a parametric press-fit construction kit,accounting for the 	lasercutter kerf, which can be assembled in multiple ways</h3>
+</li>
+</ul>
+
+<h2>Make lasercutter test part(s)</h2>
+
+<p>
+One of the more important parts is the offset create when cutting in laser, is very important calculate this offset, for making a right cut and all piece work together.
+In this exercise using Inkscape for creating a rule with different width.
+I make another rule in Qcad, is easier calculate correctly the different size and export to a rhino.
+Use Rhino for sending the file to a laser cut, and use especial software for change the power and velocity depending on the material cut.
+
+</p>
+<p><br /></p>
+<h4>Inskcape</h4>
+<div class="col-xs-12  ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/w3inkscape06.jpg" alt="webpage jekyll" />
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/w3inkscape07.JPG" alt="webpage jekyll" />
+</div>
+<div class="col-xs-12  ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/w3inkscape08.JPG" alt="webpage jekyll" />
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/w3inkscape10.JPG" alt="webpage jekyll" />
+</div>
+<h4>Qcad</h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/kerf.png" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/delta2.jpg" alt="webpage jekyll" />
+
+
+</div>
+<h4> Prepare laser cutting </h4>
+<p> To send the file to lasercut we use rihno, we export our file, in my case a dxf to rhino, and we prepare everything as if we print a normal file, this allows us to change several parameters of the laser printer, such as type of material to be used, measurement of the working area, etc. </p>
+<div class="col-xs-12  ">
+<img width="850px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/laser4.png" alt="webpage jekyll" />
+</div>
+<p>Windows printer for trotec laser cut</p>
+<div class="col-xs-12  ">
+<img width="850px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/laser3.png" alt="webpage jekyll" />
+</div>
+<p>Once the file has been sent, a special trotec program is opened, which is the one that communicates with the laser cutter, this one is in charge of managing all the parameters that we need, if we use a files by layers of colors, in this we can indicate different parameters according to the color of this, to cut carton we will use the black layer, with the following parameters that are predefined by the machine, power: 15 and speed: 1,4.</p>
+
+<div class="col-xs-12  ">
+<img width="850px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/laser5.png" alt="webpage jekyll" />
+</div>
+
+<div class="col-xs-12  ">
+
+<img width="850px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/laser6.png" alt="webpage jekyll" />
+</div>
+
+<p>To locate the beginning of the laser we will use the cursors that we have in the machine, if we will see on the trotec program a cross that indicates where the laser is located and this will be our point 0,0.</p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/cross.jpg" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/cross1.jpg" alt="webpage jekyll" />
+
+
+</div>
+
+<p>To calibrate the Z you must place the material in the machine and use the focusing tool, it is simply leaning on the laser and moving the platform until it touches and falls alone, this way we have the laser focused correctly.</p>
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/calibrate.jpg" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/calibrate1.jpg" alt="webpage jekyll" />
+
+
+</div>
+
+<!--
+<div class="col-xs-12  ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/laser.png" alt='webpage jekyll'>
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/laser1.png" alt='webpage jekyll'>
+</div>
+-->
+
+<h4>Final Test</h4>
+<div class="col-xs-12  ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/delta.jpg" alt="webpage jekyll" />
+</div>
+<p>It is important to do this test with different materials and configurations, to know how the laser cutter in them, in our case the carton so that the pieces fit perfectly we need to apply an <strong>kerf</strong> of 0.05mm, the thickness of the carton is 3.5 mm.
+</p>
+<div class="col-xs-12  ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/delta1.jpg" alt="webpage jekyll" />
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/carton.jpg" alt="webpage jekyll" />
+</div>
+
+<p><br /></p>
+<h2>Engraving test</h2>
+
+<p>
+When I finish the kerf test, I decide to see what possibilities to use other materials with the laser cutter, and I decided to use the laser to create my own label, I went to the art shop and bought a linoleum sheet.
+I created the logo in Inkscape and I configured the laser cutter to make an engraving. The result has been very well, to finish the project I created the block in wood and pasted the seal there.
+To achieve this seal, I have combined the parameters of the laser to create an engraving and thus avoid cutting the linoleum, it is important to perform several tests to see if the result is expected.
+</p>
+<p><br /></p>
+<h4>Inkscape logo and engraving </h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/stamp2.bmp" alt="webpage jekyll" />
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/stamp3.jpg" alt="webpage jekyll" />
+</div>
+<h4>Final result</h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/stamp.jpg" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/stamp1.jpg" alt="webpage jekyll" />
+</div>
+
+<h3>Cut something on the vinylcutter</h3>
+
+<p>
+I decide use a vinulcutter for make some expiriment, user the parafilm (<a href="http://www.sigmaaldrich.com/catalog/product/sigma/p7793?lang=es&amp;region=ES&amp;gclid=CjwKCAjwk4vMBRAgEiwA4ftLs0N6FpQd6T-vcggcMl0RkNJ1J64DOZdpPAHe6F8-trFLT546dLtuvxoC1fwQAvD_BwE">Link</a>)
+i trai make a microfluidics device, using paper and parafilm <a href="http://pubs.rsc.org/-/content/articlelanding/2016/ra/c5ra26255k/unauth#!divAbstract">example</a>.
+</p>
+<p> 
+The drawings made in Qcad and exported to the program of the vinyl cutter, first he performed a test on the paper to see if the design he realized was cut possible. In order to be able to cut the parafilm with the cutter and vinyl, it is necessary to prepare it, which will age our parafilm sheet in a DINA4 since the parafilm but there is no correction of the correction of movement in the cutter. Another point to take into account is the position and size of our sheet, as the machine will take the dimensions of DIN4, so the values are put manually. After several tests, achieved that the parafilm is perfectly cut. Once we have our design in the parafilm, we now apply heat on it and a sheet that absorbs the sea, so that the parafilm is stuck in it and sealed, giving it the shape that we have designed.
+</p>
+<p><br /></p>
+<h4>Design and initial test</h4>
+<p>Before sending the files to be cut we must load the material we are going to use:</p>
+<ul>
+<li>First we unlocked the roll that would press the paper against the machine.</li>
+<li>We use the white rollers to hold the paper always has to be inside the white lines that we see on the machine.</li>
+<li>We introduce the paper and lower the lever that presses this.</li>
+<li>The machine will detect the paper and ask us to indicate what type of format is (roll, sheet, etc).</li>
+<li>Depending on the format, the machine will automatically detect the measurements.</li>
+<li>Now we can use the program to send our file</li>
+</ul>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/load1.jpg" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/load2.jpg" alt="webpage jekyll" />
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/load3.jpg" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/load4.jpg" alt="webpage jekyll" />
+</div>
+<p>The program that is used is the <a href="https://www.rolanddgi.com/es/productos/software/roland-cutstudio">Roland Cut Studio</a>, this is the one that sends the file to the cutter, is very simple to use, if the measurements of the material are detected automatically, we can see the workspace where we have to accommodate our design, once we have accommodated the design we sent short.</p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/viny1.jpg" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/viny2.jpg" alt="webpage jekyll" />
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/vinilo.jpg" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/vinilo1.jpg" alt="webpage jekyll" />
+</div>
+
+<h4>Cut Design</h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/vinilo2.jpg" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/vinilo3.jpg" alt="webpage jekyll" />
+</div>
+
+<h4>Final design and test</h4>
+
+<div class="col-xs-12">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/vinilofinal.jpg" alt="webpage jekyll" />
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/vinilofinal1.jpg" alt="webpage jekyll" />
+
+<!--<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/vinilofinal2.jpg" alt='webpage jekyll'>-->
+</div>
+
+<h3>Parametric press-fit construction kit</h3>
+
+<p>
+I decided to use SolidWorks for creating a parametric model, the advantaged of using solidworks is more easily control all measurement and relate them, this way if change some measurement all design is modified.  
+</p>
+
+<p>for the design of pressfix as it is the first time I have used solid works I have found that there are two ways of being able to dimension a model and that it resizes by modifying a dimension value.
+The first one I found is linking dimension values, ie we can link the values of the dimensions, when we change a value all the dimensions that are linked to this automatically change.</p>
+
+<div class="col-xs-12 ">
+<img width="950px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/relationvalues.png" alt="webpage jekyll" />
+</div>
+<p>The second option is to create an xls file with which we will have all the values of our dimensions in which we can apply different equations for the correct calculation, I have attached a video of youtube which indicates how to perform this procedure.</p>
+<div class="col-xs-12 ">
+<img width="950px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/externalfile.png" alt="webpage jekyll" />
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8SW-UZy1QMA" frameborder="0" allowfullscreen=""></iframe>
+
+<p><br /></p>
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/pressfit1.png" alt="webpage jekyll" />
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/pressfit2.png" alt="webpage jekyll" />
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/pressfit3.png" alt="webpage jekyll" />
+
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/pressfit4.png" alt="webpage jekyll" />
+</div>
+<h4>Final result</h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/pressfit5.jpg" alt="webpage jekyll" />
+<img width="450px" src="/archives/2017/fablabbcn/students/271/assets/img/project/week3/pressfit6.jpg" alt="webpage jekyll" />
+</div>
+
+<!--<h3>Conclusions</h3>-->
+
+<h3>References</h3>
+<p><a href="https://www.epiloglaser.es/">Laser Cut</a></p>
+<p><a href="https://www.rolanddga.com/es-la/productos/plotter-de-corte">Vinyl Cuttter</a></p>
+<h3>Download</h3>
+<p><a href="/archives/2017/fablabbcn/students/271/assets/img/project/week3/download/kerf.dxf">Laser Kerf</a></p>
+<p><a href="/archives/2017/fablabbcn/students/271/assets/img/project/week3/download/sello1.png">Engraving</a></p>
+<p><a href="/archives/2017/fablabbcn/students/271/assets/img/project/week3/download/chip.dxf">Vinyl Cutter</a></p>
+<p><a href="/archives/2017/fablabbcn/students/271/assets/img/project/week3/download/pressfit.SLDPRT">Pressfit</a></p>
+
+
+
+        </div>
+      <!--  <div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Details</h4>
+            <div class="hline"></div>
+            <p><b>Date:</b> Jan 27, 2017</p>
+            <p><b>Author:</b> Esteban Martin Gimenez</p>
+            <p><b>Categories:</b> project</p>
+            <p><b>Tagged:</b> Flat, UI, Development</p>
+            <p><b>Client:</b> Wonder Corp.</p>
+            <p><b>Website:</b> <a href="http://blacktie.co">http://blacktie.co</a></p> 
+        </div>-->
+    </div><! --/row -->
+</div><! --/container -->
+	 
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        <h3></h3>
+        <div class="recentitems portfolio">
+            
+        </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+</div><!--/Portfoliowrap -->
+
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+           <!-- <div class="col-lg-4">
+                <h4>About</h4>
+                <div class="hline-w"></div>
+                <p></p>
+            </div> -->
+            <div class="col-lg-4">
+                <p>
+                    
+                        <a target="_blank" href="https://github.com/nanusefue" class="btn-social btn-outline"><i class="fa fa-github"></i></a>
+                    
+                        <a target="_blank" href="https://www.instagram.com/nanusefue/" class="btn-social btn-outline"><i class="fa fa-instagram"></i></a>
+                    
+                </p>
+            </div>
+            <div class="col-lg-8" style="color:white">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+                    <br />This work is licensed under a 
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
+     
+            </div> 
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/archives/2017/fablabbcn/students/271/assets/js/bootstrap.min.js"></script>
+<script src="/archives/2017/fablabbcn/students/271/assets/js/retina-1.1.0.js"></script>
+<script src="/archives/2017/fablabbcn/students/271/assets/js/jquery.hoverdir.js"></script>
+<script src="/archives/2017/fablabbcn/students/271/assets/js/jquery.hoverex.min.js"></script>
+<script src="/archives/2017/fablabbcn/students/271/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/archives/2017/fablabbcn/students/271/assets/js/jquery.isotope.min.js"></script>
+<script src="/archives/2017/fablabbcn/students/271/assets/js/custom.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90860442-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+    </body>
+</html>
