@@ -12,10 +12,350 @@ carousel:
 #- single01.jpg
 #- single02.jpg
 #- single03.jpg
-tagged: Flat, UI, Development
-client: Wonder Corp.
-website: http://blacktie.co
 ---
 
-
 <h2>Assignment</h2>
+<h3>Write an application that interfaces with an input and/or output device that you made, comparing as many tool options as possible.</h3>
+<p>for this week I created a board that emulates a keyboard, and also you can use any material that is moderately conductive to activate the keyboard keys, is a simpler version of MakeyMakey, to do this I use an Atinny44 and a library that emulates the usb port v-usb, which I have already used the other assignaments.</p>
+<p>This board is done on two sides, to be able to do this in the cnc, it is necessary to have a pair of guides and that the design is completely centered in our image, but the faces do not finish squaring.</p>
+<div class="row">
+    <div class="col-xs-12 ">
+        <img width="300px"  src="{{ "/assets/img/project/week16/eagle3.png" | prepend: site.baseurl }}" alt="">
+        <img width="300px"  src="{{ "/assets/img/project/week16/eagle2.png" | prepend: site.baseurl }}" alt="">
+        <img width="300px"  src="{{ "/assets/img/project/week16/eagle.png" | prepend: site.baseurl }}" alt="">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 ">
+        <img width="950px"  src="{{ "/assets/img/project/week16/eagle4.png" | prepend: site.baseurl }}" alt="">
+    </div>
+</div>
+<p>In these two images we can see how it is mapped the pins of the Attiny and the keys that I have decided to use for each output pin.</p>
+
+<div class="row">
+    <div class="col-xs-12 ">
+        <img width="450px"  src="{{ "/assets/img/project/week16/portmapping.jpg" | prepend: site.baseurl }}" alt="">
+        <img width="450px"  src="{{ "/assets/img/project/week16/keymapping.jpg" | prepend: site.baseurl }}" alt="">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 ">
+        <img width="450px"  src="{{ "/assets/img/project/week16/board.jpg" | prepend: site.baseurl }}" alt="">
+        <img width="450px"  src="{{ "/assets/img/project/week16/board1.jpg" | prepend: site.baseurl }}" alt="">
+    </div>
+</div>
+<p>As I said before I used the library v-usb that allows to emulate a usb 2.0 connector and this ends emuladon a keyboard, we see in the code that there is a part where we indicate which keys we want to map the keyboard, changing these values we can use other keys.</p>
+<div class="row">
+    <div class="col-xs-12 ">
+    {% highlight c++ linenos %}
+#include <avr/io.h>
+#include <avr/wdt.h>
+#include <avr/eeprom.h>
+#include <avr/interrupt.h>
+#include <avr/pgmspace.h>
+#include <util/delay.h>
+#include <stdlib.h>
+#include "usbdrv.h"
+#include "oddebug.h"
+
+static uchar    reportBuffer[2];    /* buffer for HID reports */
+static uchar    idleRate;           /* in 4 ms units */
+static uchar    reportCount=0;		/* current report */
+static uchar    keypad[7]={0x00,0x4F,0x50,0x51,0x52,0x2C,0x28};
+
+PROGMEM const char usbHidReportDescriptor[USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH] = { /* USB report descriptor */
+    0x05, 0x01,                    // USAGE_PAGE (Generic Desktop)
+    0x09, 0x06,                    // USAGE (Keyboard)
+    0xa1, 0x01,                    // COLLECTION (Application)
+    0x05, 0x07,                    //   USAGE_PAGE (Keyboard)
+    0x19, 0xe0,                    //   USAGE_MINIMUM (Keyboard LeftControl)
+    0x29, 0xe7,                    //   USAGE_MAXIMUM (Keyboard Right GUI)
+    0x15, 0x00,                    //   LOGICAL_MINIMUM (0)
+    0x25, 0x01,                    //   LOGICAL_MAXIMUM (1)
+    0x75, 0x01,                    //   REPORT_SIZE (1)
+    0x95, 0x08,                    //   REPORT_COUNT (8)
+    0x81, 0x02,                    //   INPUT (Data,Var,Abs)
+    0x95, 0x01,                    //   REPORT_COUNT (1)
+    0x75, 0x08,                    //   REPORT_SIZE (8)
+    0x25, 0x65,                    //   LOGICAL_MAXIMUM (101)
+    0x19, 0x00,                    //   USAGE_MINIMUM (Reserved (no event indicated))
+    0x29, 0x65,                    //   USAGE_MAXIMUM (Keyboard Application)
+    0x81, 0x00,                    //   INPUT (Data,Ary,Abs)
+    0xc0                           // END_COLLECTION
+};
+/*
+    0x4F    Keyboard RightArrow
+    0x50    Keyboard LeftArrow
+    0x51    Keyboard DownArrow
+    0x52    Keyboard UpArrow
+    0x28    Keypad ENTER
+    0x2C    Keyboard Spacebar
+*/ 
+static void buildReport(uchar key)
+{
+    if(key!=0){
+        reportBuffer[0] = 0;    /* no modifiers */
+        reportBuffer[1] = keypad[key];
+    }else
+    {
+        reportBuffer[1] =0x00;
+    }
+}
+
+static uchar keyPress(void) {
+    reportCount++;
+    uchar  i, mask, x;
+    x=PINA;
+    
+    mask = 1 << 1;
+    for (i = 0; i < 7; ++i)
+    {  
+        if((x & mask) == 0)
+                    return i+1;                        
+        mask <<= 1 ;
+    }
+    return 0;   
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ------------------------ interface to USB driver ------------------------ */
+/* -------------------------------------------------------------------------------- */
+
+uchar	usbFunctionSetup(uchar data[8])
+{
+usbRequest_t    *rq = (void *)data;
+
+    usbMsgPtr = reportBuffer;
+    if((rq->bmRequestType & USBRQ_TYPE_MASK) == USBRQ_TYPE_CLASS){    /* class request type */
+        if(rq->bRequest == USBRQ_HID_GET_REPORT){  /* wValue: ReportType (highbyte), ReportID (lowbyte) */
+            buildReport(keyPress());
+            return sizeof(reportBuffer);
+        }else if(rq->bRequest == USBRQ_HID_GET_IDLE){
+            usbMsgPtr = &idleRate;
+            return 1;
+        }else if(rq->bRequest == USBRQ_HID_SET_IDLE){
+            idleRate = rq->wValue.bytes[1];
+        }
+    }else{
+        /* no vendor specific requests implemented */
+    }
+	return 0;
+}
+/* ------------------------------------------------------------------------- */
+/* --------------------------------- main ---------------------------------- */
+/* ------------------------------------------------------------------------- */
+int main(void)
+{
+  PORTA=0x00; //banana
+ 
+    uchar   i,key,lastKey,keyDidChange=0,newkeyDidChange=0;
+    usbInit();
+    usbDeviceDisconnect();  /* enforce re-enumeration, do this while interrupts are disabled! */
+    while(--i){             /* fake USB disconnect for > 250 ms */
+        wdt_reset();
+    }
+    usbDeviceConnect();
+    wdt_enable(WDTO_1S);
+    sei();
+    for(;;){    /* main event loop */
+        wdt_reset();
+        usbPoll();
+        key= keyPress();
+         if(lastKey != key){
+            lastKey = key;
+            keyDidChange = 1;
+        }
+
+    	if(keyDidChange && usbInterruptIsReady()){ /* we can send another key */
+            keyDidChange = 0;
+        	buildReport(lastKey);
+           	usbSetInterrupt(reportBuffer, sizeof(reportBuffer));
+        }
+   }
+   	return 0;
+}
+   {% endhighlight %}
+
+</div>
+</div>
+<!--
+<div class="row">
+    <div class="col-xs-12 ">
+        <img width="450px"  src="{{ "/assets/img/project/week16/manzana.jpg" | prepend: site.baseurl }}" alt="">
+        <img width="450px"  src="{{ "/assets/img/project/week16/Banana.jpg" | prepend: site.baseurl }}" alt="">
+    </div>
+</div>
+-->
+
+<p>There are infinities of framewoks to create interfaces and connect them with any type of board, my two favorites are Processing and OpenFrameworks, both with very versatile, but the difference is great, OF is programmed in C ++ so we must compile our code for different architectures that we work, in the case processing is based on java that it is possible to execute it in a virtual machine, which allows us to execute our code in any machine without compiling it.</p>
+<p>That's why I decided to work with <strong>Processing.</strong></p>
+<div class="row  top-buffer">
+    <div class="col-xs-12 ">
+        <img width="450px"  src="{{ "/assets/img/project/week16/of.jpg" | prepend: site.baseurl }}" alt="">
+        <img width="450px"  src="{{ "/assets/img/project/week16/processing00.png" | prepend: site.baseurl }}" alt="">
+    </div>
+</div>
+<div class="row  top-buffer">
+    <div class="col-xs-12 ">
+  {% highlight c++ linenos %}
+int size = 15; 
+float xpos, ypos; // Position  Balls 
+float xspeed = random(5,6); //  Balls speed X
+float yspeed = random(0,4); // Balls speed Y
+int player1=0;
+int player2=0;
+int playerpos1;
+int playerpos2;
+PFont f;                           // STEP 1 Declare PFont variable
+
+
+void setup()
+{
+     size(640, 400);
+     noStroke();
+     frameRate(30);
+     smooth();
+     playerpos1 =height/2;
+     playerpos2 =height/2;
+     xpos = 45;
+     ypos = playerpos1;
+    f = createFont("Arial",16,true); // STEP 2 Create Font
+ }
+ 
+void draw()
+ {
+   
+      
+   
+  
+ 
+    background(80);
+      textFont(f,46);                  // STEP 3 Specify font to be used
+             text(player2+"|"+player1,(width/2)-50,50); 
+     xspeed *= 1.001;
+     xpos += xspeed;
+     ypos += yspeed;
+    
+
+ if (ypos > height-size/2 || ypos < 0+size/2) 
+ {
+     yspeed *= -1;
+ }
+ 
+ if ( xpos <= 30+size/2) {
+     if (ypos > playerpos1-50 && ypos < playerpos1+50){
+         xspeed *= -1;
+         yspeed += (ypos-playerpos1)/5;
+     }
+ }
+ 
+ if (xpos <= 0){
+       player1 += 1;
+       if (player1 <= 6){
+             xpos = 50;
+             ypos = playerpos1;
+             xspeed = random(5,6);
+             //xspeed *= -1;
+             yspeed = 0; 
+             textFont(f,46);                  // STEP 3 Specify font to be used
+             text(player2+"|"+player1,(width/2)-50,50); 
+       }
+      
+ }
+
+ if ( xpos >= width-30-size/2) {
+     if (ypos > playerpos2-50 && ypos < playerpos2+50){
+         xspeed *= -1;
+         yspeed += (ypos-playerpos2)/5;
+     }
+ }
+ 
+ if (xpos >= width){
+ player2 +=1 ;
+ if (player2 <= 6){
+ xpos = width-50;
+ ypos = playerpos2;
+ xspeed = -random(5,6);
+ yspeed = 0; 
+       textFont(f,46);                  // STEP 3 Specify font to be used
+             text(player2+"|"+player1,(width/2)-50,50); 
+ }
+ 
+ }
+
+ 
+ ellipse(xpos, ypos, size, size);
+ rect (10, playerpos1-50,20,100);
+ rect (width-30, playerpos2-50,20,100);
+ 
+ if (keyPressed) {
+       if (keyCode == LEFT) {
+           if (playerpos1 >=50)
+                 playerpos1 = playerpos1 - 8;
+       }
+       if (keyCode == RIGHT)
+       {
+          if (playerpos1 <=height-50)
+                 playerpos1 = playerpos1 + 8;
+       }
+ }
+ if (keyPressed) {
+         if (keyCode == UP) 
+        {
+         if (playerpos2 >=50)
+             playerpos2 = playerpos2 - 8;
+         }
+         if (keyCode == DOWN){
+             if (playerpos2 <=height-50)
+                   playerpos2 = playerpos2 + 8;
+             }
+         }
+if (player1 >=6) {
+    player1=5;
+        background(80);
+
+    textFont(f,46);                  // STEP 3 Specify font to be used
+   text(player2+"|"+str(player1),(width/2)-50,50); 
+   delay(10000);
+       player1=0;
+       player2=0;
+ }
+ if (player2 >=6) {
+ player2=5;
+     background(80);
+
+        textFont(f,46);                  // STEP 3 Specify font to be used
+             text(str(player2)+"|"+player1,(width/2)-50,50); 
+   delay(10000);
+   player1=0;
+   player2=0;
+
+ }  
+         }
+   {% endhighlight %}
+
+</div>
+<div class="row">
+<p>When joining my board with this game, which is the Pong, instead of using the keyboard, I have decided that each competitor should play with a piece of fruit, and I have called it BananaPong.</p>
+<p>The game consists of touching the corresponding steal to raise or lower the white line, the dough is to climb and the banana to go down.</p>
+<p>Also the code is modified so that it only detects the pressing of one of the keys, being able to interfere in the game of the opponent, but also being able to harm oneself.</p>
+<div class="col-xs-12  col-lg-12">
+        <img width="450px"  src="{{ "/assets/img/project/week16/Bananapong.png" | prepend: site.baseurl }}" alt="">
+                <img width="500px"  src="{{ "/assets/img/project/week16/fruit.jpg" | prepend: site.baseurl }}" alt="">
+
+     </div>
+     <div class="col-xs-12 ">
+
+<video width="800" controls loop>
+  <source src="{{ "/assets/img/project/week16/video.mp4" | prepend: site.baseurl }}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+</div>
+
+</div>
+<h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week16/download/firmware.zip" | prepend: site.baseurl }}">Firmware</a></p>
+<p><a href="{{ "/assets/img/project/week16/download/PoiMak3y.zip" | prepend: site.baseurl }}">Electronics</a></p>
+
