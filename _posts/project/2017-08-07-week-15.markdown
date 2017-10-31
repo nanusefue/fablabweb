@@ -61,7 +61,7 @@ website: http://blacktie.co
 
 
 <div class="col-xs-12 top-buffer">
-{% highlight c linenos %
+{% highlight c linenos %}
 void flash() {
  
    clear(led_port, led_pin);
