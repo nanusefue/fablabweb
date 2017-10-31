@@ -65,7 +65,7 @@ website: http://blacktie.co
 <img width="450px" src="{{ "/assets/img/project/week12/cnc7.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
-<p>And finished the cutting process we proceed to create the mold with silicone, the silicone is use catalizator components when they are mixed both the curing process begins, for the mix catalizator to add in a proportion of 3%/ 5%</p>
+<p>And finished the cutting process we proceed to create the mold with silicone <a href="http://www.formx.es/products/siliconas/formsil-silicona/index.php">Formsil 25</a>, the silicone is use catalizator components when they are mixed both the curing process begins, for the mix catalizator to add in a proportion of 3%/ 5%</p>
 <p>With the mixture made apply a layer of release agent so that when the silicone is cured it is easier to remove without breaking the mold, one of the most common problems that occur when we make any type of mold are the bubbles that are created inside and this can corner the final piece, so to avoid bubbles in the fablab has built a vacuum machine that with it we managed to expel most of the bubbles quickly.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/cnc8.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -79,10 +79,138 @@ website: http://blacktie.co
 
 <h4>Silicone mold from an object</h4>
 <p>As I have had a failure in the first mold and the second one I have done is not very complex I have decided to work on an object that if I need for my <strong> final project </strong>, it is a 3 output connector that is used in the glass bottles, has a special cap through which several tubes are connected, this eg to feed spirulina directly or for any experiment that requires the exchange of liquids.</p>
+
+
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/molde.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="450px" src="{{ "/assets/img/project/week12/molde1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+<p>He used the liquid plastic, which is the Smooth-cast-305 version, which has special properties indicated in the table below.</p>
+
+<table class="table-striped table table-bordered" style="width: 80%"><tbody>
+	<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Mix Ratio By Volume</span>
+		</td>
+		<td>1A:1B</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Mix Ratio By Weight</span>
+		</td>
+		<td>100A:90B</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Specific Gravity</span>
+		</td>
+		<td>1.05&thinsp;g/cc</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Specific Volume</span>
+		</td>
+		<td>26.4&thinsp;cu. in./lb.</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Color</span>
+		</td>
+		<td>White</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Pot Life</span>
+		</td>
+		<td>7&thinsp;minutes</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Cure Time</span>
+		</td>
+		<td>30&thinsp;minutes</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Tensile Strength</span>
+		</td>
+		<td>3,000&thinsp;psi</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Elongation @ Break</span>
+		</td>
+		<td>7.5&thinsp;%</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Compressive Modulus</span>
+		</td>
+		<td>44,900&thinsp;psi</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Shrinkage</span>
+		</td>
+		<td>0.0065&thinsp;in. / in.</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Tensile Modulus</span>
+		</td>
+		<td>134,000&thinsp;psi</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Flexural Strength</span>
+		</td>
+		<td>4,000&thinsp;psi</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Flexural Modulus</span>
+		</td>
+		<td>118,000&thinsp;psi</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Compressive Strength</span>
+		</td>
+		<td>3,800&thinsp;psi</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Shore Hardness</span>
+		</td>
+		<td>70&thinsp;D</td>
+	</tr>
+		<tr class="primary-trim">
+		<td class="spec-label">
+			<span class="bold-label">Heat Deflection Temp</span>
+		</td>
+		<td>120&thinsp;°F</td>
+	</tr>
+			<tr>
+			<td class="spec-label">
+				<span class="bold-label">Mixed Viscosity</span>
+			</td>
+			<td>
+			80&thinsp;cps			</td>
+	</tr></tbody></table>
+
+<div class="col-xs-12 ">
+<img width="850px" src="{{ "/assets/img/project/week12/platic0.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+
+</div>
+<div class="col-xs-12 ">
+
+<img width="850px" src="{{ "/assets/img/project/week12/plastic.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12 ">
+<img width="450px" src="{{ "/assets/img/project/week12/plastic2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="450px" src="{{ "/assets/img/project/week12/palstic3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
 <p>Being a one piece mold I have cut the silicon with a cutter, and I have done several tests since to obtain a decent piece it is necessary to go carefully so that the material fills all the interior of the mold and there are no bubbles inside it as we can see in the first image.</p>
 <div class="col-xs-12 ">
 <img width="450px" src="{{ "/assets/img/project/week12/molde3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
@@ -94,5 +222,6 @@ website: http://blacktie.co
 </div>
 
 <h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week12/download/soporter.zip" | prepend: site.baseurl }}">Molde 3D</a></p>
 <p><a href="{{ "/assets/img/project/week12/download/reductor.stl" | prepend: site.baseurl }}">Molde STL</a></p>
 <p><a href="{{ "/assets/img/project/week12/download/reductor.mpj" | prepend: site.baseurl }}">Molde Modela Player M4</a></p>
