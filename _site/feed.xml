@@ -5,8 +5,8 @@
     <description>Fab Academey 2017 -Esteban Martin Gimenez</description>
     <link>http://archive.fabacademy.org/</link>
     <atom:link href="http://archive.fabacademy.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 31 Oct 2017 09:45:20 +0100</pubDate>
-    <lastBuildDate>Tue, 31 Oct 2017 09:45:20 +0100</lastBuildDate>
+    <pubDate>Tue, 31 Oct 2017 09:53:49 +0100</pubDate>
+    <lastBuildDate>Tue, 31 Oct 2017 09:53:49 +0100</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -912,6 +912,17 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;p&gt;Program&lt;/p&gt;
+&lt;p&gt;it uses two pins with the serial protocol, and when the value compares in the main program with the id of the node that we have defined, if coindide enters the si and calls the flash function again and writes by console &quot;Task&quot; + the id of the node.&lt;/p&gt;
+&lt;div class=&quot;col-xs-12 top-buffer&quot;&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt; &lt;span class=&quot;n&quot;&gt;get_char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serial_pins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serial_pin_in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;/div&gt;
 &lt;div class=&quot;col-xs-12 top-buffer&quot;&gt;
 
 

@@ -167,6 +167,17 @@
 
 </div>
 <p>Program</p>
+<p>it uses two pins with the serial protocol, and when the value compares in the main program with the id of the node that we have defined, if coindide enters the si and calls the flash function again and writes by console "Task" + the id of the node.</p>
+<div class="col-xs-12 top-buffer">
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre> <span class="n">get_char</span><span class="p">(</span><span class="o">&amp;</span><span class="n">serial_pins</span><span class="p">,</span> <span class="n">serial_pin_in</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">chr</span><span class="p">);</span>
+      <span class="n">flash</span><span class="p">();</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">chr</span> <span class="o">==</span> <span class="n">node_id</span><span class="p">)</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+</div>
 <div class="col-xs-12 top-buffer">
 
 

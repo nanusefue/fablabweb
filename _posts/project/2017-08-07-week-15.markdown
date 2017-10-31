@@ -82,6 +82,14 @@ void flash() {
 {% endhighlight %}
 </div>
 <p>Program</p>
+<p>it uses two pins with the serial protocol, and when the value compares in the main program with the id of the node that we have defined, if coindide enters the si and calls the flash function again and writes by console "Task" + the id of the node.</p>
+<div class="col-xs-12 top-buffer">
+{% highlight c linenos %}
+ get_char(&serial_pins, serial_pin_in, &chr);
+      flash();
+      if (chr == node_id)
+{% endhighlight %}
+</div>
 <div class="col-xs-12 top-buffer">
 
 {% highlight c linenos %}
