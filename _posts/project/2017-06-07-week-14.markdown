@@ -116,5 +116,6 @@ SUPER SAP® ONE System is the industry leader for USDA BioPreferredSM   certifie
 <p><a href="https://entropyresins.com/">Entropy Resins</a></p>
 
 <h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week14/download/drone.zip" | prepend: site.baseurl }}">3D Model</a></p>
 <p><a href="{{ "/assets/img/project/week14/download/manual.pdf" | prepend: site.baseurl }}">Manual Resin</a></p>
 <p><a href="{{ "/assets/img/project/week14/download/technical.pdf" | prepend: site.baseurl }}">Spec Resin</a></p>

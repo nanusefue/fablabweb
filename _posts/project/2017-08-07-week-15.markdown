@@ -45,10 +45,24 @@ website: http://blacktie.co
 <img width="450px" src="{{ "/assets/img/project/week15/nodo_out.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 <p>The program is the same for all (bridge / nodes), we must only change the variable of line 33, by the value 0,1 or 2.</p>
+<p>I have also modified the program, I have changed the name of the Node by Task, and I have changed the type of flash for another longer and with different blink time.</p>
 
 <div class="col-xs-12 ">
 {% highlight c linenos %}
-	#define node_id '0'
+   #define node_id '0'
+{% endhighlight %}
+</div>
+
+<div class="col-xs-12 ">
+{% highlight c linenos %}
+   #define led_delay2() _delay_ms(500) // LED flash delay
+{% endhighlight %}
+</div>
+
+
+<div class="col-xs-12 ">
+{% highlight c linenos %}
+   static const char message[] PROGMEM = "Task "; //before "Node"
 {% endhighlight %}
 </div>
 <p>Program</p>
@@ -79,6 +93,7 @@ website: http://blacktie.co
 #define bit_delay() _delay_us(bit_delay_time) // RS232 bit delay
 #define half_bit_delay() _delay_us(bit_delay_time/2) // RS232 half bit delay
 #define led_delay() _delay_ms(100) // LED flash delay
+#define led_delay2() _delay_ms(500) // LED flash delay
 
 #define led_port PORTB
 #define led_direction DDRB
@@ -211,8 +226,13 @@ void put_string(volatile unsigned char *port, unsigned char pin, PGM_P str) {
 void flash() {
  
    clear(led_port, led_pin);
-   led_delay();
+   led_delay2();
    set(led_port, led_pin);
+   led_delay();
+   clear(led_port, led_pin);
+   led_delay2();
+   set(led_port, led_pin);
+
    }
 
 int main(void) {
@@ -229,7 +249,7 @@ int main(void) {
       flash();
       if (chr == node_id) {
          output(serial_direction, serial_pin_out);
-         static const char message[] PROGMEM = "node ";
+         static const char message[] PROGMEM = "Task ";
          put_string(&serial_port, serial_pin_out, (PGM_P) message);
          put_char(&serial_port, serial_pin_out, chr);
          put_char(&serial_port, serial_pin_out, 10); // new line
