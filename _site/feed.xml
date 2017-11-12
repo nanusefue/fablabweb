@@ -5,8 +5,8 @@
     <description>Fab Academey 2017 -Esteban Martin Gimenez</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 12 Nov 2017 15:07:51 +0100</pubDate>
-    <lastBuildDate>Sun, 12 Nov 2017 15:07:51 +0100</lastBuildDate>
+    <pubDate>Sun, 12 Nov 2017 16:43:07 +0100</pubDate>
+    <lastBuildDate>Sun, 12 Nov 2017 16:43:07 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -2232,6 +2232,18 @@ We used the grinder to undo the screws, since we have noticed that these were to
 
 &lt;p&gt;In the previous assignment I have also connected a servo motor, in this case I decided to try with an OLED display, since the 8k allowed me to program all the necessary code for it to work.&lt;/p&gt;
 
+&lt;h5&gt;Schematic&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/project/week13/schematic_low.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;&lt;/p&gt;
+&lt;h5&gt;Eagle/PCB&lt;/h5&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-xs-6  col-lg-6  &quot;&gt;
+&lt;img src=&quot;/assets/img/project/week13/board.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-xs-6  col-lg-6  &quot;&gt;
+&lt;img src=&quot;/assets/img/project/week13/tinyduino.jpg&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;h3&gt;I2C Protocol&lt;/h3&gt;
 &lt;p&gt;I2C requires a mere two wires, like asynchronous serial, but those two wires can support up to 1008 slave devices. Also, unlike SPI, I2C can support a multi-master system, allowing more than one master to communicate with all devices on the bus (although the master devices can’t talk to each other over the bus and must take turns using the bus lines).&lt;/p&gt;
 
@@ -2254,6 +2266,15 @@ We used the grinder to undo the screws, since we have noticed that these were to
 &lt;li&gt;#define SCL_PORT        PORTA           // SCL Port A&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
+
+&lt;div class=&quot;col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 &quot;&gt;
+
+&lt;img width=&quot;600px&quot; src=&quot;/assets/img/project/week10/oled.png&quot; alt=&quot;webpage jekyll&quot; /&gt;
+&lt;br /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-xs-12 &quot;&gt;
+&lt;br /&gt;
+
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -2320,6 +2341,8 @@ We used the grinder to undo the screws, since we have noticed that these were to
 
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;/div&gt;
+
 &lt;p&gt;Here a video of how the oled works after programming it, the plate is fed through the USB port.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
 
@@ -2332,6 +2355,8 @@ We used the grinder to undo the screws, since we have noticed that these were to
 &lt;h3&gt;Referens&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.avrfreaks.net/forum/i2c-library-attiny84&quot;&gt;I2C Attiny&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf&quot;&gt;DataSheet Oled&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&quot;https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr/libraries/DigisparkOLED&quot;&gt;DigisparkOLED Library&lt;/a&gt;&lt;/p&gt;
 
 </description>

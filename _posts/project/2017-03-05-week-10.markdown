@@ -23,6 +23,18 @@ website: http://blacktie.co
 
 <p>In the previous assignment I have also connected a servo motor, in this case I decided to try with an OLED display, since the 8k allowed me to program all the necessary code for it to work.</p>
 
+<h5>Schematic</h5>
+<img src="{{ "/assets/img/project/week13/schematic_low.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<h5>Eagle/PCB</h5>
+
+<div class="row">
+<div class="col-xs-6  col-lg-6  ">
+<img src="{{ "/assets/img/project/week13/board.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-6  col-lg-6  ">
+<img src="{{ "/assets/img/project/week13/tinyduino.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+</div>
 <h3>I2C Protocol</h3>
 <p>I2C requires a mere two wires, like asynchronous serial, but those two wires can support up to 1008 slave devices. Also, unlike SPI, I2C can support a multi-master system, allowing more than one master to communicate with all devices on the bus (although the master devices can’t talk to each other over the bus and must take turns using the bus lines).</p>
 
@@ -45,6 +57,15 @@ website: http://blacktie.co
 <li>#define SCL_PORT        PORTA           // SCL Port A</li>
 </ul>
 </p>
+
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+
+<img width="600px" src="{{ "/assets/img/project/week10/oled.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<br>
+</div>
+<div class="col-xs-12 ">
+<br>
+
 {% highlight c++ linenos %}
 
 #include <DigisparkOLED.h>
@@ -80,6 +101,7 @@ void loop() {
 
 }
 {% endhighlight %}
+</div>
 
 <p>Here a video of how the oled works after programming it, the plate is fed through the USB port.</p>
 <div class="col-xs-12 ">
@@ -95,6 +117,8 @@ void loop() {
 
 
 <p><a href="http://www.avrfreaks.net/forum/i2c-library-attiny84">I2C Attiny</a></p>
+<p><a href="https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf">DataSheet Oled</a></p>
+
 <p><a href="https://github.com/digistump/DigistumpArduino/tree/master/digistump-avr/libraries/DigisparkOLED">DigisparkOLED Library</a></p>
 
 
