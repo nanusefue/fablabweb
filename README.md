@@ -5,9 +5,7 @@
 
 This is the repository that contains all the work done at the Fab Academy of 2017 at FabLab Barcelona:
 
-> http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/ [Archive FabAcademy 2017]
+> [Archive FabAcademy 2017](http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/)
 
-> https://nanusefue.github.io/fablabweb/  [Git Page FabAcademy 2017]
+> [Git Page FabAcademy 2017](https://nanusefue.github.io/fablabweb/)
 
-http://github.com - automatic!
-[GitHub](http://github.com)
