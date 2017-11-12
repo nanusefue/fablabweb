@@ -1,7 +1,5 @@
 
 ## FAB ACADEMY 2017
-#### Esteban Martin Gimenez 
-
 
 This is the repository that contains all the work done at the Fab Academy of 2017 at FabLab Barcelona:
 
@@ -9,3 +7,4 @@ This is the repository that contains all the work done at the Fab Academy of 201
 
 > [Git Page FabAcademy 2017](https://nanusefue.github.io/fablabweb/)
 
+#### Esteban Martin Gimenez 
