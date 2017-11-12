@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/fablabweb/assets/ico/favicon.ico">
+
+    <title>FAB ACADEMY 2017 - 3D scanning and printing [5]</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/fablabweb/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/fablabweb/assets/css/style.css" rel="stylesheet">
+    <link href="/fablabweb/assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/fablabweb/assets/css/syntax.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="/fablabweb/css/main.css">-->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fablabweb/">FAB ACADEMY 2017</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li ><a href="/fablabweb/">HOME</a></li>
+      <!--  <li ><a href="/fablabweb/blog/">BLOG</a></li> -->
+     <!--   <li ><a href="/fablabweb/portfolio/">PORTFOLIO</a></li> -->
+        <li ><a href="/fablabweb/about/">ABOUT</a></li>
+     <!--   <li ><a href="/fablabweb/contact/">CONTACT</a></li>-->
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+            <div id="blue">
+    <div class="container">
+        <div class="row">
+            <h3>3D scanning and printing [5]</h3>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /blue -->
+
+<div class="container mt">
+    <div class="row">
+
+        <div class="col-lg-10 col-lg-offset-1 centered">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            
+            
+        </div>
+    </div> <!--/Carousel -->
+</div>
+
+
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="spacing"></div>
+
+            <h2>Assignment</h2>
+<ul>
+<li>
+<h3>Test the design rules for your printer(s) (group project)</h3>
+</li>
+<li>
+<h3>Design and 3D print an object (small, few cm) that could not be made subtractively</h3>
+</li>
+<li>
+<h3>3D scan an object (and optionally print it)</h3>
+</li>
+
+</ul>
+
+<h3>Introduccion 3D Printer</h3>
+
+<p>A 3D printer itself is a robot, there are different configurations of robots, most common in a 3D printer is the Cartesian configuration, this configuration is present in printers like the prusa i2 / i3, makerbot and others.
+</p>
+<p>There are other configurations like the delta or scara, a printer model with delta configuration is the Kossel printer, and a model with Scara configuration is the Morgan.
+
+</p>
+<div class="col-xs-12 ">
+<img width="300px" src="/fablabweb/assets/img/project/week5/printer/cartesiano.png" alt="webpage jekyll" />
+<img width="300px" src="/fablabweb/assets/img/project/week5/printer/delta.png" alt="webpage jekyll" />
+<img width="300px" src="/fablabweb/assets/img/project/week5/printer/scara.png" alt="webpage jekyll" />
+</div>
+<p><br /></p>
+<h3>Cartisian vs Delta</h3>
+
+<p>The molten deposition model uses an additive technique, depositing the material in layers, to form the piece. A plastic or metal filament initially stored in rolls is introduced into a nozzle. The nozzle is above the melting temperature of the material and can be moved in three axes electronically controlled. The nozzle is usually driven by stepping motors or servomotors. The part is constructed of thin strands of material that solidify immediately after exiting the nozzle.</p>
+
+<div class="col-xs-12 ">
+<img width="900px" src="/fablabweb/assets/img/project/week5/printer/diferencia.png" alt="webpage jekyll" />
+</div>
+
+<p>Here we can see which are the advantages and disadvantages between the delta and Cartesian configuration.
+</p>
+
+<h4>Advantage</h4>
+
+<div class="col-xs-10 col-xs-offset-2 ">
+
+
+<table class="table-striped table table-bordered" style="width: 80%">
+<tbody><tr style="width:50%">
+<td><center><strong>Delta</strong></center></td>
+<td><center><strong>Cartesian</strong></center></td>
+</tr>
+<tr>
+<td><center>High speed and print acceleration</center></td>
+<td><center>Easy to calibrate</center></td>
+</tr>
+<tr>
+<td><center>High Definition</center></td>
+<td><center>Easy analysis and correction of errors</center></td>
+</tr>
+<tr>
+<td><center>Resizable without affecting quality</center></td>
+<td><center>Large amount of community resources available</center></td>
+</tr>
+<tr>
+<td><center>Reliable and accurate</center></td>
+<td><center>Easier to adjust and avoid mistakes</center></td>
+</tr>
+<tr>
+<td><center>Wide range of motion</center></td>
+<td></td>
+</tr>
+<tr>
+<td><center>Static bed printing</center></td>
+<td></td>
+</tr>
+<tr>
+<td><center>Straps are constantly strained, there is no backlash</center></td>
+<td></td>
+</tr>
+</tbody></table>
+</div>
+
+<h4>Disadvantage</h4>
+<div class="col-xs-10 col-xs-offset-2 ">
+
+<table class="table-striped table table-bordered" style="width: 80%">
+<tbody><tr style="width:50%">
+<td><center><strong>Delta</strong></center></td>
+<td><center><strong>Cartesian</strong></center></td>
+</tr>
+<tr>
+<td><center>First tedious calibration</center></td>
+<td><center>Lower print speed</center></td>
+</tr>
+<tr>
+<td><center>Increased equipment volume</center></td>
+<td><center>Moving the printing bed</center></td>
+</tr>
+<tr>
+<td><center>Bad construction makes calibration never satisfactory</center></td>
+<td><center>They have inertia in each axis of motion and can affect acceleration</center></td>
+</tr>
+<tr>
+<td><center>Difficult to isolate calibration-construction problems</center></td>
+<td><center>Belt tension must be monitored</center></td>
+</tr>
+<tr>
+<td><center>Less information available</center></td>
+<td></td>
+</tr>
+</tbody></table>
+
+</div>
+
+<h3>Parts of 3D Printer</h3>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/printer/partes.png" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/printer/partes1.png" alt="webpage jekyll" />
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/printer/partes2.png" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/printer/partes3.png" alt="webpage jekyll" />
+</div>
+
+<h3>Model to Stl to g-code</h3>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/printer/modelProcess.png" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/printer/process_gcode.png" alt="webpage jekyll" />
+</div>
+
+<h3>Gcode web visualizer</h3>
+
+<p>I have created a gcode viewer using the js (ThreeJS) library, in this way we can see how to see the model by using a web browser, the model that is loaded is part of the extruder of a Prusa I2 printer.
+</p>
+<p><a href="https://github.com/nanusefue/ThreeJS-Visualizer-gcode-">https://github.com/nanusefue/ThreeJS-Visualizer-gcode</a></p>
+
+<iframe width="800" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://blog.labsdieroboter.com/wp-content/uploads/gcode/render1.html"></iframe>
+
+<h2>Test the design rules for your printer(s) (group project)
+<br /><small> (group project)</small></h2>
+
+<p>For the design test for the 3D printers I decided to use thingivers and look for a test that I found complete enough to see what resolution I could get from my printer.</p>
+
+<p>I have used a model called "Torture Test", since it tests the quality, calibration, configuration parameters, etc. of our printer.</p>
+
+<p>the characteristics to make this impression are the following:</p>
+<ul>
+<li>Print Setting</li>
+	<ul>
+		<li>Nozzel: 0.4mm</li>
+		<li>Layer height: 0.3mm</li>
+		<li>Perimeters: 3</li>
+		<li>Solid Layers: 3</li>
+		<li>Infill: 25%</li>
+		<li>Fill Pattern: Rectilinear</li>
+	</ul>
+<li>Filament Setting</li>
+	<ul>
+		<li>Diameter: 1.75mm</li>
+		<li>Temperature</li>
+			<ul>
+				<li>Extruder:</li>
+					<ul>
+						<li>First layer: 205</li>
+						<li>Other layer:180</li>
+					</ul>
+				<li>Bed:</li>
+					<ul>
+						<li>First layer:60</li>
+						<li>Other layer:60</li>
+					</ul>
+			</ul>
+
+	</ul>
+
+	</ul>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/test.jpg" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/test0.jpg" alt="webpage jekyll" />
+
+</div>
+<p>Here we can see that when you make the bridge, it does not finish correctly, this could be solved if we add a fan that cools the plastic in a faster way.</p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/test1.jpg" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/test1_1.jpg" alt="webpage jekyll" />
+
+</div>
+
+<iframe width="100%" height="600px" frameborder="none" src="http://archive.fabacademy.org/2017/fablabbcn/group/3dprint.html"></iframe>
+
+<h2>Design and 3D print an object.
+<br /><small> (small, few cm) that could not be made subtractively</small></h2>
+<p>
+I decided to design a 3D printer version of a plate holder using solidworks, some of the piezad are simple and could be done using the material subtraction system, but I decided that I could create a small project creating almost all the parts for a 3D printer.
+
+</p>
+
+<div class="col-xs-10 col-xs-offset-2 ">
+
+<img width="300px" src="/fablabweb/assets/img/project/week5/vise.jpg" alt="webpage jekyll" />
+<p><small>Model to replicate</small></p>
+
+</div>
+
+<p>I decided to replicate this model since once finished it would be something that could give one used in lab, exiten several pieces that could not be made subtractively since it has several cavities in different planes of the piece, there is the possibility of performing it by parts and finish joining the parts to get the final piece, below we can see two pieces that could not be done subtractively, because of the complexity of the same in different planes and like this, we can see a cut in solidworks to see the internal complexity.</p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/3dprint.png" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/3dprint3.png" alt="webpage jekyll" />
+
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/3dprint4.png" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/3dprint5.jpg" alt="webpage jekyll" />
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/3dprint2.png" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/3dprint3.jpg" alt="webpage jekyll" />
+
+</div>
+<p><small>Details for 3d pieces</small></p>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/3dprint6.jpg" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/3dprint7.jpg" alt="webpage jekyll" />
+</div>
+<p><small>Final printer</small></p>
+
+<h2>3D scan an object 
+<br /><small>(and optionally print it)</small></h2>
+<p>
+For the 3D scan I decided to choose a mask of fox, so that the hiding works better I have placed it on a stage, and thus to be able to scan it better. There are several methods for scanning objects in 3D such as:
+</p>
+<ul>
+<li>Laser and webcam</li>
+<li>Kinectis</li>
+
+</ul>
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/scanner.jpg" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/scanner1.jpg" alt="webpage jekyll" />
+
+</div>
+
+<h4>Prepare objeto to Scan</h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/fox.jpg" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/fox0.jpg" alt="webpage jekyll" />
+</div>
+
+<h4>Objeto before Scan</h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/fox1.png" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/fox2.png" alt="webpage jekyll" />
+
+</div>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/fox3.png" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/fox4.png" alt="webpage jekyll" />
+
+</div>
+<h4>Slic3r for 3D object</h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/foxprinter.png" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/foxprinter1.png" alt="webpage jekyll" />
+
+</div>
+
+<h4>Printer 3D scan object (Prusa I3) and support material after printer</h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/scanprinter/fox.jpg" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/scanprinter/fox1.jpg" alt="webpage jekyll" />
+
+</div>
+
+<h4>Final result</h4>
+
+<div class="col-xs-12 ">
+<img width="450px" src="/fablabweb/assets/img/project/week5/scanprinter/fox2.jpg" alt="webpage jekyll" />
+<img width="450px" src="/fablabweb/assets/img/project/week5/scanprinter/fox3.jpg" alt="webpage jekyll" />
+
+</div>
+
+<h3>Referens</h3>
+
+<p><a href="http://reprap.org/wiki/Kossel">Kossel</a></p>
+<p><a href="http://reprap.org/wiki/Prusa">Prusa I3</a></p>
+<p><a href="http://reprap.org/wiki/RepRap_Morgan">Scara</a></p>
+<p><a href="https://www.thingiverse.com/thing:33902"> Torture Test</a>
+
+<h3>Download</h3>
+
+
+
+<p><a href="/fablabweb/assets/img/project/week5/download/fox.zip">Fox 3D Scanner</a></p>
+<p><a href="/fablabweb/assets/img/project/week5/download/3dprinter.rar">3D Model</a></p>
+<p><a href="/fablabweb/assets/img/project/week5/download/fox2.gcode">Fox gcode</a></p>
+
+</p>
+
+
+        </div>
+      <!--  <div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Details</h4>
+            <div class="hline"></div>
+            <p><b>Date:</b> Jan 29, 2017</p>
+            <p><b>Author:</b> Esteban Martin Gimenez</p>
+            <p><b>Categories:</b> project</p>
+            <p><b>Tagged:</b> Flat, UI, Development</p>
+            <p><b>Client:</b> Wonder Corp.</p>
+            <p><b>Website:</b> <a href="http://blacktie.co">http://blacktie.co</a></p> 
+        </div>-->
+    </div><! --/row -->
+</div><! --/container -->
+	 
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        <h3></h3>
+        <div class="recentitems portfolio">
+            
+        </div>
+    </div>
+</div> 
+
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+           <!-- <div class="col-lg-4">
+                <h4>About</h4>
+                <div class="hline-w"></div>
+                <p></p>
+            </div> -->
+            <div class="col-lg-4">
+                <p>
+                    
+                        <a target="_blank" href="https://github.com/nanusefue" class="btn-social btn-outline"><i class="fa fa-github"></i></a>
+                    
+                        <a target="_blank" href="https://www.instagram.com/nanusefue/" class="btn-social btn-outline"><i class="fa fa-instagram"></i></a>
+                    
+                </p>
+            </div>
+            <div class="col-lg-8" style="color:white">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+                    <br />This work is licensed under a 
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
+     
+            </div> 
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/fablabweb/assets/js/bootstrap.min.js"></script>
+<script src="/fablabweb/assets/js/retina-1.1.0.js"></script>
+<script src="/fablabweb/assets/js/jquery.hoverdir.js"></script>
+<script src="/fablabweb/assets/js/jquery.hoverex.min.js"></script>
+<script src="/fablabweb/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/fablabweb/assets/js/jquery.isotope.min.js"></script>
+<script src="/fablabweb/assets/js/custom.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90860442-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+    </body>
+</html>
