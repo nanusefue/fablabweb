@@ -3,11 +3,11 @@
   <channel>
     <title>FAB ACADEMY 2017</title>
     <description>Fab Academey 2017 -Esteban Martin Gimenez</description>
-    <link>http://archive.fabacademy.org/</link>
-    <atom:link href="http://archive.fabacademy.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 31 Oct 2017 17:25:18 +0100</pubDate>
-    <lastBuildDate>Tue, 31 Oct 2017 17:25:18 +0100</lastBuildDate>
-    <generator>Jekyll v3.4.0</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 12 Nov 2017 15:07:51 +0100</pubDate>
+    <lastBuildDate>Sun, 12 Nov 2017 15:07:51 +0100</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title> Project development [19]</title>
@@ -47,8 +47,8 @@
 
 </description>
         <pubDate>Thu, 07 Sep 2017 14:00:00 +0200</pubDate>
-        <link>http://archive.fabacademy.org/project/week-19.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-19.html</guid>
+        <link>http://localhost:4000/project/week-19.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-19.html</guid>
         
       
       </item>
@@ -128,8 +128,8 @@
 
 </description>
         <pubDate>Thu, 07 Sep 2017 14:00:00 +0200</pubDate>
-        <link>http://archive.fabacademy.org/project/week-18.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-18.html</guid>
+        <link>http://localhost:4000/project/week-18.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-18.html</guid>
         
       
       </item>
@@ -206,8 +206,8 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;p&gt;The most important thing is that the automatic control works correctly, that the sensors that have adapted to the bioreactor take the data and these are very correct, in order to obtain an optimal system for the growth of spirulina.&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Sep 2017 14:00:00 +0200</pubDate>
-        <link>http://archive.fabacademy.org/project/week-17.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-17.html</guid>
+        <link>http://localhost:4000/project/week-17.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-17.html</guid>
         
       
       </item>
@@ -249,7 +249,7 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-xs-12 &quot;&gt;
     
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -375,7 +375,8 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 124
 125
 126
-127&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;avr/io.h&amp;gt;
+127
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;avr/io.h&amp;gt;
 #include &amp;lt;avr/wdt.h&amp;gt;
 #include &amp;lt;avr/eeprom.h&amp;gt;
 #include &amp;lt;avr/interrupt.h&amp;gt;
@@ -501,8 +502,7 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
    	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-   &lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+   &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 
 &lt;/div&gt;
@@ -527,7 +527,7 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;div class=&quot;row  top-buffer&quot;&gt;
     &lt;div class=&quot;col-xs-12 &quot;&gt;
   
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -661,7 +661,8 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 132
 133
 134
-135&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+135
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
 &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ypos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Position  Balls 
 &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xspeed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//  Balls speed X
 &lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yspeed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Balls speed Y
@@ -795,8 +796,7 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 
  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  
          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-   &lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+   &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 
 &lt;/div&gt;
@@ -825,8 +825,8 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 07 Sep 2017 14:00:00 +0200</pubDate>
-        <link>http://archive.fabacademy.org/project/week-16.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-16.html</guid>
+        <link>http://localhost:4000/project/week-16.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-16.html</guid>
         
       
       </item>
@@ -866,21 +866,21 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 
 &lt;div class=&quot;col-xs-12 top-buffer &quot;&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;   &lt;span class=&quot;cp&quot;&gt;#define node_id '0'&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;   &lt;span class=&quot;cp&quot;&gt;#define node_id '0'&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;/div&gt;
 
 &lt;div class=&quot;col-xs-12 top-buffer&quot;&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;   &lt;span class=&quot;cp&quot;&gt;#define led_delay2() _delay_ms(500) // LED flash delay&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;   &lt;span class=&quot;cp&quot;&gt;#define led_delay2() _delay_ms(500) // LED flash delay&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;/div&gt;
 
 &lt;div class=&quot;col-xs-12 top-buffer&quot;&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -890,7 +890,8 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 8
 9
 10
-11&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+11
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
  
    &lt;span class=&quot;n&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;led_port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;led_pin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
    &lt;span class=&quot;n&quot;&gt;led_delay2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
@@ -900,33 +901,32 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
    &lt;span class=&quot;n&quot;&gt;led_delay2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
    &lt;span class=&quot;n&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;led_port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;led_pin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;/div&gt;
 
 &lt;div class=&quot;col-xs-12 top-buffer&quot;&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;   &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PROGMEM&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Task &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Node&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;   &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PROGMEM&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Task &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;before&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Node&quot;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;/div&gt;
 &lt;p&gt;Program&lt;/p&gt;
 &lt;p&gt;it uses two pins with the serial protocol, and when the value compares in the main program with the id of the node that we have defined, if coindide enters the si and calls the flash function again and writes by console &quot;Task&quot; + the id of the node.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 top-buffer&quot;&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
-3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt; &lt;span class=&quot;n&quot;&gt;get_char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serial_pins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serial_pin_in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt; &lt;span class=&quot;n&quot;&gt;get_char&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serial_pins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serial_pin_in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;flash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;node_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;/div&gt;
 &lt;div class=&quot;col-xs-12 top-buffer&quot;&gt;
 
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -1114,7 +1114,8 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 186
 187
 188
-189&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;// Neil Gershenfeld
+189
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;// Neil Gershenfeld
 // 11/24/10
 //
 // (c) Massachusetts Institute of Technology 2010
@@ -1302,8 +1303,7 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
          &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serial_direction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serial_pin_out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;/div&gt;
 &lt;p&gt;Once programer the different boards, we have to connect them to each other by means of a cable that we have constructed especially for them, in this way the connection between the bridge and the nodes is made.&lt;/p&gt;
@@ -1334,8 +1334,8 @@ The rest of amazons and the methacrylate of a local store.&lt;/p&gt;
 &lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;/assets/img/project/week15/download/program.zip&quot;&gt;Program&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Aug 2017 14:00:00 +0200</pubDate>
-        <link>http://archive.fabacademy.org/project/week-15.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-15.html</guid>
+        <link>http://localhost:4000/project/week-15.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-15.html</guid>
         
       
       </item>
@@ -1443,8 +1443,8 @@ SUPER SAP® ONE System is the industry leader for USDA BioPreferredSM   certifie
 &lt;p&gt;&lt;a href=&quot;/assets/img/project/week14/download/technical.pdf&quot;&gt;Spec Resin&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Jun 2017 14:00:00 +0200</pubDate>
-        <link>http://archive.fabacademy.org/project/week-14.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-14.html</guid>
+        <link>http://localhost:4000/project/week-14.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-14.html</guid>
         
       
       </item>
@@ -1704,7 +1704,7 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 
 
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -1788,7 +1788,8 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 82
 83
 84
-85&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;ADXL_2.h&quot;  &lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/* Ne pas oublier d'inclure la librairie &amp;lt;TinyPinChange&amp;gt; qui est utilisee par la librairie &amp;lt;RcSeq&amp;gt; */&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
+85
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;ADXL_2.h&quot;  &lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/* Ne pas oublier d'inclure la librairie &amp;lt;TinyPinChange&amp;gt; qui est utilisee par la librairie &amp;lt;RcSeq&amp;gt; */&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
 #include &amp;lt;TinyWireM.h&amp;gt;                  // I2C Master lib for ATTinys which use USI
 #include &amp;lt;SoftSerial.h&amp;gt;     &lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/* Allows Pin Change Interrupt Vector Sharing */&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
 #include &amp;lt;TinyPinChange.h&amp;gt;  &lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/* Ne pas oublier d'inclure la librairie &amp;lt;TinyPinChange&amp;gt; qui est utilisee par la librairie &amp;lt;RcSeq&amp;gt; */&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;
@@ -1872,13 +1873,12 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
   &lt;span class=&quot;n&quot;&gt;TinyWireM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endTransmission&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 
 &lt;h5&gt;ADXL.h&lt;/h5&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -1887,7 +1887,8 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 7
 8
 9
-10&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AccelerometerRaw&lt;/span&gt;
+10
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AccelerometerRaw&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;XAxis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;YAxis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -1896,8 +1897,7 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 
 &lt;span class=&quot;n&quot;&gt;byte&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
 &lt;span class=&quot;cp&quot;&gt;#define ADXL_ADDR   0x53              // 7 bit I2C address for ADXL343 
-&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 
 
@@ -1908,8 +1908,8 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 &lt;/b&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 02 May 2017 14:00:00 +0200</pubDate>
-        <link>http://archive.fabacademy.org/project/week-13.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-13.html</guid>
+        <link>http://localhost:4000/project/week-13.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-13.html</guid>
         
       
       </item>
@@ -2127,8 +2127,8 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 &lt;p&gt;&lt;a href=&quot;/assets/img/project/week12/download/reductor.mpj&quot;&gt;Molde Modela Player M4&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 04 Apr 2017 14:00:00 +0200</pubDate>
-        <link>http://archive.fabacademy.org/project/week-12.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-12.html</guid>
+        <link>http://localhost:4000/project/week-12.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-12.html</guid>
         
       
       </item>
@@ -2192,10 +2192,10 @@ We used the grinder to undo the screws, since we have noticed that these were to
 &lt;h3&gt;First move&lt;/h3&gt;
 &lt;p&gt;For this test we send gcode directly from the arduino terminal.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;	&lt;span class=&quot;n&quot;&gt;G00&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rapid&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linear&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;move&lt;/span&gt; 
-	&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;G00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Z&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;	&lt;span class=&quot;n&quot;&gt;G00&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rapid&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linear&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;move&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;G00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Z&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;##&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 
 &lt;div class=&quot;col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 &quot;&gt;
@@ -2217,8 +2217,8 @@ We used the grinder to undo the screws, since we have noticed that these were to
 &lt;/p&gt;
 </description>
         <pubDate>Wed, 15 Mar 2017 13:00:00 +0100</pubDate>
-        <link>http://archive.fabacademy.org/project/week-11.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-11.html</guid>
+        <link>http://localhost:4000/project/week-11.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-11.html</guid>
         
       
       </item>
@@ -2255,7 +2255,7 @@ We used the grinder to undo the screws, since we have noticed that these were to
 &lt;/ul&gt;
 &lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -2286,7 +2286,8 @@ We used the grinder to undo the screws, since we have noticed that these were to
 29
 30
 31
-32&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;DigisparkOLED.h&amp;gt;
+32
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;DigisparkOLED.h&amp;gt;
 #include &amp;lt;Wire.h&amp;gt;
 #include &quot;img0_128x64c1.h&quot;
 #include &quot;digistump_128x64c1.h&quot;
@@ -2317,8 +2318,7 @@ We used the grinder to undo the screws, since we have noticed that these were to
 &lt;/span&gt;  
   &lt;span class=&quot;n&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Here a video of how the oled works after programming it, the plate is fed through the USB port.&lt;/p&gt;
 &lt;div class=&quot;col-xs-12 &quot;&gt;
@@ -2336,8 +2336,8 @@ We used the grinder to undo the screws, since we have noticed that these were to
 
 </description>
         <pubDate>Sun, 05 Mar 2017 13:00:00 +0100</pubDate>
-        <link>http://archive.fabacademy.org/project/week-10.html</link>
-        <guid isPermaLink="true">http://archive.fabacademy.org/project/week-10.html</guid>
+        <link>http://localhost:4000/project/week-10.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/week-10.html</guid>
         
       
       </item>

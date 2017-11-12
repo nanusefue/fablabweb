@@ -129,7 +129,7 @@
 <h4>Basic Usage</h4>
 
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -141,7 +141,8 @@
 10
 11
 12
-13</pre></td><td class="code"><pre><span class="c"># Install Jekyll and Bundler gems through RubyGems</span>
+13
+</pre></td><td class="code"><pre><span class="c"># Install Jekyll and Bundler gems through RubyGems</span>
 ~ <span class="nv">$ </span>gem install jekyll 
 
 <span class="c"># Create a new Jekyll site at ./myblog</span>
@@ -153,29 +154,28 @@
 <span class="c"># Build the site on the preview server</span>
 ~/myblog <span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve
 
-<span class="c"># Now browse to http://localhost:4000</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="c"># Now browse to http://localhost:4000</span></pre></td></tr></tbody></table></code></pre></figure>
 
 </p>
 
 <p>Jekyll also comes with a built-in development server that will allow you to preview what the generated site will look like in your browser locally</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
 5
 6
 7
-8</pre></td><td class="code"><pre>~ <span class="nv">$ </span>jekyll serve
+8
+</pre></td><td class="code"><pre>~ <span class="nv">$ </span>jekyll serve
 <span class="c"># =&gt; A development server will run at http://localhost:4000/</span>
 <span class="c"># Auto-regeneration: enabled. Use `--no-watch` to disable.</span>
 
-~ <span class="nv">$ </span>jekyll serve --detach
+~ <span class="nv">$ </span>jekyll serve <span class="nt">--detach</span>
 <span class="c"># =&gt; Same as `jekyll serve` but will detach from the current terminal.</span>
 <span class="c">#    If you need to kill the server, you can `kill -9 1234` where "1234" is the PID.</span>
-<span class="c">#    If you cannot find the PID, then do, `ps aux | grep jekyll` and kill the instance.</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="c">#    If you cannot find the PID, then do, `ps aux | grep jekyll` and kill the instance.</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <h4>Markdown</h4>
 
@@ -201,10 +201,10 @@
 	Jekyll genearate your static site a partir your files, for this propus you need execute this command:
 </p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre>~ <span class="nv">$ </span>jekyll build
-<span class="c"># =&gt; The static site created in _site/ folder</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre>~ <span class="nv">$ </span>jekyll build
+<span class="c"># =&gt; The static site created in _site/ folder</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <h3>Jekyll configuration file to work correctly with the fabacademy repository structure
 </h3>
@@ -215,7 +215,7 @@ In order for jekyll to work correctly with the folder structure of our webs in t
 Also in this file we can add any variable that we create static that we create necessary to use in our web, like for example the email, social networks, etc.
 </p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -249,7 +249,8 @@ Also in this file we can add any variable that we create static that we create n
 32
 33
 34
-35</pre></td><td class="code"><pre><span class="c">### GENERAL SETTINGS ###</span>
+35
+</pre></td><td class="code"><pre><span class="c">### GENERAL SETTINGS ###</span>
 
 <span class="c"># Site settings</span>
 title: FAB ACADEMY 2017
@@ -261,7 +262,7 @@ static: <span class="s2">"https://nanusefue.github.io/fab2107-static-resource"</
 <span class="c"># Build settings</span>
 markdown: kramdown
 permalink: /:categories/:title.html
-excerpt_separator: &lt;!--more--&gt; <span class="c">#use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is</span>
+excerpt_separator: &lt;<span class="o">!</span><span class="nt">--more--</span><span class="o">&gt;</span> <span class="c">#use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is</span>
 
 colors:  <span class="c">#in hex code if not noted else</span>
   primary: <span class="s2">"#00b3fe"</span> <span class="c">#"#F70031" </span>
@@ -283,8 +284,7 @@ social:
     url: https://www.instagram.com/nanusefue/
     
 <span class="c"># Postal address (add as many lines as necessary). Shown in footer and on Contact page.</span>
-email: nanusefue.at.gmail.dot.com<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+email: nanusefue.at.gmail.dot.com</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3>Part of code for the first assignament</h3>
 <p>
@@ -294,7 +294,7 @@ This is an example of how I created the first assignment using markdown, the fir
 I then use html to create the structure I have decided for my assignaments.
 </p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -320,7 +320,8 @@ I then use html to create the structure I have decided for my assignaments.
 24
 25
 26
-27</pre></td><td class="code"><pre>---
+27
+</pre></td><td class="code"><pre><span class="nt">---</span>
 layout: project
 title:  <span class="s2">"Jan 25: Principles and practices, project management [1]"</span>
 date:   2017-01-25 12:00:00
@@ -335,19 +336,18 @@ carousel:
 - single03.jpg
 
 website: http://blacktie.co
----
+<span class="nt">---</span>
 &lt;h2&gt;Create my own website &lt;/h2&gt;
 &lt;h3&gt;Jekyll&lt;/h3&gt;
 
-&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"/assets/img/project/week1/jekyll.png"</span> <span class="nv">alt</span><span class="o">=</span><span class="s1">'webpage jekyll'</span>&gt;
+&lt;img <span class="nv">src</span><span class="o">=</span><span class="s2">"/assets/img/project/week1/jekyll.png"</span> <span class="nv">alt</span><span class="o">=</span><span class="s1">'webpage jekyll'</span><span class="o">&gt;</span>
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;To create my website I<span class="s1">'ve chosen to use &lt;a  target="_blank" href="https://jekyllrb.com"&gt;Jekyll&lt;/a&gt;. That'</span>s because this system allows you to create a web <span class="k">in </span>a easy and static way,  making modifications by simple changes <span class="k">in </span>the configuration files <span class="o">(</span>Markdown<span class="o">)</span> &lt;/p&gt;
 
 &lt;h4&gt;Install Jekyll&lt;/h4&gt;
 
 
-and more ....<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+and more ....</pre></td></tr></tbody></table></code></pre></figure>
 
 <h2>Git (Version control system)  </h2>
 <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
@@ -358,7 +358,7 @@ and more ....<span class="w">
 
 <h4>Basic Command</h4>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -378,61 +378,61 @@ and more ....<span class="w">
 18
 19
 20
-21</pre></td><td class="code"><pre>~ <span class="nv">$ </span>git init <span class="o">(</span>initialize de git repository <span class="nb">local </span>server<span class="o">)</span>
+21
+</pre></td><td class="code"><pre>~ <span class="nv">$ </span>git init <span class="o">(</span>initialize de git repository <span class="nb">local </span>server<span class="o">)</span>
 ~ <span class="nv">$ </span>git add <span class="k">*</span>.c <span class="o">(</span>add new files <span class="k">in </span><span class="nb">local </span>repository<span class="o">)</span>
 ~ <span class="nv">$ </span>git add README <span class="o">(</span>add Readme file<span class="o">)</span>
-~ <span class="nv">$ </span>git commit -m <span class="s1">'initial project version'</span> <span class="o">(</span>first commit before add <span class="k">in </span>repository<span class="o">)</span>
+~ <span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s1">'initial project version'</span> <span class="o">(</span>first commit before add <span class="k">in </span>repository<span class="o">)</span>
 ~ <span class="nv">$ </span>git clone git://github.com/schacon/grit.git <span class="o">(</span>add existent respository <span class="k">for </span>use<span class="o">)</span>
-<span class="gp">$ </span>git status
+<span class="nv">$ </span>git status
 On branch master
 nothing to commit, working directory clean
-<span class="gp">$ </span>cat .gitignore
+<span class="nv">$ </span><span class="nb">cat</span> .gitignore
 <span class="k">*</span>.[oa]
 <span class="k">*</span>~
-~ <span class="nv">$ </span>git commit -m <span class="s2">"Commit message"</span>
+~ <span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"Commit message"</span>
 ~ <span class="nv">$ </span>git push origin master <span class="o">(</span>push your <span class="nb">local </span>file to remote repository<span class="o">)</span>
 ~ <span class="nv">$ </span>git remote add origin &lt;server&gt; <span class="o">(</span>conect your <span class="nb">local </span>repository with remote git server<span class="o">)</span>
-~ <span class="nv">$ </span>git checkout -b &lt;branchname&gt; <span class="o">(</span>create new branch<span class="o">)</span>
+~ <span class="nv">$ </span>git checkout <span class="nt">-b</span> &lt;branchname&gt; <span class="o">(</span>create new branch<span class="o">)</span>
 ~ <span class="nv">$ </span>git checkout &lt;branchname&gt; <span class="o">(</span>switch between branches <span class="o">)</span>
-~ <span class="nv">$ </span>git push --all origin <span class="o">(</span>upload all file to remote server<span class="o">)</span>
+~ <span class="nv">$ </span>git push <span class="nt">--all</span> origin <span class="o">(</span>upload all file to remote server<span class="o">)</span>
 ~ <span class="nv">$ </span>git pull <span class="o">(</span>download all file to <span class="nb">local </span>server<span class="o">)</span>
 ~ <span class="nv">$ </span>git merge &lt;branchname&gt; <span class="o">(</span>merge one especifica branch <span class="k">in </span>the actual branch<span class="o">)</span>
 ~ <span class="nv">$ </span>git tag 1.0.0 &lt;commitID&gt;  <span class="o">(</span>tag the actual commit<span class="o">)</span>
-~ <span class="nv">$ </span>git fetch origin <span class="o">(</span>recover all file from remote server<span class="o">)</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+~ <span class="nv">$ </span>git fetch origin <span class="o">(</span>recover all file from remote server<span class="o">)</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <h2>How to deploy my own site</h2>
 
 <h4>Generating a new SSH</h4>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>~ <span class="nv">$ </span>ssh-keygen -t rsa -b 4096 -C <span class="s2">"your_email@example.com"</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>~ <span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <h4>Copy the SSH key to your clipboard and add in fablab repository.</h4>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre>	user@user-ThinkPad-X220:~/.ssh<span class="nv">$ </span>cat id_rsa.pub 
+3
+</pre></td><td class="code"><pre>	user@user-ThinkPad-X220:~/.ssh<span class="nv">$ </span><span class="nb">cat </span>id_rsa.pub 
 	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5i+Ck1I9aN5sELzGmWeNGM9MKg+iNdO40IqPRffaMcJ
-	.... user@user-ThinkPad-X220<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+	.... user@user-ThinkPad-X220</pre></td></tr></tbody></table></code></pre></figure>
 
 <h4>Clone/Add/Commit/Push your file a fablab Repository</h4>
 
 <p>First we need to clone the repository of fablab in local, so we can add our files for the first time, then we can do our first commit, once we have the first commit, with the push command we upload everything to the remote repository, it is important to use the command pull to have the local repository updated with the remote.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-6</pre></td><td class="code"><pre>~ <span class="nv">$ </span>git clone git@git.fabacademy.org:fabacademy2017/fablabbcn.git .
-~ <span class="nv">$ </span>git add .
+6
+</pre></td><td class="code"><pre>~ <span class="nv">$ </span>git clone git@git.fabacademy.org:fabacademy2017/fablabbcn.git <span class="nb">.</span>
+~ <span class="nv">$ </span>git add <span class="nb">.</span>
 ~ <span class="nv">$ </span>git status
-~ <span class="nv">$ </span>git commit -am <span class="s1">'new assignament'</span>
+~ <span class="nv">$ </span>git commit <span class="nt">-am</span> <span class="s1">'new assignament'</span>
 ~ <span class="nv">$ </span>git pull origin master
-~ <span class="nv">$ </span>git push origin master<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+~ <span class="nv">$ </span>git push origin master</pre></td></tr></tbody></table></code></pre></figure>
 
 <p><br /></p>
 <div class="col-xs-12">

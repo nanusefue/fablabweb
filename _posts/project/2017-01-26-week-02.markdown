@@ -157,6 +157,36 @@ Instead in SolidWorks, it is drawn from 2D planes, and what is created in these 
 <img width="600px" src="{{ "/assets/img/project/week2/solid.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 <br>
+
+<h2>Possible Project</h2>
+<p>As a possible project, decided that the ship that would contain spirulina, also used a program called Keyshot to perform some renders, like the trial version, you can only use it, 15 days.</p>
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="{{ "/assets/img/project/week2/rendering/vasel.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<h3>Rendering Keyshot</h3>
+<p>In keyshot we import our solidworks model and select each piece separately and apply the material we think is necessary, in my case I have used two materials, glass and metal, and I have changed the colors of both to make it as real as possible.</p>
+<div class="col-xs-12 ">
+	<img width="300px" src="{{ "/assets/img/project/week2/rendering/keyshot4.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+	<img width="300px" src="{{ "/assets/img/project/week2/rendering/keyshot5.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+	<img width="300px" src="{{ "/assets/img/project/week2/rendering/keyshot3.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12 ">
+	<img width="900px" src="{{ "/assets/img/project/week2/rendering/keyshot2.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+<p>Here we can see the final result after adding the materials and finished the render.</p>
+
+
+<div class="col-xs-12 ">
+	<img width="450px" src="{{ "/assets/img/project/week2/rendering/render5.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+	<img width="450px" src="{{ "/assets/img/project/week2/rendering/render2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+<div class="col-xs-12 ">
+	<img width="450px" src="{{ "/assets/img/project/week2/rendering/render3.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+	<img width="450px" src="{{ "/assets/img/project/week2/rendering/render6.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
 <h3>Conclusions</h3>
 <p>
 All software used here is Magnifique, bat depends on wich you like to create, you need select the correct software.
@@ -172,7 +202,10 @@ or if you like create a simple model but super parametric the best is openscad, 
 <p><a href="http://www.qcad.org/">Qcad</a></p>
 <p><a href="http://www.openscad.org/">OpenScad</a></p>
 <h3>Download</h3>
+<p><a href="{{ "/assets/img/project/week2/download/vessel.zip" | prepend: site.baseurl }}">Possible Project</a></p>
+
 <p><a href="{{ "/assets/img/project/week2/download/qcad.dxf" | prepend: site.baseurl }}">Qcad.dxf</a></p>
+
 <p><a href="{{ "/assets/img/project/week2/download/openscad.scad" | prepend: site.baseurl }}">Openscad.scad</a></p>
 <p><a href="{{ "/assets/img/project/week2/download/board.eps" | prepend: site.baseurl }}">Bord.eps</a></p>
 <p><a href="{{ "/assets/img/project/week2/download/solidworks.SLDPRT" | prepend: site.baseurl }}">Solidworks.sld</a></p>

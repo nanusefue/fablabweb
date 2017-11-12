@@ -58,6 +58,9 @@ For this assignment began studying the Attiny family of Atmel processors. <a hre
 </div>
 
 <p>For this week I decided to investigate to be able to make my board have a bootloader as an arduino and be able to use the Arduino IDE.</p>
+<p>In order to make my board use its own bootloader, I have found two projects that have served me for this, one is the v-usb project, which allows: <i>"V-USB is a software-only implementation of a low-speed USB device for Atmel's AVR® microcontrollers, making it possible to build USB hardware with almost any AVR® microcontroller, not requiring any additional chip. "</i> , and the other is a bootloader called Micronucleus:<i>"Micronucleus is a bootloader designed for AVR ATtiny microcontrollers with a minimal usb interface, cross platform libusb-based program upload tool, and a strong emphasis on bootloader compactness. To the authors knowledge this is, by far, the smallest USB bootloader for AVR ATtiny"</i>, in this case I have created a fork of the repository and I have modified the configuration to use the Attiny44 since it was not included.
+<a target="_blank" href="https://github.com/nanusefue/micronucleus/tree/master/firmware/configuration/t44a_default">Modification Attiny44 </a></p>
+
 <p>For this I will use a bootloader that I have modified and can be used with the attiny44, also it is necessary to know how the pins of the atiny are mapped with the pins of Arduino, here we see a picture of how this would be.</p>
 
 <p>This allows me to upload all the code through the USB port without having to have 6 extra pins and the FABISP.</p>
@@ -66,7 +69,12 @@ For this assignment began studying the Attiny family of Atmel processors. <a hre
 <img width="650px" src="{{ "/assets/img/project/week8/atmel5.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
 
+
 <p>The first program is a blink, to prove that everything works correctly.</p>
+<p>the board includes an internal led as an arduino the difference is that it is internally connected to the PA0 pin.</p>
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="550px" src="{{ "/assets/img/project/week8/led.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
 
 <div class="col-xs-12 ">
 
@@ -98,8 +106,14 @@ For this assignment began studying the Attiny family of Atmel processors. <a hre
   Your browser does not support HTML5 video.
 </video>
 </div>
-<br>
 <p>The second program used the library to control servo motor, basically with this board we can use almost all libraries of arduino, the only problem is the space that is available to our programs, as the 44 attiny is only 4k.</p>
+<p>So that our plate can control a servo motor we can follow the connections that we see in the superior image, gnd, 5volts and the pin PA1 that is in charge of controlling it.</p>
+<br>
+
+<div class="col-xs-12 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="650px" src="{{ "/assets/img/project/week8/block.png" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
 <div class="col-xs-12 ">
 
 {% highlight c++ linenos %}
@@ -147,12 +161,190 @@ void loop()
   Your browser does not support HTML5 video.
 </video>
 </div>
+<h4>C and Attiny44</h4>
+<p>To compile the micronucleous application that is responsible for connecting the computer to our pcb, we use the make command, this compile for our system and architecture type, then we can copy the result to the folder / <i>"usr/local/bin"</i>, and we can access this from anywhere in our console.</p>
+<div class="col-xs-12 ">
+
+{% highlight bash linenos %}
+  ~ $ make 
+      Building library: micronucleus_lib...
+      gcc  -L/usr/lib/x86_64-linux-gnu -lusb -Ilibrary -O -g -D LINUX -c library/micronucleus_lib.c
+      Building library: littleWire_util...
+      gcc  -L/usr/lib/x86_64-linux-gnu -lusb -Ilibrary -O -g -D LINUX -c library/littleWire_util.c
+      Building command line tool: micronucleus...
+      gcc  -L/usr/lib/x86_64-linux-gnu -lusb -Ilibrary -O -g -D LINUX -o micronucleus micronucleus.c
+       micronucleus_lib.o littleWire_util.o -L/usr/lib/x86_64-linux-gnu -lusb
+  ~ $ sudo cp micronucleus /usr/local/bin/
+  ~ $ micronucleus 
+      usage: micronucleus [--help] [--run] [--dump-progress] [--fast-mode] 
+      [--type intel-hex|raw] [--timeout integer] [--erase-only] filename [--no-ansi]
+{% endhighlight %}
+
+<br>
+</div>
+<p>Blink in C</p>
+<div class="col-xs-12 ">
+
+{% highlight c++ linenos %}
+#include <avr/io.h>
+#include <util/delay.h>
+ 
+int main (void)
+{
+  // set PA0 to be output
+  DDRA = 0b00000001;
+  while (1) {
+    
+    // flash# 1:
+    // set PA0 high
+    PORTA = 0b00000001; 
+    _delay_ms(90);
+    // set PA0 low
+    PORTA = 0b00000000;
+    _delay_ms(20);
+    
+    }
+ 
+  return 1;
+}
+{% endhighlight %}
+<br>
+<p>I use a modification of the Niels Make file, to create the .hex file of our program.</p>
+</div>
+<div class="col-xs-12 ">
+
+{% highlight c++ linenos %}
+# Name: Makefile
+# Project: custom-class example
+# Author: Christian Starkjohann
+# Creation Date: 2008-04-07
+# Tabsize: 4
+# Copyright: (c) 2008 by OBJECTIVE DEVELOPMENT Software GmbH
+# License: GNU GPL v2 (see License.txt), GNU GPL v3 or proprietary (CommercialLicense.txt)
+# This Revision: $Id: Makefile 692 2008-11-07 15:07:40Z cs $
+
+DEVICE  = attiny44
+#F_CPU   = 12000000	# in Hz
+F_CPU   = 16000000	# in Hz
+FUSE_L  = 0xE2
+FUSE_H  = 0xDD
+#AVRDUDE = avrdude -c usbtiny -p $(DEVICE) -D -F # edit this line for your programmer
+#AVRDUDE = avrdude -c avrisp2 -p $(DEVICE) # edit this line for your programmer
+AVRDUDE = avrdude -c atmelice_isp -p $(DEVICE) # edit this line for your programmer
+
+
+CFLAGS  = -DDEBUG_LEVEL=0
+OBJECTS =main.o
+
+COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
+
+# symbolic targets:
+help:
+	@echo "This Makefile has no default rule. Use one of the following:"
+	@echo "make hex ....... to build main.hex"
+	@echo "make clean ..... to delete objects and hex file"
+
+hex: main.hex
+
+# rule for deleting dependent files (those which can be built by Make):
+clean:
+	rm -f main.hex main.lst main.obj main.cof main.list main.map main.eep.hex main.elf *.o usbdrv/*.o main.s usbdrv/oddebug.s usbdrv/usbdrv.s
+
+# Generic rule for compiling C files:
+.c.o:
+	$(COMPILE) -c $< -o $@
+
+# Generic rule for assembling Assembler source files:
+.S.o:
+	$(COMPILE) -x assembler-with-cpp -c $< -o $@
+# "-x assembler-with-cpp" should not be necessary since this is the default
+# file type for the .S (with capital S) extension. However, upper case
+# characters are not always preserved on Windows. To ensure WinAVR
+# compatibility define the file type manually.
+
+# Generic rule for compiling C to assembler, used for debugging only.
+.c.s:
+	$(COMPILE) -S $< -o $@
+
+# file targets:
+
+# Since we don't want to ship the driver multipe times, we copy it into this project:
+usbdrv:
+#	cp -r ../../../usbdrv .
+
+main.elf: usbdrv $(OBJECTS)	# usbdrv dependency only needed because we copy it
+	$(COMPILE) -o main.elf $(OBJECTS)
+
+main.hex: main.elf
+	rm -f main.hex main.eep.hex
+	avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+	avr-size main.hex
+
+{% endhighlight %}
+<br>
+
+</div>
+<p>Make command Help </p>
+<div class="col-xs-12 ">
+
+{% highlight c++ linenos %}
+
+ make
+This Makefile has no default rule. Use one of the following:
+make hex ....... to build main.hex
+make clean ..... to delete objects and hex file
+{% endhighlight %}
+<br>
+</div>
+<p>Create .hex file</p>
+<div class="col-xs-12 ">
+
+{% highlight c++ linenos %}
+make hex
+avr-gcc -Wall -Os -DF_CPU=16000000	 -DDEBUG_LEVEL=0 -mmcu=attiny44 -c main.c -o main.o
+avr-gcc -Wall -Os -DF_CPU=16000000	 -DDEBUG_LEVEL=0 -mmcu=attiny44 -o main.elf main.o
+rm -f main.hex main.eep.hex
+avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+avr-size main.hex
+   text	   data	    bss	    dec	    hex	filename
+      0	    102	      0	    102	     66	main.hex
+{% endhighlight %}
+<br>
+</div>
+<p>Upload using Micronucleus program</p>
+<div class="col-xs-12 ">
+
+{% highlight c++ linenos %}
+micronucleus --run main.hex 
+> Please plug in the device ... 
+> Press CTRL+C to terminate the program.
+> Device is found!
+connecting: 33% complete
+> Device has firmware version 2.3
+> Device signature: 0x1e9207 
+> Available space for user applications: 2554 bytes
+> Suggested sleep time between sending pages: 7ms
+> Whole page count: 40  page size: 64
+> Erase function sleep duration: 280ms
+parsing: 50% complete
+> Erasing the memory ...
+erasing: 66% complete
+> Starting to upload ...
+writing: 83% complete
+> Starting the user app ...
+running: 100% complete
+>> Micronucleus done. Thank you!
+
+{% endhighlight %}
+</div>
 
 <h3>Referens</h3>
 
 <p><a href="http://academy.cba.mit.edu/classes/embedded_programming/doc8183.pdf">Attiny 44/84</a></p>
 <p><a href="https://github.com/nanusefue/micronucleus">Micronucleus</a></p>
+<p><a href="https://www.obdev.at/products/vusb/index.html">V-USB</a></p>
 <p><a href="https://learn.adafruit.com/add-boards-arduino-v164/overview">Adding third party boards Arduino IDE</a></p>
+
 
 
 <!--<h3>Download</h3>-->

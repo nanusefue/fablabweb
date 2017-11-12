@@ -238,11 +238,31 @@ origins.</p>
 
 <h4>Final Process</h4>
 
+<p>Once we have the generated files and we have understood how to fit the cnc to create our plates, we must add this to the plaform with double-sided tape, and make sure that it fits perfectly to this, to set the milling and execute our file to cut the tracks , when this is finished, we change the miling to cut the contour and execute the corresponding file.</p>
+
 <div class="col-xs-12 ">
 
+<img width="400px" src="/assets/img/project/week4/miling/cut1.jpg" alt="webpage jekyll" />
 <img width="400px" src="/assets/img/project/week4/programer1.jpg" alt="webpage jekyll" />
-<img width="400px" src="/assets/img/project/week4/programer.jpg" alt="webpage jekyll" />
 </div>
+
+
+<div class="col-xs-10 col-xs-offset-2 ">
+<!--
+<img width="400px" src="/assets/img/project/week4/programer.jpg" alt='webpage jekyll'>-->
+<video width="600" controls="" loop="">
+  <source src="/assets/img/project/week4/miling/video.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+</div>
+<p>To weld the smd components to our plate I like to use the <a href="https://www.digikey.es/product-detail/es/panavise/201/201PV-ND/166719" target="_blank">vise</a> that we have in the lab, since it allows me to have the plate fastened correctly, I use a pair of pliers so that the components do not move from their place, only It is necessary a little practice to obtain a good result, besides having the welder and the tips in perfect conditions.</p>
+<div class="col-xs-12 ">
+
+<img width="400px" src="/assets/img/project/week4/soldering/soldering1.jpg" alt="webpage jekyll" />
+<img width="400px" src="/assets/img/project/week4/soldering/soldering2.jpg" alt="webpage jekyll" />
+</div>
+
+
 
 <h4>UBS connector in pcb details</h4>
 
@@ -255,12 +275,12 @@ origins.</p>
 <p>I work on linux and normally work with the design of boards, so I have already installed all the tools to work with microprocessors of the AVR family &lt;/ p&gt;
 <p> But for anyone who wants to program their microcontrollore in linux you need to install some packages </p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre>sudo apt-get install gcc-avr binutils-avr avr-libc
+3
+</pre></td><td class="code"><pre><span class="nb">sudo </span>apt-get install gcc-avr binutils-avr avr-libc
 
-sudo apt-get install avrdude<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="nb">sudo </span>apt-get install avrdude</pre></td></tr></tbody></table></code></pre></figure>
 
 
 <br />
@@ -283,7 +303,7 @@ Each type of process has different fuse settings.
 
 
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -324,8 +344,9 @@ Each type of process has different fuse settings.
 39
 40
 41
-42</pre></td><td class="code"><pre><span class="gp">nanu@nanu-ThinkPad-X220:firmware$ </span>make fuse
-avrdude -c usbtiny -p attiny44  -U hfuse:w:0xDF:m -U lfuse:w:0xFF:m
+42
+</pre></td><td class="code"><pre>nanu@nanu-ThinkPad-X220:firmware<span class="nv">$ </span>make fuse
+avrdude <span class="nt">-c</span> usbtiny <span class="nt">-p</span> attiny44  <span class="nt">-U</span> hfuse:w:0xDF:m <span class="nt">-U</span> lfuse:w:0xFF:m
 
 avrdude: AVR device initialized and ready to accept instructions
 
@@ -365,8 +386,7 @@ avrdude: 1 bytes of low fuse verified
 
 avrdude: safemode: Fuses OK
 
-avrdude <span class="k">done</span>.  Thank you.<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+avrdude <span class="k">done</span><span class="nb">.</span>  Thank you.</pre></td></tr></tbody></table></code></pre></figure>
 
 
 <h4>Programing</h4>
@@ -379,7 +399,7 @@ the -c flag is used to indicate the programmer and the -p family to which the ch
 </p>
 
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -454,8 +474,9 @@ the -c flag is used to indicate the programmer and the -p family to which the ch
 73
 74
 75
-76</pre></td><td class="code"><pre><span class="gp">nanu@nanu-ThinkPad-X220:firmware$ </span>make program
-avrdude -c usbtiny -p attiny44  -U flash:w:main.hex:i
+76
+</pre></td><td class="code"><pre>nanu@nanu-ThinkPad-X220:firmware<span class="nv">$ </span>make program
+avrdude <span class="nt">-c</span> usbtiny <span class="nt">-p</span> attiny44  <span class="nt">-U</span> flash:w:main.hex:i
 
 avrdude: AVR device initialized and ready to accept instructions
 
@@ -463,7 +484,7 @@ Reading | <span class="c">################################################## | 1
 
 avrdude: Device signature <span class="o">=</span> 0x1e9207
 avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
-         To disable this feature, specify the -D option.
+         To disable this feature, specify the <span class="nt">-D</span> option.
 avrdude: erasing chip
 avrdude: reading input file <span class="s2">"main.hex"</span>
 avrdude: writing flash <span class="o">(</span>2020 bytes<span class="o">)</span>:
@@ -487,9 +508,9 @@ avrdude: 2020 bytes of flash verified
 
 avrdude: safemode: Fuses OK
 
-avrdude <span class="k">done</span>.  Thank you.
+avrdude <span class="k">done</span><span class="nb">.</span>  Thank you.
 
-avrdude -c usbtiny -p attiny44  -U hfuse:w:0xDF:m -U lfuse:w:0xFF:m
+avrdude <span class="nt">-c</span> usbtiny <span class="nt">-p</span> attiny44  <span class="nt">-U</span> hfuse:w:0xDF:m <span class="nt">-U</span> lfuse:w:0xFF:m
 
 avrdude: AVR device initialized and ready to accept instructions
 
@@ -529,8 +550,7 @@ avrdude: 1 bytes of lfuse verified
 
 avrdude: safemode: Fuses OK
 
-avrdude <span class="k">done</span>.  Thank you.<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+avrdude <span class="k">done</span><span class="nb">.</span>  Thank you.</pre></td></tr></tbody></table></code></pre></figure>
 
 
 
@@ -540,8 +560,8 @@ avrdude <span class="k">done</span>.  Thank you.<span class="w">
 To verify that our board works correctly simply connecting it to our computer and using the command linux:
 
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="gp">nanu@nanu-ThinkPad-X220:firmware$ </span>lsusb<span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>nanu@nanu-ThinkPad-X220:firmware<span class="nv">$ </span>lsusb</pre></td></tr></tbody></table></code></pre></figure>
 
 
 we will see that our device will appear in the list, and we can start to record any microprocessor that uses the ISP protocol.

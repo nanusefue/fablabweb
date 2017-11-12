@@ -121,21 +121,21 @@
 
 <div class="col-xs-12 top-buffer ">
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>   <span class="cp">#define node_id '0'</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>   <span class="cp">#define node_id '0'</span></pre></td></tr></tbody></table></code></pre></figure>
 
 </div>
 
 <div class="col-xs-12 top-buffer">
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>   <span class="cp">#define led_delay2() _delay_ms(500) // LED flash delay</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>   <span class="cp">#define led_delay2() _delay_ms(500) // LED flash delay</span></pre></td></tr></tbody></table></code></pre></figure>
 
 </div>
 
 <div class="col-xs-12 top-buffer">
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -145,7 +145,8 @@
 8
 9
 10
-11</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">flash</span><span class="p">()</span> <span class="p">{</span>
+11
+</pre></td><td class="code"><pre><span class="kt">void</span> <span class="nf">flash</span><span class="p">()</span> <span class="p">{</span>
  
    <span class="n">clear</span><span class="p">(</span><span class="n">led_port</span><span class="p">,</span> <span class="n">led_pin</span><span class="p">);</span>
    <span class="n">led_delay2</span><span class="p">();</span>
@@ -155,33 +156,32 @@
    <span class="n">led_delay2</span><span class="p">();</span>
    <span class="n">set</span><span class="p">(</span><span class="n">led_port</span><span class="p">,</span> <span class="n">led_pin</span><span class="p">);</span>
 
-   <span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+   <span class="p">}</span></pre></td></tr></tbody></table></code></pre></figure>
 
 </div>
 
 <div class="col-xs-12 top-buffer">
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>   <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">message</span><span class="p">[]</span> <span class="n">PROGMEM</span> <span class="o">=</span> <span class="s">"Task "</span><span class="p">;</span> <span class="o">//</span><span class="n">before</span> <span class="s">"Node"</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>   <span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">message</span><span class="p">[]</span> <span class="n">PROGMEM</span> <span class="o">=</span> <span class="s">"Task "</span><span class="p">;</span> <span class="o">//</span><span class="n">before</span> <span class="s">"Node"</span></pre></td></tr></tbody></table></code></pre></figure>
 
 </div>
 <p>Program</p>
 <p>it uses two pins with the serial protocol, and when the value compares in the main program with the id of the node that we have defined, if coindide enters the si and calls the flash function again and writes by console "Task" + the id of the node.</p>
 <div class="col-xs-12 top-buffer">
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre> <span class="n">get_char</span><span class="p">(</span><span class="o">&amp;</span><span class="n">serial_pins</span><span class="p">,</span> <span class="n">serial_pin_in</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">chr</span><span class="p">);</span>
+3
+</pre></td><td class="code"><pre> <span class="n">get_char</span><span class="p">(</span><span class="o">&amp;</span><span class="n">serial_pins</span><span class="p">,</span> <span class="n">serial_pin_in</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">chr</span><span class="p">);</span>
       <span class="n">flash</span><span class="p">();</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">chr</span> <span class="o">==</span> <span class="n">node_id</span><span class="p">)</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+      <span class="k">if</span> <span class="p">(</span><span class="n">chr</span> <span class="o">==</span> <span class="n">node_id</span><span class="p">)</span></pre></td></tr></tbody></table></code></pre></figure>
 
 </div>
 <div class="col-xs-12 top-buffer">
 
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -369,7 +369,8 @@
 186
 187
 188
-189</pre></td><td class="code"><pre><span class="c1">// Neil Gershenfeld
+189
+</pre></td><td class="code"><pre><span class="c1">// Neil Gershenfeld
 // 11/24/10
 //
 // (c) Massachusetts Institute of Technology 2010
@@ -557,8 +558,7 @@
          <span class="n">input</span><span class="p">(</span><span class="n">serial_direction</span><span class="p">,</span> <span class="n">serial_pin_out</span><span class="p">);</span>
          <span class="p">}</span>
       <span class="p">}</span>
-   <span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+   <span class="p">}</span></pre></td></tr></tbody></table></code></pre></figure>
 
 </div>
 <p>Once programer the different boards, we have to connect them to each other by means of a cable that we have constructed especially for them, in this way the connection between the bridge and the nodes is made.</p>

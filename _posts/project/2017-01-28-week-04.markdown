@@ -167,11 +167,31 @@ origins.</p>
 
 <h4>Final Process</h4>
 
+<p>Once we have the generated files and we have understood how to fit the cnc to create our plates, we must add this to the plaform with double-sided tape, and make sure that it fits perfectly to this, to set the milling and execute our file to cut the tracks , when this is finished, we change the miling to cut the contour and execute the corresponding file.</p>
+
 <div class="col-xs-12 ">
 
+<img width="400px" src="{{ "/assets/img/project/week4/miling/cut1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 <img width="400px" src="{{ "/assets/img/project/week4/programer1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
-<img width="400px" src="{{ "/assets/img/project/week4/programer.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
 </div>
+
+
+<div class="col-xs-10 col-xs-offset-2 ">
+<!--
+<img width="400px" src="{{ "/assets/img/project/week4/programer.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>-->
+<video width="600" controls loop>
+  <source src="{{ "/assets/img/project/week4/miling/video.mp4" | prepend: site.baseurl }}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+<p>To weld the smd components to our plate I like to use the <a href="https://www.digikey.es/product-detail/es/panavise/201/201PV-ND/166719" target="_blank" >vise</a> that we have in the lab, since it allows me to have the plate fastened correctly, I use a pair of pliers so that the components do not move from their place, only It is necessary a little practice to obtain a good result, besides having the welder and the tips in perfect conditions.</p>
+<div class="col-xs-12 ">
+
+<img width="400px" src="{{ "/assets/img/project/week4/soldering/soldering1.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+<img width="400px" src="{{ "/assets/img/project/week4/soldering/soldering2.jpg" | prepend: site.baseurl }}" alt='webpage jekyll'>
+</div>
+
+
 
 <h4>UBS connector in pcb details</h4>
 

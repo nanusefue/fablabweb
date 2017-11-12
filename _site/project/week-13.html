@@ -341,7 +341,7 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 
 
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -425,7 +425,8 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 82
 83
 84
-85</pre></td><td class="code"><pre><span class="cp">#include "ADXL_2.h"  </span><span class="cm">/* Ne pas oublier d'inclure la librairie &lt;TinyPinChange&gt; qui est utilisee par la librairie &lt;RcSeq&gt; */</span><span class="cp">
+85
+</pre></td><td class="code"><pre><span class="cp">#include "ADXL_2.h"  </span><span class="cm">/* Ne pas oublier d'inclure la librairie &lt;TinyPinChange&gt; qui est utilisee par la librairie &lt;RcSeq&gt; */</span><span class="cp">
 #include &lt;TinyWireM.h&gt;                  // I2C Master lib for ATTinys which use USI
 #include &lt;SoftSerial.h&gt;     </span><span class="cm">/* Allows Pin Change Interrupt Vector Sharing */</span><span class="cp">
 #include &lt;TinyPinChange.h&gt;  </span><span class="cm">/* Ne pas oublier d'inclure la librairie &lt;TinyPinChange&gt; qui est utilisee par la librairie &lt;RcSeq&gt; */</span><span class="cp">
@@ -509,13 +510,12 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
   <span class="n">TinyWireM</span><span class="p">.</span><span class="n">endTransmission</span><span class="p">();</span>
 
   <span class="k">return</span> <span class="n">buffer</span><span class="p">;</span>
-<span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="p">}</span></pre></td></tr></tbody></table></code></pre></figure>
 
 
 <h5>ADXL.h</h5>
 
-<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -524,7 +524,8 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 7
 8
 9
-10</pre></td><td class="code"><pre><span class="k">struct</span> <span class="n">AccelerometerRaw</span>
+10
+</pre></td><td class="code"><pre><span class="k">struct</span> <span class="n">AccelerometerRaw</span>
 <span class="p">{</span>
   	<span class="kt">int</span> <span class="n">XAxis</span><span class="p">;</span>
   	<span class="kt">int</span> <span class="n">YAxis</span><span class="p">;</span>
@@ -533,8 +534,7 @@ Now we can select the version of our tinyduino, Stracciatella or Mint
 
 <span class="n">byte</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">6</span><span class="p">];</span>
 <span class="cp">#define ADXL_ADDR   0x53              // 7 bit I2C address for ADXL343 
-</span><span class="kt">int</span> <span class="n">data</span><span class="p">;</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+</span><span class="kt">int</span> <span class="n">data</span><span class="p">;</span></pre></td></tr></tbody></table></code></pre></figure>
 
 
 

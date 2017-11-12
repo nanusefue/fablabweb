@@ -169,7 +169,7 @@ Below we see the most common functions that OpenScad has to create models.
 </div>
 <h4>Model example</h4>
 
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -178,7 +178,8 @@ Below we see the most common functions that OpenScad has to create models.
 7
 8
 9
-10</pre></td><td class="code"><pre><span class="n">cube</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">]);</span>
+10
+</pre></td><td class="code"><pre><span class="n">cube</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">]);</span>
 <span class="k">for</span> <span class="p">(</span> <span class="n">i</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="o">:</span><span class="mi">2</span><span class="o">:</span> <span class="mi">99</span><span class="p">]</span> <span class="p">)</span>
 <span class="p">{</span>
 	 <span class="n">translate</span><span class="p">([</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
@@ -187,8 +188,7 @@ Below we see the most common functions that OpenScad has to create models.
 		 <span class="n">translate</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span><span class="n">rotate</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span><span class="n">cube</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">3</span><span class="p">]);</span>
 
 	 <span class="p">}</span>
-<span class="p">}</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="p">}</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p><br /></p>
 
@@ -232,6 +232,36 @@ Instead in SolidWorks, it is drawn from 2D planes, and what is created in these 
 <img width="600px" src="/assets/img/project/week2/solid.png" alt="webpage jekyll" />
 </div>
 <br />
+
+<h2>Possible Project</h2>
+<p>As a possible project, decided that the ship that would contain spirulina, also used a program called Keyshot to perform some renders, like the trial version, you can only use it, 15 days.</p>
+<div class="col-xs-10 col-xs-offset-2 col-lg-10 col-lg-offset-2 ">
+<img width="600px" src="/assets/img/project/week2/rendering/vasel.png" alt="webpage jekyll" />
+</div>
+<h3>Rendering Keyshot</h3>
+<p>In keyshot we import our solidworks model and select each piece separately and apply the material we think is necessary, in my case I have used two materials, glass and metal, and I have changed the colors of both to make it as real as possible.</p>
+<div class="col-xs-12 ">
+	<img width="300px" src="/assets/img/project/week2/rendering/keyshot4.png" alt="webpage jekyll" />
+	<img width="300px" src="/assets/img/project/week2/rendering/keyshot5.png" alt="webpage jekyll" />
+	<img width="300px" src="/assets/img/project/week2/rendering/keyshot3.png" alt="webpage jekyll" />
+</div>
+<div class="col-xs-12 ">
+	<img width="900px" src="/assets/img/project/week2/rendering/keyshot2.png" alt="webpage jekyll" />
+</div>
+
+<p>Here we can see the final result after adding the materials and finished the render.</p>
+
+
+<div class="col-xs-12 ">
+	<img width="450px" src="/assets/img/project/week2/rendering/render5.jpg" alt="webpage jekyll" />
+	<img width="450px" src="/assets/img/project/week2/rendering/render2.jpg" alt="webpage jekyll" />
+</div>
+<div class="col-xs-12 ">
+	<img width="450px" src="/assets/img/project/week2/rendering/render3.jpg" alt="webpage jekyll" />
+	<img width="450px" src="/assets/img/project/week2/rendering/render6.jpg" alt="webpage jekyll" />
+</div>
+
+
 <h3>Conclusions</h3>
 <p>
 All software used here is Magnifique, bat depends on wich you like to create, you need select the correct software.
@@ -247,7 +277,10 @@ or if you like create a simple model but super parametric the best is openscad, 
 <p><a href="http://www.qcad.org/">Qcad</a></p>
 <p><a href="http://www.openscad.org/">OpenScad</a></p>
 <h3>Download</h3>
+<p><a href="/assets/img/project/week2/download/vessel.zip">Possible Project</a></p>
+
 <p><a href="/assets/img/project/week2/download/qcad.dxf">Qcad.dxf</a></p>
+
 <p><a href="/assets/img/project/week2/download/openscad.scad">Openscad.scad</a></p>
 <p><a href="/assets/img/project/week2/download/board.eps">Bord.eps</a></p>
 <p><a href="/assets/img/project/week2/download/solidworks.SLDPRT">Solidworks.sld</a></p>
